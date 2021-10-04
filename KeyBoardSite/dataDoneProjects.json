@@ -2,36 +2,42 @@
     {
         "name": "Hallowen Cup",
         "img": "/image/keycup1.png",
+        "popupID": "1",
         "description": "add"
 
     },
     {
         "name": "Tor Cup",
         "img": "/image/keycup2.png",
+        "popupID": "2",
         "description": "add"
 
     },
     {
         "name": "Mountain Cup",
         "img": "/image/keycup3.png",
+        "popupID": "3",
         "description": "add"
 
     },
     {
         "name": "Axe Cup",
         "img": "/image/keycup4.png",
+        "popupID": "4",
         "description": "add"
 
     },
     {
         "name": "Frost Cup",
         "img": "/image/keycup5.png",
+        "popupID": "5",
         "description": "add"
 
     },
     {
         "name": "Chaos Cup",
         "img": "/image/keycup6.png",
+        "popupID": "6",
         "description": "add"
 
     }
