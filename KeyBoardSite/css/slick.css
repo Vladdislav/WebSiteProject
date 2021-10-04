@@ -1,0 +1,64 @@
+/* slider */
+.slick-slide {
+    position: relative;
+    left: 0;
+}
+.slick-prev {
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 0;
+
+    border: none;
+    background: red;
+    color: black;
+
+    padding-top: 5px;
+    font-size: 40px;
+    margin-left: 20px;
+    border-radius: 5px;
+}
+.slick-next {
+    position: absolute;
+    top: 50%;
+    right: 0;
+
+    color: black;
+    background: red;
+    border: none;
+    padding-top: 5px;
+    font-size: 40px;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+.slick-prev:hover{
+    color: white;
+    background: linear-gradient(45deg,
+    rgba(242,99,19,1),
+    rgba(211,19,242,1));
+    transition: ease 0.5s;
+}
+.slick-next:hover{
+    color: white;
+    background: linear-gradient(45deg,
+    rgba(242,99,19,1),
+    rgba(211,19,242,1));
+    transition: ease 0.5s;
+}
+.slick-prev:before{
+    font-family: "icomoon";
+    font-size: 40px;
+    content: "\e900";
+}
+.slick-next:before{
+    font-family: "icomoon";
+    font-size: 40px;
+    content: "\e904";
+}
+.slick-track {
+    color: black;
+    display: flex;
+}
+.slick-list {
+    overflow: hidden;
+}

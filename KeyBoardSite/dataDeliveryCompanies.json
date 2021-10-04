@@ -1,0 +1,42 @@
+[
+    {
+        "imgUrl": "/image/Деловые_линии.svg",
+        "nameCompany": "ДеловыеЛинии",
+        "regionDelivery": "Регион доставки: Россия, Беларусь, Казахстан, Киргизия"
+    },
+    {
+        "imgUrl": "/image/CDEK.svg",
+        "nameCompany": "CDEK",
+        "regionDelivery": "Регион доставки:оссия, Казахстан, Беларусь, Армения, Киргизия, Китай, Литва"
+    },
+    {
+        "imgUrl": "/image/DPD.svg",
+        "nameCompany": "DPD",
+        "regionDelivery": "Регион доставки: Россия, Мир"
+    },
+    {
+        "imgUrl": "/image/UPS.svg",
+        "nameCompany": "UPS",
+        "regionDelivery": "Регион доставки: Россия, Беларусь, Казахстан, Киргизия"
+    },
+    {
+        "imgUrl": "/image/BoxBerry.svg",
+        "nameCompany": "BoxBerry",
+        "regionDelivery": "Регион доставки: Россия, Мир"
+    },
+    {
+        "imgUrl": "/image/Почта_России.svg",
+        "nameCompany": "Почта России",
+        "regionDelivery": "Регион доставки: Россия, Беларусь, Казахстан, Киргизия"
+    },
+    {
+        "imgUrl": "/image/ПЭК.svg",
+        "nameCompany": "ПЭК",
+        "regionDelivery": "Регион доставки: Россия, Беларусь, Казахстан, Киргизия"
+    },
+    {
+        "imgUrl": "/image/EMS.svg",
+        "nameCompany": "EMS",
+        "regionDelivery": "Регион доставки:оссия, Казахстан, Беларусь, Армения, Киргизия, Китай, Литва"
+    }
+]
