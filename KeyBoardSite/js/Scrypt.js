@@ -5,6 +5,7 @@ import addScrollHeader from './headerScroll.js';
 const API_cardProduct = './database.json';
 const API_cardDeliveryCompanies = './dataDeliveryCompanies.json';
 const API_cardDoneProject = './dataDoneProjects.json';
+const API_cardStaff = './dataStaff.json';
 
 $(document).ready(function (){
 
@@ -23,7 +24,7 @@ $(document).ready(function (){
 
         let parent = document.querySelector(".slider_card");
 
-        addCard(cardData, parent, buttonClickedID);
+        addCardProduct(cardData, parent, buttonClickedID);
         callback();
         })
     };
@@ -50,6 +51,17 @@ $(document).ready(function (){
         callback();
         })
     };
+    async function getCardStaff(){
+        await fetch(API_cardStaff)
+        .then(responce => responce.json())
+        .then(cardData => {
+
+
+        let parent = document.querySelector(".staff");
+
+        addCardStaff(cardData, parent);
+        })
+    };
 
         function addSlider(){
             $('.slider_card').slick({
@@ -74,6 +86,7 @@ $(document).ready(function (){
     getCardOurWork(addSliderWork);
     getCard(addSlider);
     getCardDelivery();
+    getCardStaff();
 
 });
 
@@ -113,7 +126,7 @@ $(document).ready(function (){
 // }
 
 
-function addCard(cards, parent, categoryID){
+function addCardProduct(cards, parent, categoryID){
 
     for (const key in cards) {
         if(categoryID === cards[key].clickedID){
@@ -175,7 +188,7 @@ function addCardWorkDone(cards, parent){
 
     for (const key in cards) {
         let CardChild = document.createElement('div');
-        let cardDelivery = 
+        let cardWorkDone = 
         `
         <div class="our_work_card" style="background: url(${cards[key].img})">
             <p class="title_card_our_work">${cards[key].name}</p>
@@ -186,8 +199,30 @@ function addCardWorkDone(cards, parent){
         </div>
         `;
         
-        CardChild.innerHTML = cardDelivery;
+        CardChild.innerHTML = cardWorkDone;
         parent.appendChild(CardChild);
         
     }
 }
+
+function addCardStaff(cards, parent){
+
+    for (const key in cards) {
+        let CardChild = document.createElement('div');
+        let cardStaff = 
+        `
+        <div class="employee_card">
+            <img src="${cards[key].imgURL}" alt="">
+            <div class="employee_info">
+                <p class="name">${cards[key].name}</p>
+                <p class="post">${cards[key].post}</p>
+            </div>
+        </div>
+        `;
+        
+        CardChild.innerHTML = cardStaff;
+        parent.appendChild(CardChild);
+        
+    }
+}
+
