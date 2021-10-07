@@ -1,0 +1,171 @@
+@media (max-width:1660px) {
+    /* Main page */
+    .container {
+        max-width: 1200px;
+    }
+    .logo a {
+        font-size: 28px ;
+    }
+    .menu a{
+        font-size: 18px ;
+    }
+    main .main_page {
+        min-height: 768px;
+    }
+    .container .main_content {
+        padding-top: 140px;
+    }
+    .description h2 {
+        font-size: 16px ;
+    }
+    .main_content .description h1 {
+        font-size: 36px ;
+    }
+    .description p {
+        font-size: 16px ;
+    }
+    .quality h3 {
+        font-size: 12px;
+    }
+    .quality_desc {
+        font-size: 12px;
+    }
+    .quality .quality_desc h4{
+        text-align: start;
+        font-size: 14px;
+    }
+    .right_content .icon:before {
+        font-size: 40px;
+    }
+    /* Main page  */
+
+    /* Catalog page */
+    main .catalog_page {
+        min-height: 768px;
+    }
+    main .background:before {
+        min-height: 768px;
+    }
+    .category_card a {
+        font-size: 20px;
+    }
+    .slider_inner {
+        width: 350px !important;
+        height: 550px !important;
+    }
+    .slider_inner .description_card {
+        padding-top: 20px;
+    }
+    .photo_card .coast  {
+        right: 40px;
+        bottom: 15px;
+    }
+
+    .photo_card img {
+
+        width: 300px;
+        height: 300px;
+    } 
+    /* Catalog page */
+
+    /* Delivery page */
+
+    /* Delivery page */
+
+    /* Our projects */
+
+    /* Our projects */
+
+    /* About KeyCup */
+
+    /* About KeyCup */
+
+    /* About us */
+
+    /* About us */
+    
+}
+@media (max-width:1200px) {
+    /* Main page  */
+    .container {
+        max-width: 970px;
+    }
+    /* Main page  */
+
+    /* Catalog page */
+
+    /* Catalog page */
+
+    /* Delivery page */
+
+    /* Delivery page */
+
+    /* Our projects */
+
+    /* Our projects */
+
+    /* About KeyCup */
+
+    /* About KeyCup */
+
+    /* About us */
+
+    /* About us */
+    
+}
+@media (max-width:992ox) {
+    /* Main page  */
+    .container {
+        max-width: 750px;
+    }
+    /* Main page  */
+
+    /* Catalog page */
+
+    /* Catalog page */
+
+    /* Delivery page */
+
+    /* Delivery page */
+
+    /* Our projects */
+
+    /* Our projects */
+
+    /* About KeyCup */
+
+    /* About KeyCup */
+
+    /* About us */
+
+    /* About us */
+    
+}
+@media (max-width:767px) {
+    /* Main page  */
+    .container {
+        max-width: none;
+    }
+    /* Main page  */
+
+    /* Catalog page */
+
+    /* Catalog page */
+
+    /* Delivery page */
+
+    /* Delivery page */
+
+    /* Our projects */
+
+    /* Our projects */
+
+    /* About KeyCup */
+
+    /* About KeyCup */
+
+    /* About us */
+
+    /* About us */
+    
+}
