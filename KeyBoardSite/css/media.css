@@ -1,7 +1,7 @@
 @media (max-width:1660px) {
     /* Main page */
     .container {
-        max-width: 1200px;
+        max-width: 1200px !important;
     }
     .logo a {
         font-size: 28px ;
@@ -49,9 +49,9 @@
     .category_card a {
         font-size: 20px;
     }
-    .slider_inner {
-        width: 350px !important;
-        height: 550px !important;
+    .slick-slide .slider_inner {
+        width: 350px ;
+        height: 550px ;
     }
     .slider_inner .description_card {
         padding-top: 20px;
@@ -59,17 +59,81 @@
     .photo_card .coast  {
         right: 40px;
         bottom: 15px;
+        width: 70px;
+        height: 25px;
     }
-
     .photo_card img {
 
         width: 300px;
         height: 300px;
-    } 
+    }
+    .description_card .name {
+        margin-top: 0px;
+    }
+    .button_card .btn {
+        height: 20px;
+        width: 100px;
+        font-size: 14px;
+    }
+    .button_card .btn_buy {
+        visibility: hidden;
+    }
+    .button_card .btn a {
+        line-height: 20px;
+    }
+    .btn_add_in_cart {
+        margin-left: 20px;
+    }
+    .slick-prev:before {
+        font-size: 24px;
+    }
+    .slick-prev {
+        font-size: 24px;
+    }
+    .slick-next:before {
+        font-size: 24px;
+    }
+    .slick-next {
+        font-size: 24px;
+    }
     /* Catalog page */
 
     /* Delivery page */
-
+    main .delivery_page {
+        min-height: 900px;
+    }
+    .container .delivery_head h3 {
+        font-size: 36px;
+    }
+    .content_delivery .title_left_content {
+        font-size: 14px;
+    }
+    .bottom_delivery_content .delivery_companies {
+        max-height: 630px;
+    }
+    .bottom_delivery_content .delivery_post_tracking {
+        min-height: 630px;
+    }
+    .delivery_list_companies .company img {
+        width: 40px;
+        height: 40px;
+    }
+    .description_company .name_company {
+        font-size: 14px;
+    }
+    .description_company .region_company {
+        font-size: 12px;
+        max-width: 145px;
+    }
+    .container .delivery_head p{
+        font-size: 20px;
+    }
+    .delivery_post_tracking .details_abouts_delivery {
+        max-height:490px;
+    }
+    .delivery_post_tracking .search_post button {
+        width: 9%;
+    }
     /* Delivery page */
 
     /* Our projects */
