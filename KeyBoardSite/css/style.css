@@ -388,8 +388,6 @@ header {
 
 /* delivery companies */
 .bottom_delivery_content {
-    height: 765px;
-    max-height: 765px;
     width: 100%;
     display: flex;
     position: relative;
@@ -400,6 +398,7 @@ header {
 /* left and right content delivery */
 
 .delivery_companies {
+    min-height: 765px;
     width: 45%;
     height: 100%;
     margin: 0 auto;
@@ -407,15 +406,6 @@ header {
 }
 .content_delivery {
     width: 100%;
-}
-
-
-
-
-
-.delivery_post_tracking {
-    width: 100%;
-    height: 100%;
 }
 .search_post {
     display: flex;
@@ -491,8 +481,6 @@ header {
 /* search post */
 .delivery_post_tracking {
     width: 45%;
-    height: 100%;
-
     margin: 0 auto;
 }
 .details_abouts_delivery {
@@ -523,10 +511,10 @@ header {
 .our_work_card {
     border-radius: 50px;
     position: relative;
+    min-height: 350px;
+    min-width: 350px;
     max-height: 350px;
-    height: 350px;
-    width: 350px;
-    max-width: 350%;
+    max-width: 350px;
 
 }
 .our_work_card:first-child {
@@ -585,7 +573,7 @@ header {
     position: absolute;
     margin-left: 40px;
     bottom: 50px;
-    width: 270px;
+    min-width: 270px;
     height: 30px;
     font-size: 14px;
     padding-top: 8px;
@@ -612,8 +600,8 @@ header {
     position: relative;
     z-index: 2;
     margin: 0 auto;
-    width: 67%;
-    height: 300px;
+    max-width: 57%;
+    min-height: 300px;
 }
 .lower_title{
     font-size: 24px;
@@ -631,7 +619,7 @@ header {
 }
 .new_product {
     position: relative;
-    width: 22%;
+    max-width: 200px;
     min-height: 100%;
     background: radial-gradient(50% 50% at 50% 50%,
     rgba(88, 54, 54, 0) 13.54%, 
@@ -657,7 +645,7 @@ header {
     transition: 0.3s;
     position: absolute;
     bottom: 20px;
-    left: 40px;
+    left: 5%;
     font-size: 18px;
     color: white;
 }
@@ -665,14 +653,14 @@ header {
     transition: 0.3s;
     position: absolute;
     margin: 0 auto;
-    min-width: 160px;
+    min-width: 90%;
     text-align: center;
     padding-top: 5px;
     height: 30px;
     opacity: 0;
     background-color: #EE3E4B;
     bottom: 0;
-    left: 40px;
+    left: 5%;
     font-size: 18px;
 }
 
@@ -681,7 +669,7 @@ header {
 .about_keycup {
     position: relative;
     width: 100%;
-    height: 970px;
+    min-height: 970px;
     background: url('../image/Screen_catalog.jpg');
     background-position: center center;
 }
@@ -750,7 +738,7 @@ header {
 .about_us {
     position: relative;
     width: 100%;
-    height: 970px;
+    min-height: 970px;
     background: url('../image/Screen_catalog.jpg');
     background-position: center center;
 }
@@ -766,6 +754,7 @@ header {
     position: relative;
     z-index: 2;
     width: 43%;
+    max-height: 100%;
 }
 
 .company_characteristic {
@@ -840,8 +829,8 @@ header {
     justify-content: space-around;
 }
 .employee_card {
-    width: 180px;
-    height: 223px;
+    max-width: 180px;
+    max-height: 223px;
     text-align: center;
     margin-bottom: 60px;
 }
@@ -854,7 +843,7 @@ header {
     text-align: center;
     margin-top: 20px;
 }
-.name {
+.name_staff {
     font-size: 18px;
     margin-top: 20px;
 }

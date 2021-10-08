@@ -214,7 +214,7 @@ function addCardStaff(cards, parent){
         <div class="employee_card">
             <img src="${cards[key].imgURL}" alt="">
             <div class="employee_info">
-                <p class="name">${cards[key].name}</p>
+                <p class="name_staff">${cards[key].name}</p>
                 <p class="post">${cards[key].post}</p>
             </div>
         </div>

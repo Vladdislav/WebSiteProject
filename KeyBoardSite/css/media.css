@@ -1,7 +1,7 @@
 @media (max-width:1660px) {
     /* Main page */
-    .container {
-        max-width: 1200px !important;
+    body .container {
+        max-width: 1200px;
     }
     .logo a {
         font-size: 28px ;
@@ -44,7 +44,7 @@
         min-height: 768px;
     }
     main .background:before {
-        min-height: 768px;
+        min-height: inherit;
     }
     .category_card a {
         font-size: 20px;
@@ -100,7 +100,7 @@
 
     /* Delivery page */
     main .delivery_page {
-        min-height: 900px;
+        min-height: 768px;
     }
     .container .delivery_head h3 {
         font-size: 36px;
@@ -108,11 +108,14 @@
     .content_delivery .title_left_content {
         font-size: 14px;
     }
+    .container .bottom_delivery_content {
+        margin-top: 40px;
+    }
     .bottom_delivery_content .delivery_companies {
-        max-height: 630px;
+        min-height: 430px;
     }
     .bottom_delivery_content .delivery_post_tracking {
-        min-height: 630px;
+        max-height: 630px;
     }
     .delivery_list_companies .company img {
         width: 40px;
@@ -129,25 +132,174 @@
         font-size: 20px;
     }
     .delivery_post_tracking .details_abouts_delivery {
-        max-height:490px;
+        max-height:385px
+    }
+    .delivery_post_tracking form {
+        margin: 15px 0;
+    }
+    .delivery_post_tracking .search_post input {
+        height: 20px;
     }
     .delivery_post_tracking .search_post button {
-        width: 9%;
+        width: 6%;
+    }
+    .delivery_post_tracking .search_post button:before {
+        font-size: 25px;
     }
     /* Delivery page */
 
     /* Our projects */
-
+    main .our_works {
+        min-height: 768px;
+    }
+    .container .title_our_works {
+        font-size: 26px;
+    }
+    .container .slider_card_work {
+        margin-top: 50px;
+    }
+    .slick-slide .our_work_card {
+        max-height: 250px;
+        min-height: 250px;
+        min-width: 250px;
+        max-width: 250px;
+    }
+    .our_work_card .title_card_our_work {
+    font-size: 20px ;
+    }
+    .our_work_card:hover .push_button {
+        min-width: 200px;
+        margin-left: 25px;
+    }
+    .container .lower_content {
+        padding-top: 112px;
+        max-width: 80%;
+    }
+    .lower_content .lower_title {
+        font-size: 20px;
+    }
+    .lower_content .product_card {
+        margin-top: 30px;
+        height: 150px;
+    }
+    .new_product .date {
+        font-size: 14px;
+    }
+    .new_product:hover .push_batton_news {
+        font-size: 14px;
+    }
     /* Our projects */
 
     /* About KeyCup */
-
+    main .about_keycup {
+        min-height: 768px;
+    }
+    .container .category_plastic a {
+        font-size: 18px;
+    }
+    .container .content_plastic {
+        padding-top: 60px;
+    }
+    .content_plastic .content_keycup {
+        max-width: 48%;
+        height: 220px;
+        margin-bottom: 60px;
+    }
+    .content_keycup .content_description {
+        min-width: 280px;
+        margin-left: 20px;
+    }
+    .content_description .title_plastic {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+    .content_description .description_plastic {
+        font-size: 10px;
+    }
     /* About KeyCup */
 
     /* About us */
-
-    /* About us */
+    main .about_us {
+        min-height: 768px;
+    }
+    .company_characteristic .company_char_title {
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+    .company_characteristic .company_char_desc {
+        font-size: 14px;
+    }
+    .content_about_us .left_colomn {
+        max-height: 650px;
+    }
+    .left_colomn .company_characteristic {
+        height: 140px;
+    }
+    .left_colomn .company_characteristic:not(:first-child){
+        margin-top: 20px;
+    }
+    .right_colomn .key_indicators h6 {
+        font-size: 24px;
+    }
+    .achives .circle {
+        background: none;
+        background: gray;
+        width: 50px;
+        height: 50px;
+    }
+    .achives .circle p {
+        font-size: 18px;
+    }
+    .achives .achive_desc {
+        font-size: 12px;
+    }
+    .right_colomn .our_comands {
+        margin-top: 30px;
+    }
+    .right_colomn .our_comands h6 {
+        font-size: 24px;
+    }
     
+    .staff .employee_card {
+        max-width: 120px;
+        max-height: 180px;
+        margin-bottom: 40px;
+    }
+    .staff .employee_card img{
+        width: 75px;
+        height: 75px;
+        border-radius: 40px;
+    }
+    .employee_info .name_staff {
+        font-size: 14px;
+        margin-top: 15px;
+    }
+    .employee_info .post {
+        font-size: 12px;
+    }
+    /* About us */
+
+    /* footer */
+    body footer {
+        height: 250px;
+    }
+    .container .top_footer_content {
+        padding-top: 60px;
+    }
+    .container .top_footer_content {
+        align-items: center;
+    }
+    .top_footer_content nav {
+        font-size: 16px;
+        padding: 5px 30px 0 30px;
+    }
+    .container .middle_line {
+        height: 2px;
+        max-width: 900px;
+        margin: 40px auto;
+        opacity: 70%;
+    }
+    /* footer */
 }
 @media (max-width:1200px) {
     /* Main page  */
