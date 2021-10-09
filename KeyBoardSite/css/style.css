@@ -909,7 +909,20 @@ nav a:hover {
     color: orange;
 }
 /* pop-up */
-
+.container_popup {
+    position: relative;
+    font-family: "Roboto";
+    
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+}
+.more_detail {
+    margin-left: 20px;
+}
+.more_detail_title_desc h1 {
+    color: black;
+}
 .hidden {
     color: black;
     display: none;
