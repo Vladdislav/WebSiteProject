@@ -1,1 +1,4 @@
-import 'Fancybox';
+$(function(){
+
+console.log(2);
+});

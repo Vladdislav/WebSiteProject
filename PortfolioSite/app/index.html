@@ -6,87 +6,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stanislav Blog</title>
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
     <header class="header">
-        <div class="header__top">
-            <div class="container">
-                <div class="header__top-inner">
-                    <div class="logo">
-                        <a class="logo__link" href="#"><span class="header__content--color">Stanislav</span> T</a>
+        <div class="container">
+            <div class="header__top">
+                <div class="header__top-logo">
+                    <a class="header__top-logo-link" href="#">
+                        <span class="keycolor">Stanislav</span> T
+                    </a>
+                </div>
+                <nav class="header__top-menu">
+                    <ul class="header__top-list">
+                        <li class="header__top-item">
+                            <a class="header__top-item-link" href="#">Главная</a>
+                        </li>
+                        <li class="header__top-item">
+                            <a class="header__top-item-link" href="#">Обо мне</a>
+                        </li>
+                        <li class="header__top-item">
+                            <a class="header__top-item-link" href="#">Портфолио</a>
+                        </li>
+                        <li class="header__top-item">
+                            <a class="header__top-item-link" href="#">Резюме</a>
+                        </li>
+                        <li class="header__top-item">
+                            <a class="header__top-item-link" href="#">Блог</a>
+                        </li>
+                    </ul>
+                    <div class="header__top-lang">
+                        <a class="header__top-lang-item header__top-lang--active" href="#">rus</a>
+                        <a class="header__top-lang-item" href="#">eng</a>
                     </div>
-                    <nav class="menu">
-                        <ul class="menu__list">
-                            <li class="menu__list-item">
-                                <a class="menu__link menu__link--active" href="#">Главная</a>
-                            </li>
-                            <li class="menu__list-item">
-                                <a class="menu__link" href="#">Портфолио</a>
-                            </li>
-                            <li class="menu__list-item">
-                                <a class="menu__link" href="#">Резюме</a>
-                            </li>
-                            <li class="menu__list-item">
-                                <a class="menu__link" href="#">Блог</a>
-                            </li>
-                            <li class="menu__list-item">
-                                <a class="menu__link" href="#">Обо мне</a>
-                            </li>
-                        </ul>
-                        <div class="menu__switch-language">
-                            <ul class="menu__switch-list">
-                                <li class="menu__switch-list-item">
-                                    <a class="menu__list-item--link menu__list-item--active" href="">rus</a>
-                                </li>
-                                <li class="menu__switch-list-item">
-                                    <a class="menu__list-item--link" href="">eng</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </nav>
+                </nav>
+            </div>
+            <div class="header__content">
+                <p class="header__suptitle">Всем привет</p>
+                <h1 class="header__title">Меня зовут <span class="header__title--bold keycolor">Станислав</span> Тюленев</h1>
+                <p class="header__desc">Вы находитесь на сайте человека, который смог бы вам рассказать много интересного о визуализации, 3D моделировании и усердной работы для достижения поставленных целей.</p>
+                <div class="header__btn">
+                    <a class="header__btn-detail" href="#" data-fancybox data-src="#modal">Подробнее обо мне</a>
                 </div>
             </div>
-        </div>
-        <div class="header__content">
-            <div class="container">
-                <div class="header__content-inner">
-                    <p class="header__content-sup-title">Всем привет</p>
-                    <h1 class="header__content-title">Меня зовут 
-                        <span class="header__content-title-word header__content--color">Станислав</span> Тюленев
-                    </h1>
-                    <p class="header__content-description">Вы находитесь на сайте человека, который смог бы вам рассказать много интересного о визуализации, 3D моделировании и усердной работы для достижения поставленных целей.</p>
-                    <div class="header__content-detail-btn">
-                        <a class="header__content-link" data-fancybox data-src="#more" href="">Подробнее обо мне</a>
-                    </div>
+            <div class="header__bottom">
+                <div class="header__icons">
+                    <a class="header__icon-link header__icon-instagram" href="#"></a>
+                    <a class="header__icon-link header__icon-telegramm" href="#"></a>
+                    <a class="header__icon-link header__icon-vk" href="#"></a>
                 </div>
-            </div>
-        </div>
-        <div class="header__bottom">
-            <div class="container">
-                <div class="header__bottom-inner">
-                    <div class="header__bottom-messengers">
-                        <ul class="header__bottom-content">
-                            <li class="header__bottom-messenger">
-                                <a class="header__bottom-instagram header_bottom-btn" href="#"></a>
-                            </li>
-                            <li class="header__bottom-messenger">
-                                <a class="header__bottom-telegramm header_bottom-btn" href="#"></a>
-                            </li>
-                            <li class="header__bottom-messenger">
-                                <a class="header__bottom-vk header_bottom-btn" href="#" ></a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="header_bottom-decor"></div>
-                </div>
+                <div class="header__decor"></div>
             </div>
         </div>
     </header>
-    <div class="popup" id="more" style="display:none;max-width:500px;">
-        <h2>Pla</h2>
-        <p>pla</p>
+    <section class="">
+
+    </section>
+
+
+    <div class="popup" id="modal">
+        <h1 class="title">hello</h1>
+        <p class="desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis nam obcaecati nemo impedit distinctio repudiandae sed quaerat iste tenetur quod harum cumque quisquam, autem consequatur dicta nostrum, quibusdam facilis a!
+        Ducimus nostrum in debitis alias accusamus sunt doloremque blanditiis suscipit fuga quo praesentium excepturi est impedit nemo, quam molestiae quasi recusandae unde quas id sed nulla, natus magni voluptates! Tempora.</p>
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="js/main.min.js"></script>
 </body>
 </html>
