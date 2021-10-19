@@ -1,7 +1,10 @@
 @import 'reset';
 @import 'fonts';
 @import 'icomoon';
+@import 'animate.compat';
+@import 'carousel';
 @import 'fancybox';
+
 
 $color-orange: #FF7A00;
 $color-red: #FF0000;
@@ -10,32 +13,42 @@ body {
     font-family: "Jura";
     font-weight: 400;
     font-size: 20px;
+    position: relative;
 
 }
 
 .container {
-    position: relative;
     max-width: 1440px;
-
+    overflow: hidden;
     margin: 0 auto;
 }
 
 .header {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    transition: all 1s ease;
 
-    height: 100vh;
-    background: linear-gradient(180deg, 
-                rgba(0, 0, 0, 0.2) 0%, 
-                rgba(0, 0, 0, 0.2) 100%), 
-                url('../images/back-2.png');
-
+    &--hidden {
+        transform: translateY(-100%);
+        transition: all 1s ease;
+    }
     &__top {
-        padding: 20px 10px 0 10px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        padding: 10px 10px 0 10px;
+        transition: all 1s ease;
+
+        &-inner {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        
 
         &-logo {
-            
+                
             &-link {
                 font-size: 36px;
                 line-height: 45px;
@@ -100,11 +113,54 @@ body {
         
     }
 
-   &__content {
-        margin-left: auto;
-        margin-right: 40px;
-        margin-top: 200px;
-        max-width: 542px;
+   
+}
+
+// modificators
+
+.keycolor {
+    color: $color-orange;
+
+    &--active {
+        animation: activeHidden;
+        animation-iteration-count: infinite;
+        animation-duration: 2s;
+    }
+
+    @keyframes activeHidden {
+        0% {
+            opacity: 0.4;
+        }
+        100%{
+            opacity: 1;
+        }
+    }
+}
+//-------------------------//
+
+// about-me page
+.header-addition {
+    margin-top: -55px;
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+
+    background: linear-gradient(180deg, 
+                rgba(0, 0, 0, 0.2) 0%, 
+                rgba(0, 0, 0, 0.2) 100%), 
+                url('../images/back-2.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &__content {
+
+        &-inner {
+            margin-right: 40px;
+            margin-top: 265px;
+            margin-left: auto;
+            max-width: 542px;  
+        }
     }
     &__suptitle {
 
@@ -139,16 +195,16 @@ body {
     &__btn {
 
         margin-top: 45px;
-        padding: 10px 20px;
         background: $color-red;
         max-width: 232px;
+        text-align: center;
         transition: .3s;
 
         &-detail {
             
             font-family: 'Montserrat';
             font-size: 18px;
-            line-height: 22px;
+            line-height: 40px;
             text-align: justify;
             transition: .3s;
 
@@ -166,14 +222,28 @@ body {
     }
 
     &__bottom {
-        margin-top: 350px;
+
+        &-inner {
+
+        width: 100%;
         padding: 0 10px;
-        display: flex;
-        justify-content: space-between;
+        height: 60px;
+        position: absolute;
+        bottom: 20px;
+        left: 0;
+        }
+        
+        &-content {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
     }
 
     &__icons {
         display: flex;
+        position: absolute;
         
     }
     &__icon-link {
@@ -205,26 +275,322 @@ body {
         content: "\e906";
     }
 
-    &__decor:after {
-        font-family: 'icomoon';
-        content: "\e903";
-        font-size: 60px;
+    &__decor {
         position: absolute;
-        left: 50%;
+            left: 50%;
+        &:after{
+            font-family: 'icomoon';
+            content: "\e903";
+            font-size: 60px;
+        }
     }
 }
-.keycolor {
-    color: $color-orange;
-}
 
+// portfolio page
+.portfolio {
+    height: 100vh;
+    width: 100%;
+
+    position: relative;
+    overflow: hidden;
+    background-color: #EDF1FD;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &-top {
+
+
+        &__inner {
+            margin-left: 10px;
+            margin-top: 144px;
+            max-width: 618px;
+        }
+        &__title {
+            color: black;
+            font-size: 36px;
+            line-height: 43px;
+
+            &:after {
+                margin-left: 20px;
+                font-family: 'icomoon';
+                content: "\e900";
+                font-size: 20px;
+            }
+        }
+
+        &__description {
+            color: black;
+            margin-top: 10px;
+            font-size: 20px;
+            line-height: 24px;
+        }
+    }
+
+    &-center {
+
+
+        &__inner {
+            width: 100%;
+            max-height: max-content;
+            display: flex;
+            justify-content: space-around;
+            margin-top: 113px;
+            background: #CACACA;
+            box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.6);
+            
+            &-block {
+
+                position: relative;
+                max-width: 245px;
+                min-height: 350px;
+                text-align: center;
+                margin: 25px 0;
+            }
+
+            &-box {
+                margin: 0 auto;
+                background: #2B303B;
+                border-radius: 70px;
+                width: max-content;
+                height: max-content;
+                max-height: 140px;
+                max-width: 140px;
+
+                &-circle{
+                    padding: 30px 30px;
+                }
+            }
+
+            &-title {
+                color: black;
+                margin-top: 10px;
+                font-size: 20px;
+                line-height: 24px;
+            }
+
+            &-descriotion {
+                color: black;
+                margin-top: 10px;
+                font-size: 20px;
+                line-height: 24px;
+            }
+
+            &-btn {
+                position: absolute;
+                bottom: 0;
+                left: 18px;
+                background-color: black;
+
+                max-width: 213px;
+                width: 100%;
+
+                &-detail {
+
+                    line-height: 26px;
+                    font-size: 20px;
+                    text-align: center;
+
+                    &:hover {
+                        color: $color-orange;
+                        transition: .3s;
+                    }
+                }
+
+            }
+            
+        }
+        
+    }
+    
+    &-bottom {
+    
+        &__quote {
+            text-align: center;
+            &-title {
+                margin-top: 68px;
+                color: black;
+                font-size: 48px;
+                line-height: 57px;
+            }
+        }
+    }
+}
+.carousel {
+    color: #32325d;
+  
+    --carousel-button-bg: #fff;
+    --carousel-button-shadow: 0 2px 1px -1px rgb(0 0 0 / 20%),
+      0 1px 1px 0 rgb(0 0 0 / 14%), 0 1px 3px 0 rgb(0 0 0 / 12%);
+  
+    --carousel-button-svg-width: 20px;
+    --carousel-button-svg-height: 20px;
+  
+    --carousel-button-svg-stroke-width: 2.5;
+  
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
+  
+  .carousel__button {
+    z-index: 2;
+    box-shadow: 0 6px 12px -2px rgb(50 50 93 / 25%),
+      0 3px 7px -3px rgb(0 0 0 / 30%);
+  }
+  
+  .carousel__button:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px #A78BFA;
+  }
+  
+  .carousel__button.is-prev {
+    left: -1.5rem;
+    color: black;
+  }
+  
+  .carousel__button.is-next {
+    right: -1.5rem;
+    color: black;
+  }
+  
+  .carousel__viewport {
+    width: calc(55% + 120px);
+    margin-left: auto;
+  }
+  
+  .carousel__slide {
+    width: 100%;
+    padding: 60px 60px 60px 160px;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .carousel__slide h3,.carousel__slide p {
+    color: black;
+  }
+  
+  .carousel__image-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 55%;
+    bottom: 0;
+    z-index: 1;
+    overflow: hidden;
+  
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+  }
+  
+  .carousel__image-container ul {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    background: currentColor;
+  }
+  
+  .carousel__image-container li {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.35s;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 50px 0 50px;
+  
+    user-select: none;
+  }
+  
+  .carousel__image-container li:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: currentColor;
+    opacity: 0.7;
+    z-index: 1;
+  }
+  
+  .carousel__image-container li.is-active {
+    opacity: 1;
+  }
+  
+  .carousel__image-container li h3 {
+    color: #fff;
+    z-index: 1;
+  }
+  ul li a {
+      color: black;
+  }
+  
+  .carousel__image-container li img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+.project {
+
+    
+    
+    
+    .project-bottom {
+
+        &__inner {
+
+            &-card {
+
+            }
+
+            &-block {
+
+            }
+
+            &-content {
+
+            }
+
+            &-title {
+
+            }
+
+            &-description {
+
+            }
+
+            &-btn {
+                margin-top: 0;
+                &-detail {
+
+                }
+    
+            }
+
+        }
+    }
+}
+// Popups
 .popup {
     color: black;
     display: none;
     cursor:default !important;
 }
+
 .title {
     color: black;
 }
+
 .desc {
     color: black;
 }
+
