@@ -23,6 +23,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
     text-decoration: none;
     color: white;
+    outline: none;
 }
 
 /* make sure to set some focus styles for accessibility */
@@ -131,7 +132,7 @@ html {
  */
 
 a:focus {
-    outline: thin dotted;
+    outline: none;
 }
 
 /**

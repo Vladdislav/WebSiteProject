@@ -1,0 +1,10 @@
+@media (min-width: 960px) {
+    .carousel__image-container ul {
+        transform: translateX(-60px) skewX(-12deg);
+    }
+
+    .carousel__image-container li {
+        transform: translateX(60px) skewX(12deg);
+        padding-right: 100px;
+    }
+}
