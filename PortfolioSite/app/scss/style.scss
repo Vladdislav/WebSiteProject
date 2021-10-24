@@ -1,105 +1,15 @@
 @import "reset";
+@import "vars";
 @import "fonts";
 @import "icomoon";
 @import "animate.compat";
 @import "carousel";
 @import "fancybox";
+@import 'global';
 
-$color-primary: #ff7a00;
+// header
+@import "../parths/header";
 
-body {
-    font-family: "Jura";
-    font-weight: 400;
-    font-size: 20px;
-    position: relative;
-}
-
-.container {
-    max-width: 1440px;
-    overflow: hidden;
-    margin: 0 auto;
-}
-
-.header {
-    width: 100%;
-    position: sticky;
-    top: 0;
-    z-index: 2;
-    transition: all 1s ease;
-    background-color: #23201d;
-
-    &--hidden {
-        transform: translateY(-100%);
-        transition: all 1s ease;
-    }
-    &__top {
-        padding: 10px 10px 10px 10px;
-        transition: all 1s ease;
-
-        &-inner {
-            width: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-
-        &-logo {
-            &-link {
-                font-size: 36px;
-                line-height: 45px;
-                font-family: "SedgwickAve";
-            }
-        }
-        &-menu {
-            display: flex;
-            justify-content: space-between;
-            max-width: 932px;
-            width: 100%;
-        }
-        &-list {
-            display: flex;
-        }
-
-        &-item {
-            &:not(:first-child) {
-                margin-left: 40px;
-            }
-
-            &-link {
-                font-family: "Jura";
-                font-size: 28px;
-                line-height: 33px;
-
-                &:hover {
-                    color: $color-primary;
-                    transition: 0.5s;
-                }
-            }
-        }
-
-        &-lang {
-            display: flex;
-            padding: 0 10px;
-            align-items: center;
-
-            &-item {
-                font-size: 20px;
-                line-height: 24px;
-
-                &:not(:first-child) {
-                    margin-left: 15px;
-                }
-                &:hover {
-                    transition: 0.3s;
-                    color: $color-primary;
-                }
-            }
-            &--active {
-                color: red;
-            }
-        }
-    }
-}
 
 // modificators
 
@@ -272,9 +182,46 @@ body {
         }
     }
 }
+// portfolio
 
-// portfolio page
 .portfolio {
+    .portfolio-top {
+    }
+    .portfolio-title {
+    }
+}
+
+.content {
+    .content__left {
+        
+    }
+    .content__hexagon {
+
+        .content__hexagon-title {
+        }
+        .content__hexagon-btn {
+        }
+        .content__hexagon-detail {
+        }
+    }
+    
+    .content__right {
+
+        .content__right-title {
+        }
+        .content__right-text {
+        }
+        .content__right-desc {
+        }
+    }
+    
+}
+
+.hexagon--color {
+}
+
+// short-about page
+.short-about {
     min-height: 100vh;
     width: 100%;
 
@@ -682,66 +629,12 @@ body {
     &__title {
         margin-top: 40px;
         text-align: center;
-        font-family: Jura;
+        font-family: 'Jura';
         font-size: 36px;
         line-height: 43px;
     }
 }
-.footer {
-    background: linear-gradient(180deg, #a89f8e 0%, rgba(168, 159, 142, 0.2) 100%), url("../images/footer.jpg");
-    background-position: center;
-    min-height: 380px;
-    &__inner {
-        margin-top: 100px;
-        padding: 0 10px;
 
-        &-b {
-            display: flex;
-            justify-content: space-between;
-        }
-
-        &:after {
-            content: "";
-            display: block;
-            background-color: #fff;
-            height: 1px;
-            margin: 50px auto 0 auto;
-            max-width: 1200px;
-        }
-    }
-
-    &__sourses-title {
-        color: white;
-        font-size: 28px;
-        line-height: 33px;
-    }
-    &__sourse-list {
-        text-align: left;
-        margin-left: 40px;
-    }
-    &__sourse-item {
-        color: red;
-        margin-top: 10px;
-
-        &:not(:first-child) {
-            margin-top: 15px;
-        }
-    }
-    &__sourse-link {
-        font-size: 24px;
-        line-height: 28px;
-        color: black;
-
-        &:hover {
-            color: $color-primary;
-            transition: 0.3s;
-        }
-    }
-
-    &__list--dots {
-        list-style-type: disc;
-    }
-}
 
 // Popups
 .popup {
@@ -757,5 +650,5 @@ body {
 .desc {
     color: black;
 }
-
+@import "../parths/footer";
 @import "media";

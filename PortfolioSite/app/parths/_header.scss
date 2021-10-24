@@ -1,0 +1,77 @@
+.header {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    transition: all 1s ease;
+    background-color: #23201d;
+
+    &--hidden {
+        transform: translateY(-100%);
+        transition: all 1s ease;
+    }
+    &__inner {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 10px 10px 10px;
+        transition: all 1s ease;
+    }
+}
+.logo {
+    &__link {
+        font-size: 36px;
+        line-height: 45px;
+        font-family: "SedgwickAve";
+    }
+}
+.menu {
+    display: flex;
+    justify-content: space-between;
+    max-width: 932px;
+    width: 100%;
+
+    &__list {
+        display: flex;
+    }
+
+    &__item {
+        &:not(:first-child) {
+            margin-left: 40px;
+        }
+    }
+    &__link {
+        font-family: "Jura";
+        font-size: 28px;
+        line-height: 33px;
+
+        &:hover {
+            color: $color-primary;
+            transition: 0.5s;
+        }
+    }
+}
+
+.lang-switcher {
+    display: flex;
+    padding: 0 10px;
+    align-items: center;
+
+    &__item {
+        font-size: 20px;
+        line-height: 24px;
+
+        &:not(:first-child) {
+            margin-left: 15px;
+        }
+        &:hover {
+            transition: 0.3s;
+            color: $color-primary;
+        }
+
+        &--active {
+            color: red;
+        }
+    }
+}

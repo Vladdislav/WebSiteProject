@@ -1,0 +1,49 @@
+.footer {
+    background: linear-gradient(180deg, #a89f8e 0%, rgba(168, 159, 142, 0.2) 100%), url("../images/footer.jpg");
+    background-position: center;
+
+    &__inner {
+        padding: 100px 10px 0 10px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__menu {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 1016px;
+    }
+
+    &__title {
+        color: white;
+        font-size: 28px;
+        line-height: 33px;
+    }
+    &__list {
+        text-align: left;
+        margin-left: 40px;
+    }
+    &__item {
+        color: red;
+        margin-top: 10px;
+
+        &:not(:first-child) {
+            margin-top: 15px;
+        }
+    }
+    &__link {
+        font-size: 24px;
+        line-height: 28px;
+        color: black;
+
+        &:hover {
+            color: $color-primary;
+            transition: 0.3s;
+        }
+    }
+
+    &__list--dots {
+        list-style-type: disc;
+    }
+    
+}

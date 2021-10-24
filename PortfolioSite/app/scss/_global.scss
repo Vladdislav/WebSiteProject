@@ -1,0 +1,27 @@
+
+body {
+    font-family: "Jura";
+    font-weight: 400;
+    font-size: 20px;
+    position: relative;
+}
+
+.container {
+    max-width: 1460px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.footer__container {
+    min-height: 380px;
+
+    &:after {
+        content: '';
+        display: block;
+        height: 1px;
+        max-width: 1200px;
+        padding: 0 10px;
+        background-color: #fff;
+        margin: 50px auto 73px auto;
+        width: 100%;
+    }
+}

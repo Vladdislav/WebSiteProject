@@ -10,6 +10,8 @@ const uglify = require('gulp-uglify-es').default;
 const imagemin = require('gulp-imagemin');
 const deliteDist = require('del');
 
+
+
 // BrowserSync обновляет страницу
 function browsersync() {
     browserSync.init({
@@ -50,7 +52,7 @@ function scripts() {
         'app/js/main.js'
     ])
     .pipe(concat('main.min.js'))
-    .pipe(uglify())
+    // .pipe(uglify())
     .pipe(dest('app/js'))
     .pipe(browserSync.stream())
 }
@@ -69,6 +71,7 @@ function styles() {
 }
 // ВЫгружает весь проект в папку dist
 function build() {
+    
     return src([
     'app/css/style.min.css',
     'app/fonts/**/*',
@@ -80,7 +83,7 @@ function build() {
 
 // Наблюдейние за файлами scss, js, html
 function watching() {
-    watch(['app/scss/**/*.scss'], styles);
+    watch(['app/**/**/*.scss'], styles);
     watch(['app/js/main.js' ,'!app/js/main.min.js'], scripts);
     watch(['app/*.html']).on('change', browserSync.reload);
 }
