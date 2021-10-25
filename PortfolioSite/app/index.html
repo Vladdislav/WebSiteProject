@@ -52,18 +52,17 @@
     <main class="page">
         <section class="header-addition" id="main">
             <div class="container">
-                <div class="header-addition__content">
+                <div class="header-addition__top">
                     <div class="container">
-                        <div class="header-addition__content-inner wow slideInDown">
+                        <div class="header-addition__top-inner wow slideInDown">
                             <p class="header-addition__suptitle">Всем привет</p>
                             <h1 class="header-addition__title">Меня зовут <span
                                     class="header__title--bold keycolor">Станислав</span> Тюленев</h1>
                             <p class="header-addition__desc">Вы находитесь на сайте человека, который смог бы вам
                                 рассказать много интересного о визуализации, 3D моделировании и усердной работы для
                                 достижения поставленных целей.</p>
-                            <div class="header-addition__btn">
-                                <a class="header-addition__btn-detail" href="#" data-fancybox
-                                    data-src="#modal">Подробнее обо мне</a>
+                            <div class="btn">
+                                <a class="btn-detail" href="#" data-fancybox data-src="#modal">Подробнее обо мне</a>
                             </div>
                         </div>
                     </div>
@@ -71,14 +70,12 @@
                 <div class="header-addition__bottom">
                     <div class="container">
                         <div class="header-addition__bottom-inner">
-                            <div class="header-addition__bottom-content">
-                                <div class="header-addition__icons">
-                                    <a class="header-addition__icon-link header-addition__icon-instagram" href="#"></a>
-                                    <a class="header-addition__icon-link header-addition__icon-telegramm" href="#"></a>
-                                    <a class="header-addition__icon-link header-addition__icon-vk" href="#"></a>
-                                </div>
-                                <div class="header-addition__decor wow fadeInUp slower infinite"></div>
+                            <div class="icons">
+                                <a class="icons__link icons__instagram" href="#"></a>
+                                <a class="icons__link icons__telegramm" href="#"></a>
+                                <a class="icons__link icons__vk" href="#"></a>
                             </div>
+                            <div class="header-addition__bottom-decor wow fadeInUp slower infinite"></div>
                         </div>
                     </div>
                 </div>
@@ -86,91 +83,95 @@
         </section>
 
         <section class="portfolio">
-            <div class="portfolio__top">
-                <div class="container">
-                    <h2 class="portfolio__title">Портфолио</h2>
-                </div>
+            <div class="container">
+                <h2 class="portfolio__main-title">Портфолио</h2>
             </div>
             <div class="portfolio__content">
                 <div class="container">
-                    <div class="portfolio__list">
-                        <div class="content__list-hexagon">
-                            <p class="content__hexagon-title">
-                                BUSINESS CENTER
-                            </p>
-                            <div class="content__hexagon-btn header-addition__btn">
-                                <a class="content__hexagon-detail header-addition__btn-detail" href="#" data-fancybox
-                                    data-src="#modal">Подробнее</a>
+                    <div class="portfolio__content-inner">
+                        <div class="portfolio__content-left">
+                            <div class="portfolio__content-top">
+                                <div class="portfolio__hexagon-busines hexagon">
+                                    <p class="portfolio__hexagon-title">
+                                        BUSINESS CENTER
+                                    </p>
+                                    <div class="portfolio__hexagon-btn btn">
+                                        <a class="portfolio__hexagon-detail btn-detail" href="#" data-fancybox
+                                            data-src="#modal">Подробнее</a>
+                                    </div>
+                                </div>
+                                <div class="portfolio__hexagon-severin hexagon">
+                                    <p class="portfolio__hexagon-title">
+                                        Severin
+                                    </p>
+                                    <div class="portfolio__hexagon-btn btn">
+                                        <a class="portfolio__hexagon-detail btn-detail" href="#" data-fancybox
+                                            data-src="#modal">Подробнее</a>
+                                    </div>
+                                </div>
+                                <div class="portfolio__hexagon-kitchen hexagon">
+                                    <p class="portfolio__hexagon-title">
+                                        Kitchen
+                                    </p>
+                                    <div class="portfolio__hexagon-btn btn">
+                                        <a class="portfolio__hexagon-detail btn-detail" href="#" data-fancybox
+                                            data-src="#modal">Подробнее</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="portfolio__content-bottom">
+                                <div class="portfolio__hexagon-park hexagon">
+                                    <p class="portfolio__hexagon-title">
+                                        Park
+                                    </p>
+                                    <div class="portfolio__hexagon-btn btn">
+                                        <a class="portfolio__hexagon-detail btn-detail" href="#" data-fancybox
+                                            data-src="#modal">Подробнее</a>
+                                    </div>
+                                </div>
+                                <div class="portfolio__hexagon-room hexagon">
+                                    <p class="portfolio__hexagon-title">
+                                        Room
+                                    </p>
+                                    <div class="portfolio__hexagon-btn btn">
+                                        <a class="portfolio__hexagon-detail btn-detail" href="#" data-fancybox
+                                            data-src="#modal">Подробнее</a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="content__hexagon">
-                            <p class="content__hexagon-title">
-                                BUSINESS CENTER
-                            </p>
-                            <div class="content__hexagon-btn header-addition__btn">
-                                <a class="content__hexagon-detail header-addition__btn-detail" href="#" data-fancybox
-                                    data-src="#modal">Подробнее</a>
+                        <div class="portfolio__content-right">
+                            <h2 class="portfolio__title">
+                                Коротко о работах:
+                            </h2>
+                            <div class="portfolio__description">
+                                <p class="portfolio__text">
+    
+                                    <span class="title--color">Business center</span>
+                                    : Работа выполнена как учебная. В работе были получены навыки работы с программой 3D
+                                    MAX. Приходилось схватывать на лету.
+                                </p>
+                                <p class="portfolio__text">
+                                    <span class="title--color">Kitchen</span>
+                                    : Создание этой работы показало мне перспективу в создании рендера внутренней отделки.
+                                </p>
+                                <p class="portfolio__text">
+                                    <span class="title--color">Severin</span>
+                                    : Эта большая работа выполнялась на работе, после окончания учебного заведения. Полезной
+                                    информации и самое главное настоящей практики получено сполна. Я узнал, как работают над
+                                    настоящими проектами.
+                                </p>
+                                <p class="portfolio__text">
+                                    <span class="title--color">Park</span>
+                                    : На создание концепции парка меня натолкнул бывший одногрупник, где в задачах стояло
+                                    отобразить совершенно новую концепцию ‘Парк будущего’.
+                                </p>
+                                <p class="portfolio__text">
+                                    <span class="title--color">Room</span>
+                                    : Дизайн комнат мне понравился ещё с работы над кухней. Прекрасный интерьер и правильно
+                                    подобранный свет, творят чудеса.
+                                </p>
                             </div>
-                        </div>
-                        <div class="content__hexagon">
-                            <p class="content__hexagon-title">
-                                BUSINESS CENTER
-                            </p>
-                            <div class="content__hexagon-btn header-addition__btn">
-                                <a class="content__hexagon-detail header-addition__btn-detail" href="#" data-fancybox
-                                    data-src="#modal">Подробнее</a>
-                            </div>
-                        </div>
-                        <div class="content__hexagon">
-                            <p class="content__hexagon-title">
-                                BUSINESS CENTER
-                            </p>
-                            <div class="content__hexagon-btn header-addition__btn">
-                                <a class="content__hexagon-detail header-addition__btn-detail" href="#" data-fancybox
-                                    data-src="#modal">Подробнее</a>
-                            </div>
-                        </div>
-                        <div class="content__hexagon">
-                            <p class="content__hexagon-title">
-                                BUSINESS CENTER
-                            </p>
-                            <div class="content__hexagon-btn header-addition__btn">
-                                <a class="content__hexagon-detail header-addition__btn-detail" href="#" data-fancybox
-                                    data-src="#modal">Подробнее</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="content__right">
-                        <h2 class="content__title">
-                            Коротко о работах:
-                        </h2>
-                        <div class="content__text">
-                            <p class="content__desc">
-
-                                <span class="hexagon--color">Business center</span>
-                                : Работа выполнена как учебная. В работе были получены навыки работы с программой 3D
-                                MAX. Приходилось схватывать на лету.
-                            </p>
-                            <p class="content__right-desc">
-                                <span class="hexagon--color">Kitchen</span>
-                                : Создание этой работы показало мне перспективу в создании рендера внутренней отделки.
-                            </p>
-                            <p class="content__right-desc">
-                                <span class="hexagon--color">Severin</span>
-                                : Эта большая работа выполнялась на работе, после окончания учебного заведения. Полезной
-                                информации и самое главное настоящей практики получено сполна. Я узнал, как работают над
-                                настоящими проектами.
-                            </p>
-                            <p class="content__right-desc">
-                                <span class="hexagon--color">Park</span>
-                                : На создание концепции парка меня натолкнул бывший одногрупник, где в задачах стояло
-                                отобразить совершенно новую концепцию ‘Парк будущего’.
-                            </p>
-                            <p class="content__right-desc">
-                                <span class="hexagon--color">Room</span>
-                                : Дизайн комнат мне понравился ещё с работы над кухней. Прекрасный интерьер и правильно
-                                подобранный свет, творят чудеса.
-                            </p>
                         </div>
                     </div>
                 </div>
@@ -178,78 +179,94 @@
         </section>
 
         <section class="short-about" id="about">
-            <div class="short-about-top wow slideInDown">
+            <div class="short-about__top wow slideInDown">
                 <div class="container">
-                    <div class="short-about-top__inner">
-                        <h2 class="short-about-top__title">Коротко о том</h2>
-                        <p class="short-about-top__description">что потребовалось мне для успешного овладения своим
+                    <div class="short-about__top-inner">
+                        <h2 class="short-about__top-title">Коротко о том</h2>
+                        <p class="short-about__top-description">что потребовалось мне для успешного овладения своим
                             делом, в частности, чтобы получить приглашение работать в Москву в компанию Industrial на
                             вакансию 3D Visualisation.</p>
                     </div>
                 </div>
             </div>
-            <div class="short-about-center wow slideInDown">
+            <div class="short-about__center wow slideInDown">
                 <div class="container">
-                    <div class="short-about-center__inner">
-                        <div class="short-about-center__inner-block">
-                            <div class="short-about-center__inner-box">
-                                <img class="short-about-center__inner-box-circle" src="images/cube.svg" alt="">
+                    <div class="short-about__center-inner">
+                        <div class="short-about__center-content">
+
+
+                            <div class="short-about__center-block">
+                                <div class="short-about__center-box">
+                                    <img class="short-about__center-circle" src="images/cube.svg" alt="">
+                                </div>
+                                <p class="short-about__center-title">3D Визуализация</p>
+                                <p class="short-about__center-descriotion">Визуализация объектов до их появления стало
+                                    обычным и очень важным делом</p>
+                                <div class="btn short-about__center-btn">
+                                    <a class="btn-detail short-about__center-btn-detail" href="#" data-fancybox
+                                        data-src="#modal">Узнать больше
+                                    </a>
+                                </div>
                             </div>
-                            <p class="short-about-center__inner-title">3D Визуализация</p>
-                            <p class="short-about-center__inner-descriotion">Визуализация объектов до их появления стало
-                                обычным и очень важным делом</p>
-                            <div class="short-about-center__inner-btn">
-                                <a class="short-about-center__inner-btn-detail" href="#" data-fancybox
-                                    data-src="#modal">Узнать больше</a>
+
+
+                            <div class="short-about__center-block">
+                                <div class="short-about__center-box">
+                                    <img class="short-about__center-circle" src="images/cube.svg" alt="">
+                                </div>
+                                <p class="short-about__center-title">Дизайн</p>
+                                <p class="short-about__center-descriotion">Дизайн важная часть. Качественно сейчас
+                                    синоним слова красиво, а так же синоним слову хороший рендер.</p>
+                                <div class="btn short-about__center-btn">
+                                    <a class="btn-detail short-about__center-btn-detail" href="#" data-fancybox
+                                        data-src="#modal">Узнать больше
+                                    </a>
+                                </div>
                             </div>
-                        </div>
-                        <div class="short-about-center__inner-block">
-                            <div class="short-about-center__inner-box">
-                                <img class="short-about-center__inner-box-circle" src="images/paint.svg" alt="">
+
+                            <div class="short-about__center-block">
+                                <div class="short-about__center-box">
+                                    <img class="short-about__center-circle" src="images/cube.svg" alt="">
+                                </div>
+                                <p class="short-about__center-title">Пользование ПК</p>
+                                <p class="short-about__center-descriotion">Использование различных программ для создания
+                                    концепта будущего продукта.Без этого уже никак.</p>
+                                <div class="btn short-about__center-btn">
+                                    <a class="btn-detail short-about__center-btn-detail" href="#" data-fancybox
+                                        data-src="#modal">Узнать больше
+                                    </a>
+                                </div>
                             </div>
-                            <p class="short-about-center__inner-title">Дизайн</p>
-                            <p class="short-about-center__inner-descriotion">Дизайн важная часть. Качественное и
-                                красивое исполнение проектов, это стандарт любой работы.</p>
-                            <div class="short-about-center__inner-btn">
-                                <a class="short-about-center__inner-btn-detail" href="#" data-fancybox
-                                    data-src="#modal">Узнать больше</a>
+
+                            <div class="short-about__center-block">
+                                <div class="short-about__center-box">
+                                    <img class="short-about__center-circle" src="images/cube.svg" alt="">
+                                </div>
+                                <p class="short-about__center-title">Софт-Скилы</p>
+                                <p class="short-about__center-descriotion">Взаимодействие с коллегами для достижения
+                                    одной цели не менее важный фактор.</p>
+                                <div class="btn short-about__center-btn">
+                                    <a class="btn-detail short-about__center-btn-detail" href="#" data-fancybox
+                                        data-src="#modal">Узнать больше
+                                    </a>
+                                </div>
                             </div>
-                        </div>
-                        <div class="short-about-center__inner-block">
-                            <div class="short-about-center__inner-box">
-                                <img class="short-about-center__inner-box-circle" src="images/Display.svg" alt="">
+
+                            <div class="short-about__center-block">
+                                <div class="short-about__center-box">
+                                    <img class="short-about__center-circle" src="images/cube.svg" alt="">
+                                </div>
+                                <p class="short-about__center-title">Продукт</p>
+                                <p class="short-about__center-descriotion">Выхлоп всегда должен быть, вне зависимости от
+                                    уровня владения навыками.</p>
+                                <div class="btn short-about__center-btn">
+                                    <a class="btn-detail short-about__center-btn-detail" href="#" data-fancybox
+                                        data-src="#modal">Узнать больше
+                                    </a>
+                                </div>
                             </div>
-                            <p class="short-about-center__inner-title">Использование ПК</p>
-                            <p class="short-about-center__inner-descriotion">Использование различных программ для
-                                создания концепта будущего продукта.</p>
-                            <div class="short-about-center__inner-btn">
-                                <a class="short-about-center__inner-btn-detail" href="#" data-fancybox
-                                    data-src="#modal">Узнать больше</a>
-                            </div>
-                        </div>
-                        <div class="short-about-center__inner-block">
-                            <div class="short-about-center__inner-box">
-                                <img class="short-about-center__inner-box-circle" src="images/person.svg" alt="">
-                            </div>
-                            <p class="short-about-center__inner-title">Софт-скилы</p>
-                            <p class="short-about-center__inner-descriotion">Взаимодействие с коллегами для достижения
-                                общей цели.</p>
-                            <div class="short-about-center__inner-btn">
-                                <a class="short-about-center__inner-btn-detail" href="#" data-fancybox
-                                    data-src="#modal">Узнать больше</a>
-                            </div>
-                        </div>
-                        <div class="short-about-center__inner-block">
-                            <div class="short-about-center__inner-box">
-                                <img class="short-about-center__inner-box-circle" src="images/pazzle.svg" alt="">
-                            </div>
-                            <p class="short-about-center__inner-title">Продукт</p>
-                            <p class="short-about-center__inner-descriotion">'Выхлоп' всегда должен быть, вне
-                                зависимости от уровня владения навыками.</p>
-                            <div class="short-about-center__inner-btn">
-                                <a class="short-about-center__inner-btn-detail" href="#" data-fancybox
-                                    data-src="#modal">Узнать больше</a>
-                            </div>
+
+
                         </div>
                     </div>
                 </div>
@@ -266,114 +283,108 @@
 
 
         <section class="project">
-            <div class="project-top">
-                <div class="container">
-                    <div class="project-top__inner">
-                        <div id="logoCarousel" class="carousel">
-                            <div class="carousel__image-container">
-                                <ul class="carousel__image-left">
-                                    <li data-for="0" class="carousel__image-inner is-active">
-                                        <h3 class="carousel__image-title">Vivamus</h3>
-                                        <img classs="carousel__image-img" alt=""
-                                            src="https://lipsum.app/id/2/460x320" />
-                                    </li>
-                                    <li data-for="1">
-                                        <h3 class="carousel__image-title">Ut semper</h3>
-                                        <img classs="carousel__image-img" alt=""
-                                            src="https://lipsum.app/id/3/460x320" />
-                                    </li>
-                                    <li data-for="2">
-                                        <h3 class="carousel__image-title">Dolor amet</h3>
-                                        <img classs="carousel__image-img" alt=""
-                                            src="https://lipsum.app/id/4/460x320" />
-                                    </li>
-                                    <li data-for="3">
-                                        <h3 class="carousel__image-title">Sed blandit</h3>
-                                        <img classs="carousel__image-img" alt=""
-                                            src="https://lipsum.app/id/5/460x320" />
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="carousel__viewport">
-                                <div class="carousel__track">
-                                    <div class="carousel__slide">
-                                        <h3 class="carousel__slide-title">
-                                            Lorem ipsum
-                                        </h3>
-                                        <p class="carousel__slide-description">
-                                            Dolor sit amet, consectetur adipiscing elit. Ut semper, justo eget
-                                            vehicula vestibulum, enim enim suscipit lectus, et sagittis nibh risus
-                                            vel metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                        </p>
-                                    </div>
-                                    <div class="carousel__slide">
-                                        <h3 class="carousel__slide-title">
-                                            Aliquet dictum
-                                        </h3>
-                                        <p class="carousel__slide-description">
-                                            Vivamus massa justo, sagittis non viverra sed, sodales non nisi. Nunc
-                                            semper, massa a aliquet dictum, enim nisi malesuada orci, et elementum
-                                            lectus turpis et velit.
-                                        </p>
-                                    </div>
-                                    <div class="carousel__slide">
-                                        <h3 class="carousel__slide-title">
-                                            Nunc nec nibh nibh
-                                        </h3>
-                                        <p class="carousel__slide-description">
-                                            Duis dolor orci, viverra ut finibus sed, aliquet vitae tortor. Proin
-                                            sodales ipsum ac ipsum hendrerit tempus. Nunc nec nibh nibh. Aenean
-                                            consequat auctor posuere.
-                                        </p>
-                                    </div>
-                                    <div class="carousel__slide">
-                                        <h3 class="carousel__slide-title">
-                                            Sed blandit nibh
-                                        </h3>
-                                        <p class="carousel__slide-description">
-                                            Duis dignissim magna in mattis pulvinar. Sed blandit nibh quis arcu
-                                            ornare, sit amet fermentum nisi rhoncus.
-                                        </p>
-                                    </div>
+            <div class="container">
+                <div class="project__top">
+                    <div id="logoCarousel" class="carousel">
+                        <div class="carousel__image-container">
+                            <ul class="carousel__image-left">
+                                <li data-for="0" class="carousel__image-inner is-active">
+                                    <h3 class="carousel__image-title">Vivamus</h3>
+                                    <img classs="carousel__image-img" alt="" src="https://lipsum.app/id/2/460x320" />
+                                </li>
+                                <li data-for="1">
+                                    <h3 class="carousel__image-title">Ut semper</h3>
+                                    <img classs="carousel__image-img" alt="" src="https://lipsum.app/id/3/460x320" />
+                                </li>
+                                <li data-for="2">
+                                    <h3 class="carousel__image-title">Dolor amet</h3>
+                                    <img classs="carousel__image-img" alt="" src="https://lipsum.app/id/4/460x320" />
+                                </li>
+                                <li data-for="3">
+                                    <h3 class="carousel__image-title">Sed blandit</h3>
+                                    <img classs="carousel__image-img" alt="" src="https://lipsum.app/id/5/460x320" />
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="carousel__viewport">
+                            <div class="carousel__track">
+                                <div class="carousel__slide">
+                                    <h3 class="carousel__slide-title">
+                                        Lorem ipsum
+                                    </h3>
+                                    <p class="carousel__slide-description">
+                                        Dolor sit amet, consectetur adipiscing elit. Ut semper, justo eget
+                                        vehicula vestibulum, enim enim suscipit lectus, et sagittis nibh risus
+                                        vel metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    </p>
+                                </div>
+                                <div class="carousel__slide">
+                                    <h3 class="carousel__slide-title">
+                                        Aliquet dictum
+                                    </h3>
+                                    <p class="carousel__slide-description">
+                                        Vivamus massa justo, sagittis non viverra sed, sodales non nisi. Nunc
+                                        semper, massa a aliquet dictum, enim nisi malesuada orci, et elementum
+                                        lectus turpis et velit.
+                                    </p>
+                                </div>
+                                <div class="carousel__slide">
+                                    <h3 class="carousel__slide-title">
+                                        Nunc nec nibh nibh
+                                    </h3>
+                                    <p class="carousel__slide-description">
+                                        Duis dolor orci, viverra ut finibus sed, aliquet vitae tortor. Proin
+                                        sodales ipsum ac ipsum hendrerit tempus. Nunc nec nibh nibh. Aenean
+                                        consequat auctor posuere.
+                                    </p>
+                                </div>
+                                <div class="carousel__slide">
+                                    <h3 class="carousel__slide-title">
+                                        Sed blandit nibh
+                                    </h3>
+                                    <p class="carousel__slide-description">
+                                        Duis dignissim magna in mattis pulvinar. Sed blandit nibh quis arcu
+                                        ornare, sit amet fermentum nisi rhoncus.
+                                    </p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="project-center">
-                <div class="project-center-top">
+            <div class="project__center">
+                <div class="project__center-top">
                     <div class="container">
-                        <ul id="logoBar" class="project-center-top__nav">
-                            <li class="project-center-top__item">
-                                <a class="project-center-top__item-title is-active" data-for="0">Vivamus</a>
+                        <ul id="logoBar" class="project__center-top-nav">
+                            <li class="project__center-top-item">
+                                <a class="project__center-top-title is-active" data-for="0">Vivamus</a>
                             </li>
-                            <li class="project-center-top__item">
-                                <a class="project-center-top__item-title" data-for="1">Ut semper</a>
+                            <li class="project__center-top-item">
+                                <a class="project__center-top-title" data-for="1">Ut semper</a>
                             </li>
-                            <li class="project-center-top__item">
-                                <a class="project-center-top__item-title" data-for="2">Dolor amet</a>
+                            <li class="project__center-top-item">
+                                <a class="project__center-top-title" data-for="2">Dolor amet</a>
                             </li>
-                            <li class="project-center-top__item">
-                                <a class="project-center-top__item-title" data-for="3">Sed blandit</a>
+                            <li class="project__center-top-item">
+                                <a class="project__center-top-title" data-for="3">Sed blandit</a>
                             </li>
                         </ul>
                     </div>
                 </div>
-                <div class="project-center-bottom">
+                <div class="project__center-bottom">
                     <div class="container">
-                        <h3 class="project-center-bottom__title">О моей работе</h3>
+                        <h3 class="project__center-bottom-title">О моей работе</h3>
                     </div>
                 </div>
             </div>
-            <div class="project-bottom">
+            <div class="project__bottom">
                 <div class="container">
-                    <div class="project-bottom__inner">
-                        <div class="project-bottom__inner-card">
-                            <div class="project-bottom__inner-block">
-                                <img src="images/project_with_team.jpg" alt="" class="project-bottom__inner-content">
-                                <p class="project-bottom__inner-title">Моя команда</p>
-                                <p class="project-bottom__inner-description">Description about my team,
+                    <div class="project__bottom-inner">
+                        <div class="project__bottom-cards">
+                            <div class="project__bottom-block">
+                                <img src="images/project_with_team.jpg" alt="" class="project__bottom-content">
+                                <p class="project__bottom-title">Моя команда</p>
+                                <p class="project__bottom-description">Description about my team,
                                     Description about my team,
                                     Description about my team,
                                     Description about my team,
@@ -381,15 +392,15 @@
                                     Description about my team
                                     Description about my team,
                                     Description about my team</p>
-                                <div class="project-bottom__inner-btn header-addition__btn">
-                                    <a class="project-bottom__inner-btn-detail header-addition__btn-detail" href="#"
-                                        data-fancybox data-src="#modal">Подробнее обо мне</a>
+                                <div class="project__bottom-btn btn">
+                                    <a class="project__bottom-btn-detail btn-detail" href="#" data-fancybox
+                                        data-src="#modal">Подробнее обо мне</a>
                                 </div>
                             </div>
-                            <div class="project-bottom__inner-block">
-                                <img src="images/cheess.jpg" alt="" class="project-bottom__inner-content">
-                                <p class="project-bottom__inner-title">Поставленные задачи</p>
-                                <p class="project-bottom__inner-description">Description about my team,
+                            <div class="project__bottom-block">
+                                <img src="images/cheess.jpg" alt="" class="project__bottom-content">
+                                <p class="project__bottom-title">Поставленные задачи</p>
+                                <p class="project__bottom-description">Description about my team,
                                     Description about my team,
                                     Description about my team,
                                     Description about my team,
@@ -397,15 +408,15 @@
                                     Description about my team
                                     Description about my team,
                                     Description about my team</p>
-                                <div class="project-bottom__inner-btn header-addition__btn">
-                                    <a class="project-bottom__inner-btn-detail header-addition__btn-detail" href="#"
-                                        data-fancybox data-src="#modal">Подробнее обо мне</a>
+                                <div class="project__bottom-btn btn">
+                                    <a class="project__bottom-btn-detail btn-detail" href="#" data-fancybox
+                                        data-src="#modal">Подробнее обо мне</a>
                                 </div>
                             </div>
-                            <div class="project-bottom__inner-block">
-                                <img src="images/nature.jpg" alt="" class="project-bottom__inner-content">
-                                <p class="project-bottom__inner-title">Источники вдохновления</p>
-                                <p class="project-bottom__inner-description">Description about my team,
+                            <div class="project__bottom-block">
+                                <img src="images/nature.jpg" alt="" class="project__bottom-content">
+                                <p class="project__bottom-title">Источники вдохновления</p>
+                                <p class="project__bottom-description">Description about my team,
                                     Description about my team,
                                     Description about my team,
                                     Description about my team,
@@ -413,15 +424,15 @@
                                     Description about my team
                                     Description about my team,
                                     Description about my team</p>
-                                <div class="project-bottom__inner-btn header-addition__btn">
-                                    <a class="project-bottom__inner-btn-detail header-addition__btn-detail" href="#"
-                                        data-fancybox data-src="#modal">Подробнее обо мне</a>
+                                <div class="project__bottom-btn btn">
+                                    <a class="project__bottom-btn-detail btn-detail" href="#" data-fancybox
+                                        data-src="#modal">Подробнее обо мне</a>
                                 </div>
                             </div>
-                            <div class="project-bottom__inner-block">
-                                <img src="images/process.jpg" alt="" class="project-bottom__inner-content">
-                                <p class="project-bottom__inner-title">Задача в процессе</p>
-                                <p class="project-bottom__inner-description">Description about my team,
+                            <div class="project__bottom-block">
+                                <img src="images/process.jpg" alt="" class="project__bottom-content">
+                                <p class="project__bottom-title">Задача в процессе</p>
+                                <p class="project__bottom-description">Description about my team,
                                     Description about my team,
                                     Description about my team,
                                     Description about my team,
@@ -429,9 +440,9 @@
                                     Description about my team
                                     Description about my team,
                                     Description about my team</p>
-                                <div class="project-bottom__inner-btn header-addition__btn">
-                                    <a class="project-bottom__inner-btn-detail header-addition__btn-detail" href="#"
-                                        data-fancybox data-src="#modal">Подробнее обо мне</a>
+                                <div class="project__bottom-btn btn">
+                                    <a class="project__bottom-btn-detail btn-detail" href="#" data-fancybox
+                                        data-src="#modal">Подробнее обо мне</a>
                                 </div>
                             </div>
                         </div>
@@ -441,15 +452,15 @@
         </section>
 
 
-        <section class="development-details">
+        <section class="development">
             <div class="container">
-                <div class="development-details__container-video">
+                <div class="development__details development__container-video">
                     <video muted controls>
                         <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
                             type="video/mp4" />
                     </video>
                 </div>
-                <h4 class="development-details__title">О разработке проектов моими глазами</h4>
+                <h4 class="development__title">О разработке проектов моими глазами</h4>
             </div>
         </section>
     </main>

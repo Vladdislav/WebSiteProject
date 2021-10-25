@@ -1,4 +1,19 @@
 .footer {
+
+    &__container {
+        min-height: 380px;
+    
+        &:after {
+            content: '';
+            display: block;
+            height: 1px;
+            max-width: 1200px;
+            background-color: #fff;
+            margin: 50px auto 73px auto;
+            width: 85%;
+        }
+    }
+
     background: linear-gradient(180deg, #a89f8e 0%, rgba(168, 159, 142, 0.2) 100%), url("../images/footer.jpg");
     background-position: center;
 

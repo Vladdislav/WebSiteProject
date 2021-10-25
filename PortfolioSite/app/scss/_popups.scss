@@ -1,0 +1,27 @@
+// Popups
+.popup .carousel__button {
+    
+    width: 20px;
+    height: 20px;
+    box-shadow: none;
+    border: none;
+}
+.popup .is-close {
+    color: black !important;
+    top: 15px !important;
+    right: 15px !important;
+} 
+
+.popup {
+    color: black;
+    display: none;
+    cursor: default !important;
+}
+
+.title {
+    color: black;
+}
+
+.desc {
+    color: black;
+}

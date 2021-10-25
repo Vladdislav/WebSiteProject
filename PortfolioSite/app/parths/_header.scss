@@ -20,10 +20,15 @@
     }
 }
 .logo {
+    word-wrap: none;
+    width: 100%;
+    max-width: max-content;
+    padding-right: 60px;
     &__link {
-        font-size: 36px;
+        font-size: 30px;
         line-height: 45px;
         font-family: "SedgwickAve";
+        
     }
 }
 .menu {
@@ -43,7 +48,7 @@
     }
     &__link {
         font-family: "Jura";
-        font-size: 28px;
+        font-size: 24px;
         line-height: 33px;
 
         &:hover {
