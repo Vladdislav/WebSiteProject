@@ -1,0 +1,253 @@
+// short-about page
+.short-about {
+    min-height: 100vh;
+    width: 100%;
+
+    position: relative;
+    overflow: hidden;
+    background-color: #edf1fd;
+
+    &__top {
+        &-inner {
+            margin-top: 144px;
+            max-width: 638px;
+            padding: 0 10px;
+        }
+        &-title {
+            color: black;
+            font-size: 36px;
+            line-height: 43px;
+
+            &:after {
+                margin-left: 20px;
+                font-family: "icomoon";
+                content: "\e900";
+                font-size: 20px;
+            }
+        }
+
+        &-description {
+            color: black;
+            margin-top: 10px;
+            font-size: 20px;
+            line-height: 24px;
+        }
+    }
+
+    &__center {
+        &-inner {
+            padding: 0 10px;
+            overflow: visible;
+            margin-bottom: 58px;
+        }
+        &-content {
+            box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.6);
+            width: 100%;
+            margin: 113px auto 0 auto;
+            display: flex;
+            justify-content: space-between;
+            min-height: 400px;
+            background: #cacaca;
+        }
+        &-block {
+            padding: 0 5px;
+            position: relative;
+            max-width: calc(((1440 - 100) / 1440) * 100% / 5);
+            min-height: 380px;
+            text-align: center;
+            margin: 10px 0;
+        }
+
+        &-box {
+            margin: 0 auto;
+            background: #2b303b;
+            border-radius: 70px;
+            position: relative;
+            width: 100%;
+            height: 100%;
+            max-height: 140px;
+            max-width: 140px;
+        }
+        &-circle {
+            position: absolute;
+            top: calc((((140 - 80) / 140) * 100%) / 2);
+            left: calc((((140 - 80) / 140) * 100%) / 2);
+        }
+
+        &-title {
+            color: black;
+            margin-top: 10px;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 24px;
+        }
+
+        &-descriotion {
+            color: black;
+            margin-top: 10px;
+            font-size: 20px;
+            line-height: 24px;
+        }
+
+        &-btn {
+            position: absolute;
+            bottom: 0;
+            left: 10%;
+            background-color: black;
+
+            min-width: 80%;
+
+            &-detail {
+                font-family: "Jura";
+                height: 26px;
+                line-height: 26px;
+                font-size: 20px;
+                text-align: center;
+                min-width: 140px;
+
+            }
+
+            &:hover &-detail {
+                color: $color-primary;
+                transition: 0.3s;
+            }
+        }
+    }
+
+    &-bottom {
+        &__quote {
+            text-align: center;
+            &-title {
+                margin-bottom: 40px;
+                color: black;
+                font-size: 48px;
+                line-height: 57px;
+            }
+        }
+    }
+}
+.carousel {
+    margin-top: 90px;
+    max-width: 1109px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 320px;
+    margin-bottom: 30px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.4);
+    border-radius: 8px;
+
+    &__button {
+        position: absolute;
+        color: black;
+        z-index: 2;
+        box-shadow: 0 6px 12px -2px rgb(50 50 93 / 25%), 0 3px 7px -3px rgb(0 0 0 / 30%);
+        background-color: #fff;
+        border: none;
+
+        &:focus {
+            outline: none;
+            box-shadow: 0 0 0 4px #a78bfa;
+        }
+        &.is-prev {
+            left: -1.5rem;
+        }
+
+        &.is-next {
+            right: -1.5rem;
+        }
+    }
+
+    &__viewport {
+        width: calc(55% + 120px);
+        margin-left: auto;
+    }
+    &__slide {
+        width: 100%;
+        padding: 20px 60px 0 160px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-height: 320px;
+
+        &-title {
+            color: black;
+            font-family: "Jura";
+            font-size: 36px;
+            line-height: 43px;
+        }
+        &-description {
+            font-family: "Montserrat";
+            font-size: 24px;
+            line-height: 29px;
+            margin-top: 15px;
+            color: black;
+            max-width: 420px;
+        }
+    }
+    &__image-container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 55%;
+        bottom: 0;
+        z-index: 1;
+        overflow: hidden;
+
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+
+        & li {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transition: opacity 0.35s;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0 50px 0 50px;
+
+            user-select: none;
+
+            &:before {
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                background: #32325d;
+                opacity: 0.4;
+                z-index: 1;
+            }
+            &.is-active {
+                opacity: 1;
+            }
+            & h3 {
+                font-family: "Jura";
+                font-size: 36px;
+                color: white;
+                z-index: 1;
+            }
+            & img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+
+    &__image-left {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        height: 100%;
+        width: 100%;
+        background: currentColor;
+    }
+}

@@ -1,0 +1,295 @@
+$design: calc(114 / 164) * 100%;
+$max3d: calc(153 / 164) * 100%;
+$soft-skill: calc(127 / 164) * 100%;
+$photoshop: calc(135 / 164) * 100%;
+
+@mixin addPoints($width-line) {
+
+    animation-iteration-count: 1;
+    animation: 3s animate ease-in-out;
+    width: $width-line;
+
+    @keyframes animate{
+        0%{
+            width: 0%;
+        }
+        65% {
+            width: $width-line;
+        }
+        
+    }
+}
+
+.line-design {
+    
+    &::after{
+        content: "";
+        display: block;
+        position: absolute;
+        z-index: 2;
+        bottom: 0;
+        left: 0;
+        height: 1px;
+        background-color: $color-primary;
+        @include addPoints($design);
+        
+        
+    }
+}
+.line-3dmax {
+    
+    &::after{
+        content: "";
+        display: block;
+        position: absolute;
+        z-index: 2;
+        bottom: 0;
+        left: 0;
+        height: 1px;
+        background-color: $color-primary;
+        
+        @include addPoints($max3d);
+    }
+}
+.line-soft-skills {
+    
+    &::after{
+        content: "";
+        display: block;
+        position: absolute;
+        z-index: 2;
+        bottom: 0;
+        left: 0;
+        height: 1px;
+        background-color: $color-primary;
+
+        @include addPoints($soft-skill);
+    }
+}
+.line-photoshop {
+    
+    &::after{
+        content: "";
+        display: block;
+        position: absolute;
+        z-index: 2;
+        bottom: 0;
+        left: 0;
+        height: 1px;
+        background-color: $color-primary;
+
+        @include addPoints($photoshop);
+    }
+}
+
+.icon {
+    position: absolute;
+    left: 15px;
+    top: 8px;
+    &__contact {
+        margin-right: 15px;
+    }
+}
+.phone {
+    margin-left: 4px;
+    margin-right: 19px;
+}
+.left-content__block {
+    margin: 25px auto 0 auto;
+    width: 100%;
+    max-width: 300px;
+
+    &-inner {
+        margin-top: 10px;
+        background: rgba(113, 101, 86, 0.4);
+    }
+    &-item {
+        position: relative;
+        display: flex;
+        margin: 0 10px;
+        padding-top: 10px;
+        font-size: 18px;
+        line-height: 21px;
+        &:last-child {
+            padding-bottom: 10px;
+        }
+    }
+
+    &-title {
+        position: relative;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 28px;
+
+        background: #716556;
+        text-align: center;
+        padding: 6px 15px;
+    }
+    &:last-child {
+        margin-bottom: 355px;
+    }
+}
+.block-item--dflex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.resume {
+    background-color: #3b2b2b;
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__left-bar {
+        margin: 100px 20px 100px 0;
+        max-height: max-content;
+        height: 100%;
+        width: 100%;
+        max-width: 400px;
+        background: #928c8a;
+        box-shadow: 5px 5px 10px 4px rgba(0, 0, 0, 0.3);
+    }
+
+    &__right-bar {
+        margin: 100px 0;
+        max-height: max-content;
+        height: 100%;
+        width: 100%;
+        max-width: 940px;
+        background: #928c8a;
+        box-shadow: -5px 5px 10px 4px rgba(0, 0, 0, 0.3);
+    }
+
+    &__photo {
+        position: relative;
+        margin: 42px auto 0 auto;
+
+        max-width: 300px;
+        max-height: 350px;
+        width: 100%;
+        height: 100%;
+
+        img {
+            border-radius: 5px;
+            object-fit: cover;
+        }
+    }
+
+    &__info {
+        padding: 12px 30px;
+        max-height: 86px;
+        max-width: 300px;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.6);
+        position: absolute;
+        z-index: 2;
+        bottom: 0;
+        text-align: center;
+    }
+    &__name {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 28px;
+        color: #dbdbdb;
+    }
+    &__short-info {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 24px;
+        color: #dbdbdb;
+        margin-top: 10px;
+    }
+    &__title {
+    }
+    &__contacts-link {
+        font-size: 18px;
+        line-height: 21px;
+        &:hover {
+            color: black;
+            transition: 0.3s;
+        }
+    }
+
+    &__languaches-lvl {
+        max-width: 154px;
+        padding-bottom: 5px;
+        border-bottom: 1px solid $color-primary;
+        width: 100%;
+    }
+    &__languaches-rus {
+        max-width: 105px;
+        width: 100%;
+
+        &__languaches-rus-lvl {
+        }
+    }
+    &__languaches-eng {
+        max-width: 105px;
+        width: 100%;
+        &__languaches-eng-lvl {
+        }
+    }
+    &__languaches-franch {
+        max-width: 105px;
+        width: 100%;
+        &__languaches-franch-lvl {
+        }
+    }
+
+    &__skills {
+    }
+    &__line-info {
+        position: relative;
+        max-width: 164px;
+        width: 100%;
+
+        &:before {
+            content: "";
+            display: block;
+            position: absolute;
+            z-index: 1;
+            bottom: 0;
+            left: 0;
+            height: 1px;
+            background-color: white;
+            width: 100%;
+        }
+    }
+
+    &__content-block {
+        margin: 20px auto;
+        padding: 0 10px;
+        max-width: 810px;
+
+        &-text {
+            background: rgba(51, 73, 72, 0.7);
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+            padding-bottom: 20px;
+        }
+        &:first-child{
+            margin-top: 40px;
+        }
+        &:last-child {
+            padding-bottom: 20px;
+        }
+    }
+    &__content-title {
+        display: inline-block;
+        padding: 5px 20px;
+        margin-bottom: 10px;
+        font-size: 26px;
+        line-height: 31px;
+        background: #334948;
+        box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.3);
+    }
+    &__content-text {
+
+        font-family: "Montserrat";
+        font-size: 16px;
+        line-height: 20px;
+
+        padding: 20px 20px 0 20px;
+        margin: 0 auto;
+    }
+}

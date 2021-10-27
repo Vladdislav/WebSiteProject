@@ -1,6 +1,7 @@
 
 $(function(){
-
+  
+  
 // Function for scrollHeader
   function onScrollHeader() { // объявляем основную функцию onScrollHeader
 
@@ -33,6 +34,10 @@ $(function(){
     });
 
 };
+$('.burger').on('click', function(){
+  $('.burger').toggleClass('active');
+  $('.menu').toggleClass('active');
+})
 //-----------------------------------------------------------//
       
       

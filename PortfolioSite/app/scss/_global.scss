@@ -10,8 +10,11 @@ body {
     max-width: 1460px;
     overflow: hidden;
     margin: 0 auto;
-}
 
+    &--visible {
+        overflow: visible;
+    }
+}
 .btn {
     margin-top: 45px;
     background: red;

@@ -8,3 +8,427 @@
         padding-right: 100px;
     }
 }
+
+@media (max-width: 1025px){
+    //header 
+    .menu {
+        max-width: 750px;
+
+        &__link{
+            font-size: 22px;
+            line-height: 25px;
+        }
+        
+    }
+    // 
+
+    // header addition
+    .header-addition__top-inner {
+        margin-top: 150px;
+        
+        
+    }
+    .header-addition__suptitle {
+        font-size: 15px;
+
+        &:after {
+            font-size: 15px;
+        }
+    }
+    .header-addition__title {
+        font-size: 25px;
+        margin: 5px 0 10px 0;
+    }
+    .header-addition__desc {
+        font-size: 15px;
+    }
+    .header-addition__btn {
+        max-width: 190px;
+        &-detail {
+        font-size: 15px;
+        line-height: 28px;
+        }
+    }
+    .icons__link {
+        font-size: 22px;
+
+        &:not(:first-child) {
+            margin-left: 15px;
+        }
+    }
+    .header-addition__bottom-decor:after {
+        font-size: 45px;
+    }
+    // 
+
+    // portfolio
+
+    .portfolio__content-inner {
+        display: block;
+        
+    }
+    .portfolio__content-left {
+        margin-left: auto;
+        margin-right: auto;
+
+        &:last-child {
+            margin-top: 40px;
+        }
+    }
+    .portfolio__content-right {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 846px;
+        
+
+        &:last-child {
+            margin-top: 40px;
+        }
+    }
+    // 
+
+    // short-about
+    .short-about__center-title {
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .short-about__center-descriotion {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    // 
+    .short-about-bottom__quote {
+        padding: 0 10px;
+
+        &-title {
+            font-size: 35px;
+            line-height: 41px;
+        }
+    }
+    // project 
+    .carousel__slide-title{
+        font-size: 28px;
+        line-height: 34px;
+    }
+    .carousel__slide-description {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .project__center-bottom-title {
+        font-size: 30px;
+        line-height: 36px;
+    }
+    // 
+
+    // footer
+    .footer__title {
+        font-size: 20px;
+        line-height: 25px;
+    }
+    .footer__link {
+        font-size: 18px;
+        
+    }
+    .footer__item:not(:first-child) {
+        margin-top: 8px;
+    }
+    // 
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 769px){
+    //header 
+    
+    .header__inner {
+        padding: 5px 10px;
+    }
+    .logo {
+        &__link {
+            font-size: 20px;
+            line-height: 26px;
+        }
+    }
+    .menu {
+        display: block;
+        position: absolute;
+        text-align: center;
+        max-width: 150px;
+        background-color: #2B303B; 
+        right: -100%;
+        padding-top: 10px;
+        top: 36px;
+        transition: all 0.4s ease;
+        overflow: auto;
+        &.active {
+            right: 0;
+        }
+        &__list{
+            display: block;
+        }
+        &__item:not(:first-child) {
+            margin: 10px 0;
+        }
+        &__link{
+            font-size: 20px;
+            line-height: 24px;
+        }
+        
+    }
+    .lang-switcher {
+        background-color: #2B303B;
+        max-width: 150px;
+        width: 100%;
+        margin-top: 10px;
+        padding: 0 10px;
+        
+        &__item {
+            font-size: 16px;
+            line-height: 20px;
+            margin: 0 auto;
+            text-shadow: none;
+            &--active {
+                color: $color-primary;
+            }
+            
+            &:not(:first-child) {
+                margin-left: 15px;
+                
+            }
+        }
+        
+    }
+    
+    
+    // 
+    .burger {
+        display:block;
+        
+        &.active span {
+            opacity:0; 
+            transition: 0.5s; 
+        }
+        &.active:before {
+            transform: rotate(45deg);
+            top: 12px;
+            transition: 0.4s;
+        }
+        &.active:after {
+            transform: rotate(-45deg);
+            bottom: 12px;
+            transition: 0.4s;
+        }
+    }
+
+    // header addition
+    .header-addition {
+        
+    }
+    .header-addition__suptitle {
+        line-height: 21px;
+
+        
+    }
+    .header-addition__title {
+        margin-top: 0;
+
+        font-size: 24px;
+        line-height: 30px;
+    }
+    
+    .header-addition__btn {
+        margin-top: 20px;
+    }
+    // 
+
+    // portfolio
+
+    .portfolio__content-inner {
+        
+        margin-bottom: 80px;
+    }
+    
+    
+    .portfolio__hexagon-title {
+        font-size: 24px;
+        line-height: 30px;
+    }
+    .portfolio__hexagon-btn {
+        max-width: 140px;
+
+    }
+    .portfolio__hexagon-detail {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    
+    .portfolio__content-top {
+        margin: 0 auto;
+        max-width: 726px;
+    }
+    .portfolio__content-bottom {
+        margin-top: -53px;
+        max-width: 478px;
+    }
+    .hexagon {
+        width: 230px;
+        height: 230px;
+        max-width: 230px;
+        min-height: 230px;
+    }
+    // 
+    // resume
+    .resume__name {
+        font-size: 20px;
+        line-height: 26px;
+    }
+    .resume__left-bar {
+        margin: 100px 20px 0 0;
+    }
+    .left-content__block:last-child {
+        margin-bottom: calc( (1650px - 1404px) + 358px);
+    }
+    .resume__short-info {
+        font-size: 18px;
+        line-height: 24px;
+        margin-top: 5px;
+    }
+    .left-content__block-title {
+        font-size: 20px;
+        line-height: 26px;
+    }
+    .resume__content-title {
+        padding: 2px 10px;
+        font-size: 20px;
+        line-height: 36px;
+        margin-bottom: 5px;
+    }
+    .resume__content-text {
+        font-size: 14px;
+        line-height: 18px;
+        padding: 10px 10px 0 10px;
+    }
+    .resume__content-block {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    // 
+
+
+    // short-about
+    .short-about__center-title {
+        font-size: 16px;
+        line-height: 22px;
+        margin-top: 5px;
+    }
+    .short-about__center-descriotion {
+        font-size: 14px;
+        line-height: 20px;
+        margin-top: 5px;
+    }
+    .short-about__center-box {
+        max-height: 100px;
+        max-width: 100px;
+    }
+    .short-about__center-circle {
+        top: calc((((100 - 80) / 100) * 100%) / 2);
+        left: calc((((100 - 80) / 100) * 100%) / 2);
+    }
+    .short-about-bottom__quote {
+        
+
+        &-title {
+            
+        }
+    }
+    .short-about__top-title {
+        font-size: 26px;
+        line-height: 32px;
+    }
+    .short-about__top-description {
+        margin-top: 5px;
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .short-about__center-btn-detail {
+        line-height: 24px;
+        font-size: 16px;
+        padding: 0 5px;
+    }
+    .short-about__center-block {
+        min-height: 300px;
+    }
+    .short-about__center-content {  
+        min-height: 360px;  
+    }
+    .short-about-bottom__quote-title {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    // 
+
+
+    // project 
+    .carousel {
+        height: 280px;
+    }
+    .carousel__button {
+        width: var(--carousel-button-width, 32px);
+        height: var(--carousel-button-height, 32px);
+    }
+    .carousel__button.is-prev {
+        left: -1rem;
+    }
+    .carousel__button.is-next {
+        right: -1rem;
+    }
+    .carousel__slide-title{
+        font-size: 24px;
+        line-height: 30px;
+    }
+    .carousel__slide-description {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .project__center-top-nav {
+        font-size: 20px;
+        line-height: 26px;
+    }
+    
+    .project__center-bottom-title {
+        
+    }
+    .project__bottom-btn-detail {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    // 
+    // development
+    .development__title {
+        font-size: 20px;
+        line-height: 26px;
+    }
+    //
+    // footer
+    .footer__title {
+        
+    }
+    .footer__link {
+        
+        
+    }
+    .footer__item:not(:first-child) {
+        
+    }
+    // 
+}

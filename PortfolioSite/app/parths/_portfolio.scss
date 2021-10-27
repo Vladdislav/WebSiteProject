@@ -1,0 +1,264 @@
+// portfolio
+
+.portfolio {
+    
+    &__main-title {
+        text-align: center;
+        margin-top: 85px;
+        color: black;
+        font-size: 36px;
+        line-height: 43px;
+    }
+
+    &__content {
+        
+        &-inner {
+            padding: 0 10px;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 60px;
+            margin-bottom: 138px;
+        }
+
+        &-top {
+            display: flex;
+            
+        }
+
+        &-bottom {
+
+            margin: -60px auto 0 auto;
+            display: flex;
+            justify-content: space-between;
+            max-width: 558px;
+        }
+
+        &-left {
+            max-width: 846px;
+        }
+
+        &-right {
+            max-width: 517px;
+        }
+        &--margin {
+            margin-top: 0;
+            margin-bottom: 186px;
+        }
+        
+    }
+
+    &__hexagon {
+
+
+        &-busines:after {
+            content: '';
+            background: linear-gradient(0deg, 
+            rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+             url('../images/business_center.jpg');
+             background-size: cover;
+            background-position: center center;
+             
+        }
+        &-severin:after {
+            content: '';
+            background: linear-gradient(0deg, 
+            rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+             url('../images/severin.jpg');
+             background-size: cover;
+            background-position: center center;
+             
+        }
+        &-kitchen:after {
+            content: '';
+            background: linear-gradient(0deg, 
+            rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+             url('../images/kitchen.jpg');
+             background-size: cover;
+            background-position: center center;
+             
+        }
+        &-park:after {
+            content: '';
+            background: linear-gradient(0deg, 
+            rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+             url('../images/park.jpg');
+             background-size: cover;
+            background-position: center center;
+             
+        }
+        &-room:after {
+            content: '';
+            background: linear-gradient(0deg, 
+            rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+             url('../images/room.jpg');
+             background-size: cover;
+            background-position: center center;
+             
+        }
+
+        &-build-1:after {
+
+            content: '';
+            background: linear-gradient(0deg, 
+            rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+             url('../images/portfolio_case.jpg');
+             background-size: cover;
+            background-position: center center;
+        }
+        &-build-2:after {
+
+            content: '';
+            background: linear-gradient(0deg, 
+            rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+             url('../images/portfolio_case2.jpg');
+             background-size: cover;
+            background-position: center center;
+        }
+        &-build-3:after {
+
+            content: '';
+            background: linear-gradient(0deg, 
+            rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+             url('../images/portfolio_case3.jpg');
+             background-size: cover;
+            background-position: center center;
+        }
+        &-build-4:after {
+
+            content: '';
+            background: linear-gradient(0deg, 
+            rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+             url('../images/portfolio_case4.jpg');
+             background-size: cover;
+            background-position: center center;
+        }
+        &-build-5:after {
+
+            content: '';
+            background: linear-gradient(0deg, 
+            rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+             url('../images/portfolio_case5.jpg');
+             background-size: cover;
+            background-position: center center;
+        }
+        &-title {
+            color: white;
+            position: absolute;
+            z-index: 3;
+            text-align: center;
+            top: 45%;
+            width: 100%;
+            
+            transition: .5s;
+
+            font-size: 36px;
+            line-height: 43px;
+
+        }
+        &-btn {
+            position: absolute;
+            z-index: 3;
+            width: 100%;
+            max-width: 180px;
+            
+            left: calc((((270 - 180) / 270) * 100%) / 2);
+            top: 60%;
+            opacity: 0;
+            background: $color-primary;
+            padding: 5px 0;
+        }
+
+        &-detail {
+            
+            color: black;
+            font-size: 20px;
+            line-height: 24px;
+        }
+        
+    }
+
+    &__title {
+        color: black;
+        font-size: 30px;
+        line-height: 35px;
+        &:after {
+            content: '';
+            display: block;
+            width: 100%;
+            max-width: 247px;
+            height: 1px;
+            margin: 5px 0;
+            background-color: red;
+        }
+    }
+    &__description {
+        
+
+    }
+    &__text {
+        font-family: "Montserrat";
+        color: black;
+        font-size: 18px;
+        line-height: 22px;
+        
+
+        &:not(:first-child){
+            margin-top: 15px;
+        }
+
+    }
+}
+.hexagon {
+    position: relative;
+    width: 270px;
+    height: 270px;
+    
+    
+    &:not(:last-child){
+        margin-right: 18px;
+    }
+
+    &:after {
+        content: "";
+        position: absolute;
+        z-index: 2;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        transition: .5s;
+        
+        clip-path: polygon(50% 0%, 100% 28.5%, 100% 71.5%, 50% 100%, 0% 71.5%, 0% 28.5%);
+    }
+    &:hover:after {
+        transform: translateY(-5%);
+        transition: .5s;
+    }
+    &:hover .portfolio__hexagon-title{
+        transform: translateY(-90%);
+        transition: .5s;
+    }
+    &:hover .portfolio__hexagon-btn {
+        top: 40%;
+        transition: .5s;
+        opacity: 1;
+    }
+    &:hover:before {
+        left: 5px;
+        transition: .5s;
+    }
+    &::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        clip-path: polygon(50% 0%, 100% 28.5%, 100% 71.5%, 50% 100%, 0% 71.5%, 0% 28.5%);
+        background: rgba(0,0,0,0.5);
+        z-index: 1;
+        transition: .5s;
+    }
+
+    
+}

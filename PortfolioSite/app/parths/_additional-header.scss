@@ -1,0 +1,116 @@
+// hello page - header-addition
+.header-addition {
+    
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), url("../images/back-2.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &__top {
+        &-inner {
+            margin-right: 30px;
+            margin-top: 265px;
+            margin-left: auto;
+            max-width: 542px;
+            padding: 0 10px;
+        }
+    }
+    &__suptitle {
+        font-family: "Montserrat";
+        font-size: 20px;
+        line-height: 24px;
+
+        &:after {
+            margin-left: 20px;
+            font-family: "icomoon";
+            content: "\e900";
+            font-size: 20px;
+        }
+    }
+    &__title {
+        margin: 10px 0 20px 0;
+        line-height: 37px;
+        font-size: 30px;
+
+        &--bold {
+            font-family: "Montserrat";
+            font-weight: 600;
+        }
+    }
+    &__desc {
+        font-family: "Montserrat";
+        font-size: 18px;
+        line-height: 22px;
+        text-align: justify;
+    }
+
+    &__bottom {
+        &-inner {
+            width: 100%;
+            max-width: 1440px;
+            padding: 0 10px;
+            height: 60px;
+            position: absolute;
+            bottom: 20px;
+            left: auto;
+            right: auto;
+        }
+
+        &-content {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        &-decor {
+            position: absolute;
+            left: 50%;
+            top: 0;
+            &:after {
+                font-family: "icomoon";
+                content: "\e903";
+                font-size: 60px;
+            }
+        }
+    }
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    margin-top: 14px;
+    margin-bottom: 14px;
+    &__instagram:after {
+        font-family: "icomoon";
+        content: "\e907";
+        margin-top: 20px;
+    }
+    &__telegramm:after {
+        font-family: "icomoon";
+        content: "\e90d";
+    }
+
+    &__vk:after {
+        font-family: "icomoon";
+        content: "\e906";
+    }
+
+    &__link {
+        font-size: 30px;
+        transition: 0.3s;
+
+        &:hover {
+            transition: 0.3s;
+            color: red;
+            transform: translateY(-15%);
+        }
+
+        &:not(:first-child) {
+            margin-left: 25px;
+        }
+    }
+}
