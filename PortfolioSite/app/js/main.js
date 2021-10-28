@@ -1,4 +1,5 @@
 
+
 $(function(){
   
   
@@ -55,56 +56,19 @@ $('.burger').on('click', function(){
       },
     }
   );
-  const allTagA = document.querySelectorAll('a[href]');
-
-      for(var i = 0; i < allTagA.length; i++){
-
-        if (allTagA[i].getAttribute('href').substr(1) == 'main'){
-
-          const main = allTagA[i];
-          main.addEventListener('click', function(event){
-
-            event.preventDefault();
-    
-            const scrollTargetMain = document.getElementById('main');
-    
-            const topOffset = 0;
-    
-            const elementPosition =  scrollTargetMain.getBoundingClientRect().top;
-    
-            const offsetPosition = elementPosition - topOffset;
-    
-            window.scrollBy({
-              top: offsetPosition,
-              behavior: 'smooth'
-            })
-          })
-        }
-        else if (allTagA[i].getAttribute('href').substr(1) == 'about'){
-
-          const about = allTagA[i];
-          about.addEventListener('click', function(event){
-
-            event.preventDefault();
-    
-            const scrollTargetAbout = document.getElementById('about');
-            if (scrollTargetAbout.click){
-              $('a.header__top-item-link').addClass('header__top-item-link--active');
-            }
-    
-            const topOffset = 0;
-    
-            const elementPosition =  scrollTargetAbout.getBoundingClientRect().top;
-    
-            const offsetPosition = elementPosition - topOffset;
-    
-            window.scrollBy({
-              top: offsetPosition,
-              behavior: 'smooth'
-            })
-          })
-        }
-      }
+    const anchors = document.querySelectorAll('a[href*="#"]')
+    for (let anchor of anchors) {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault()
+        
+        const blockID = anchor.getAttribute('href').substr(1)
+        
+        document.getElementById(blockID).scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
+        })
+      })
+    }
       
       wow.init();
       onScrollHeader();
@@ -113,6 +77,7 @@ $('.burger').on('click', function(){
 const logoCarousel = new Carousel(document.querySelector("#logoCarousel"), {
   friction: 0.83,
   Dots: false,
+  Autoplay: true,
   on: {
     change: (carousel, to) => {
       // Clear active elements
@@ -136,6 +101,7 @@ const logoCarousel = new Carousel(document.querySelector("#logoCarousel"), {
 
 // Make links clickable
 document.getElementById("logoBar").addEventListener("click", (event) => {
+  
   const index = event.target.dataset.for || -1;
 
   if (index > -1) {
