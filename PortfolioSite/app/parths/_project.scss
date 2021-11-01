@@ -5,7 +5,7 @@
     background: #8A7977;
 
     &__top {
-        padding: 0 40px;
+        padding: 0 20px;
     }
 
     &__center {
@@ -21,7 +21,6 @@
                 max-width: 900px;
                 width: 100%;
                 margin: 0 auto;
-                padding: 0 10px;
 
                 color: rgba(49, 49, 49, 0.8);
             }
@@ -54,7 +53,7 @@
             margin: 48px auto 0 auto;
         }
         &-cards {
-            padding: 0 10px 10px 10px;
+            padding-top: 10px;
             width: 100%;
             display: flex;
             justify-content: space-between;
@@ -86,7 +85,7 @@
             transition: 0.5s;
         }
         &-block:hover &-description {
-            font-size: 10px;
+            font-size: 13px;
             transition: 0.5s;
         }
         &-block:hover &-title:after {
@@ -119,8 +118,9 @@
             padding: 0 5px;
             cursor: default;
             color: inherit;
-            max-width: 212px;
+            max-width: 220px;
             max-height: 150px;
+            text-align: justify;
             overflow: hidden;
             margin: 0 auto;
 

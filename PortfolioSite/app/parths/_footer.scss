@@ -7,7 +7,6 @@
             content: '';
             display: block;
             height: 1px;
-            max-width: 1200px;
             background-color: #fff;
             margin: 50px auto 73px auto;
             width: 85%;
@@ -18,7 +17,7 @@
     background-position: center;
 
     &__inner {
-        padding: 100px 10px 0 10px;
+        margin-top: 100px;
         display: flex;
         justify-content: space-between;
     }

@@ -7,8 +7,11 @@ body {
 }
 
 .container {
+    height: 100%;
     max-width: 1460px;
     overflow: hidden;
+    position: relative;
+    padding: 0 10px;
     margin: 0 auto;
 
     &--visible {
@@ -31,7 +34,7 @@ body {
     }
     &:hover &-detail {
         transition: 0.3s;
-        color: black;
+        
     }
     &:hover {
         transition: 0.3s;
