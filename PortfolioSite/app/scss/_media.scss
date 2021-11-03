@@ -24,8 +24,28 @@
         max-width: 440px;
         min-width: 420px;
     }
+    .popups__title {
+        font-size: 30px;
+        line-height: 34px;
+    }
+    .popups__desc {
+        font-size: 16px;
+        line-height: 20px;
+        margin-top: 10px;
+    }
+    .popups__btn {
+        margin-top: 20px;
+        padding: 6px 15px;
+    }
+    .popups__btn-detail {
+        font-size: 16px;
+        
+    } 
 }
 @media (max-width: 1025px){
+    #Visualisation {
+        width: 100%;
+    }
     .popups__project-desc {
         max-width: 400px;
         min-width: 300px;
@@ -35,7 +55,24 @@
         max-width: 210px;
         min-width: 200px;
     }
-    
+
+    .popups__title {
+        font-size: 24px;
+        line-height: 28px;
+    }
+    .popups__desc {
+        font-size: 16px;
+        line-height: 20px;
+        margin-top: 10px;
+    }
+    .popups__btn {
+        margin-top: 15px;
+        padding: 4px 10px;
+    }
+    .popups__btn-detail {
+        font-size: 14px;
+    }
+
     //header 
     .menu {
         max-width: 750px;
@@ -205,6 +242,55 @@
         img {
             max-width: 23%;
             max-height: 100px;
+        }
+    }
+    .popups__project-desc {
+        max-width: 400px;
+        min-width: 300px;
+        font-size: 16px;
+    }
+    .popups__project-collection {
+        max-width: 210px;
+        min-width: 200px;
+    }
+    .popups__content {
+        margin: auto auto;
+    }
+    .popups__title {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .popups__desc {
+        font-size: 14px;
+        line-height: 18px;
+        margin-top: 10px;
+    }
+    .popups__btn {
+        margin-top: 15px;
+        margin-left: 10px;
+        padding: 4px 10px;
+    }
+    .popups__btn-detail {
+        font-size: 14px;
+    }
+    .popups__card {
+        display: block;
+    }
+    .popups__img {
+        
+        max-height: 25%;
+
+        &:nth-child(2){
+            position: relative;
+            top:0;
+            left: 0;
+            margin-top: 15px;
+        }
+        &:last-child{
+            position: relative;
+            top: 0;
+            left: 0;
+            margin-top: 15px;
         }
     }
 
@@ -490,6 +576,53 @@
             max-width: 100%;
             max-height: 100px;
         }
+    }
+
+    .popups__content {
+        display: block;
+        margin: 0 auto;
+    }
+    .popups__card {
+        margin: 0 auto;
+        position: relative;
+        max-width: 100%;
+        max-height: 100%;
+    }
+    
+    .popups__title {
+        margin: 10px auto 0 auto;
+        max-width: 150px;
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .popups__img {
+        border-radius: 5px;
+        max-width: 100%;
+
+        &:hover {
+            transform: none;
+        }
+    
+        &:nth-child(2) {
+          display: none;
+          
+        }
+        &:last-child {
+          display: none;
+        }
+    }
+    .popups__description {
+        margin-left: 0px;
+        margin-right: 0px;
+        min-width: 280px - 24px;
+        width: 100%;
+    }
+    .popups__desc {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .popups__btn {
+        margin-left: 0px;
     }
     //header 
     .header {
@@ -786,16 +919,34 @@
     }
     // 
 }
+@media (max-width: 376px) {
+    .header-addition {
+        &__top-inner {
+            margin-top: 70%;
+        }
+    }
+    
+}
 @media (max-width: 320px){
+    
+    .is-animated .carousel__button {
+        width: 20px;
+        height: 20px;
+    }
+    
+    // popups
+    
+
     //header 
     .header {
         max-width: 320px;
  
         .container {
-            max-width: 340px;
+            max-width: 320px;
             width: 100%;
             margin: 0 auto;
         }
+
     }
     
     
@@ -828,7 +979,7 @@
     // header addition
     .header-addition {
         &__top-inner {
-            margin-top: 60%;
+            margin-top: 70%;
         }
     }
     .header-addition__suptitle {

@@ -13,6 +13,16 @@
     right: 15px !important;
 } 
 
+.is-animated .carousel__button {
+  background: none;
+  color: white;
+}
+.popup .carousel__button {
+  background: none !important;
+}
+.skill .is-close {
+  color: white !important;
+}
 
 // popup
 
@@ -32,11 +42,86 @@
 .fancybox__container {
     --fancybox-bg: rgba(0,0,0, 0.9) !important;
 }
-.popups__project {
+
+
+.popups{
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    min-height: 700px;
+  }
+
+  &__card {
+    position: relative;
+    max-width: 50%;
+    max-height: 100%;
+  }
+
+  &__img {
+    
+    max-width: 100%;
+    max-height: 33%;
+    object-fit: cover;
+
+    transition: .5s;
+      &:hover {
+        transform: translateX(10%);
+        transition: .5s;
+      }
+
+    &:nth-child(2) {
+      position: absolute;
+      left: 15px;
+      top:25%;
+      
+    }
+    &:last-child {
+      position: absolute;
+      left: 30px;
+      top:50%;
+    }
+  }
+
+  &__description {
+    margin-left: 7%;
+    width: 43%;
+    min-width: 160px;
+  }
+  &__title {
+    font-size: 36px;
+    line-height: 43px;
+    color: #393939;
+  }
+  &__desc {
+    font-size: 20px;
+    line-height: 24px;
+    margin-top: 20px;
+    color: #6D6D6D;
+  }
+
+  &__btn {
+    background-color: $color-primary;
+    max-width: max-content;
+    max-height: max-content;
+    padding: 8px 26px;
+    cursor: pointer;
+    margin-top: 57px;
+  }
+  &__btn-detail {
+
+    font-size: 24px;
+    line-height: 28px;
+
+    color: black;
+  }
+
+  &__project{
+
     &-content {
-        display: flex;
-        justify-content: space-between;
-        max-height: 700px;
+      display: flex;
+      justify-content: space-between;
+      max-height: 700px;
     }
     &-collection {
 
@@ -48,20 +133,59 @@
             margin: 3px;
         }
         
-    }
+    } 
 
     &-title {
         font-size: 36px;
         color: black;
     }
-    
+  
     &-desc {
         margin-top: 20px;
         font-size: 18px;
         color: black;
         max-width: 700px;
     }
+  }
+
+  &__skills {
+
+    
+    
+    
+  }
+
+  &__design {
+
+    &-content {
+      display: flex;
+      justify-content: space-between;
+    }
+    &-card {
+
+    }
+    &-img {
+
+    }
+    &-description {
+
+    }
+    &-title {
+
+    }
+    &-desc {
+
+    }
+    
+  }
 }
+
+#Visualisation {
+  background-color: #EDF1FD;
+  width: 70%;
+}
+
+
 
 
 
