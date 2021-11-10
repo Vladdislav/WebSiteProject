@@ -1,7 +1,7 @@
 .footer {
-
+    min-height: 380px;
+    overflow: hidden;
     &__container {
-        min-height: 380px;
     
         &:after {
             content: '';
@@ -21,6 +21,9 @@
         display: flex;
         justify-content: space-between;
     }
+    &__icons {
+        margin-top: 20px;
+    }
     &__menu {
         display: flex;
         justify-content: space-between;
@@ -32,6 +35,7 @@
         color: white;
         font-size: 28px;
         line-height: 33px;
+        font-weight: normal;
     }
     &__list {
         text-align: left;
@@ -40,6 +44,7 @@
     &__item {
         color: red;
         margin-top: 10px;
+        list-style: disc;
 
         &:not(:first-child) {
             margin-top: 15px;

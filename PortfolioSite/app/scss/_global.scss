@@ -1,44 +1,65 @@
+// reset some atribute
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+    line-height: normal;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+ul {
+    line-height:normal;
+
+}
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+button {
+    background-color: $color-btn;
+}
+
+
 
 body {
     font-family: "Jura";
     font-weight: 400;
     font-size: 20px;
     position: relative;
+    color: white;
 }
 
 .container {
     height: 100%;
-    max-width: 1460px;
-    overflow: hidden;
-    position: relative;
-    padding: 0 10px;
+    max-width: 1480px;
+    padding: 0 20px;
     margin: 0 auto;
 
-    &--visible {
-        overflow: visible;
-    }
+
 }
 .btn {
-    margin-top: 45px;
     background: red;
-    max-width: 232px;
+    max-width: 230px;
     text-align: center;
     transition: 0.3s;
 
     &-detail {
         font-family: "Montserrat";
         font-size: 18px;
-        line-height: 40px;
-        text-align: justify;
+        line-height: normal;
+        padding: 9px 20px;
         transition: 0.3s;
-    }
-    &:hover &-detail {
-        transition: 0.3s;
-        
     }
     &:hover {
-        transition: 0.3s;
-        transform: translateY(-15%);
+        transform: scale(105%);
+    }
+    &:active {
+        transform: scale(95%);
     }
 }
 

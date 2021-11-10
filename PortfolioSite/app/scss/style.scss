@@ -1,5 +1,4 @@
 // main imports
-@import "reset";
 @import "vars";
 @import "global";
 @import "libs";
@@ -10,27 +9,20 @@
 @import "../parths/header";
 
 // main page
-@import "../parths//additional-header";
+@import "../parths/main";
 // ---------
 
-// portfolio
-@import "../parths/portfolio";
-// ---------
-
-// resume
-@import "../parths/resume";
-// ---------
 
 // short-about
-@import "../parths/short-about";
+@import "../parths/main_about-me";
 // ---------
 
-// prject
-@import "../parths/project";
+// project
+@import "../parths/main_about-work";
 // ---------
 
-// prject
-@import "../parths/development";
+// development
+@import "../parths/main_development";
 // ---------
 
 // footer

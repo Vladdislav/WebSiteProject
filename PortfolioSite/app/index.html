@@ -42,10 +42,22 @@
                             <a class="menu__link" href="#about">Обо мне</a>
                         </li>
                     </ul>
-                    <div class="lang-switcher">
-                        <a class="lang-switcher__item lang-switcher__item--active" href="">rus</a>
-                        <a class="lang-switcher__item" href="">eng</a>
-                    </div>
+                    <ul class="languages__list">
+                        <li class="languages__item">
+                            <a href="#" class="languages__list-svg"></a>
+
+                            <ul class="languages__swither-list">
+                                <li class="languages__swither-link">
+                                    <a href="" class="languages__swither-item">rus</a>
+                                </li>
+
+                                <li class="languages__swither-link">
+                                    <a href="" class="languages__swither-item">eng</a>
+                                </li>
+                            </ul>
+
+                        </li>
+                    </ul>
 
                 </nav>
             </div>
@@ -53,481 +65,137 @@
     </header>
 
 
-    <main class="page">
-        <section class="header-addition" id="main">
+    <main class="main-page">
+        <section class="main" id="main">
 
-            <div class="header-addition__top">
+            <div class="main__top">
                 <div class="container">
-                    <div class="header-addition__top-inner wow slideInDown">
-                        <p class="header-addition__suptitle">Всем привет</p>
-                        <h1 class="header-addition__title">Меня зовут <span
-                                class="header__title--bold keycolor">Станислав</span> Тюленев</h1>
-                        <p class="header-addition__desc">Вы находитесь на сайте человека, который смог бы вам
+                    <div class="main__top-inner wow slideInDown">
+                        <p class="main__suptitle">Всем привет</p>
+                        <h1 class="main__title">Меня зовут <span class="main--bold keycolor">Станислав</span> Тюленев
+                        </h1>
+                        <p class="main__desc">Вы находитесь на сайте человека, который смог бы вам
                             рассказать много интересного о визуализации, 3D моделировании и усердной работы для
                             достижения поставленных целей.</p>
-                        <div class="header-addition__btn btn">
-                            <a class="header-addition__btn-detail btn-detail" href="#about">Подробнее обо мне</a>
+                        <div class="main__btn btn">
+                            <button class="main__btn-detail btn-detail" href="#about">Подробнее обо мне</button>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="header-addition__bottom">
+            <div class="main__bottom">
                 <div class="container">
-                    <div class="header-addition__bottom-inner">
+                    <div class="main__bottom-inner">
                         <div class="icons">
                             <a class="icons__link icons__instagram" href=""></a>
                             <a class="icons__link icons__telegramm" href=""></a>
                             <a class="icons__link icons__vk" href=""></a>
                         </div>
-                        <div class="header-addition__bottom-decor wow fadeInUp slower infinite"></div>
+                        <div class="main__bottom-decor wow fadeInUp slower infinite"></div>
                     </div>
                 </div>
             </div>
 
         </section>
 
-        <section class="portfolio" id="portfolio">
-            <div class="container">
-                <h2 class="portfolio__main-title">Портфолио</h2>
-            </div>
-            <div class="portfolio__content">
+
+
+
+
+        <section class="about" id="about">
+            <div class="about__top wow slideInDown">
                 <div class="container">
-                    <div class="portfolio__content-inner">
-                        <div class="portfolio__content-left wow fadeInLeft">
-                            <div class="portfolio__content-top">
-                                <div class="portfolio__hexagon-busines hexagon">
-                                    <p class="portfolio__hexagon-title">
-                                        Business Center
-                                    </p>
-                                    <div class="portfolio__hexagon-btn btn">
-                                        <a class="portfolio__hexagon-detail btn-detail" href="" data-fancybox
-                                            data-src="#center">Подробнее</a>
-                                    </div>
-                                </div>
-                                <div class="portfolio__hexagon-severin hexagon">
-                                    <p class="portfolio__hexagon-title">
-                                        Severin
-                                    </p>
-                                    <div class="portfolio__hexagon-btn btn">
-                                        <a class="portfolio__hexagon-detail btn-detail" href="" data-fancybox
-                                            data-src="#severin">Подробнее</a>
-                                    </div>
-                                </div>
-                                <div class="portfolio__hexagon-kitchen hexagon">
-                                    <p class="portfolio__hexagon-title">
-                                        Kitchen
-                                    </p>
-                                    <div class="portfolio__hexagon-btn btn">
-                                        <a class="portfolio__hexagon-detail btn-detail" href="" data-fancybox
-                                            data-src="#kitchen">Подробнее</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="portfolio__content-bottom">
-                                <div class="portfolio__hexagon-park hexagon">
-                                    <p class="portfolio__hexagon-title">
-                                        Park
-                                    </p>
-                                    <div class="portfolio__hexagon-btn btn">
-                                        <a class="portfolio__hexagon-detail btn-detail" href="" data-fancybox
-                                            data-src="#park">Подробнее</a>
-                                    </div>
-                                </div>
-                                <div class="portfolio__hexagon-room hexagon">
-                                    <p class="portfolio__hexagon-title">
-                                        Room
-                                    </p>
-                                    <div class="portfolio__hexagon-btn btn">
-                                        <a class="portfolio__hexagon-detail btn-detail" href="" data-fancybox
-                                            data-src="#room">Подробнее</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="portfolio__content-right wow fadeInRight">
-                            <h2 class="portfolio__title">
-                                Коротко о работах:
-                            </h2>
-                            <div class="portfolio__description">
-                                <p class="portfolio__text">
-
-                                    <span class="title--color">Business center</span>
-                                    : Работа выполнена как учебная. В работе были получены навыки работы с программой 3D
-                                    MAX. Приходилось схватывать на лету.
-                                </p>
-                                <p class="portfolio__text">
-                                    <span class="title--color">Kitchen</span>
-                                    : Создание этой работы показало мне перспективу в создании рендера внутренней
-                                    отделки.
-                                </p>
-                                <p class="portfolio__text">
-                                    <span class="title--color">Severin</span>
-                                    : Эта большая работа выполнялась на работе, после окончания учебного заведения.
-                                    Полезной
-                                    информации и самое главное настоящей практики получено сполна. Я узнал, как работают
-                                    над
-                                    настоящими проектами.
-                                </p>
-                                <p class="portfolio__text">
-                                    <span class="title--color">Park</span>
-                                    : На создание концепции парка меня натолкнул бывший одногрупник, где в задачах
-                                    стояло
-                                    отобразить совершенно новую концепцию ‘Парк будущего’.
-                                </p>
-                                <p class="portfolio__text">
-                                    <span class="title--color">Room</span>
-                                    : Дизайн комнат мне понравился ещё с работы над кухней. Прекрасный интерьер и
-                                    правильно
-                                    подобранный свет, творят чудеса.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="portfolio__content">
-                <div class="container container--visible">
-                    <div class="portfolio__content-inner portfolio__content--margin">
-
-                        <div class="portfolio__content-right wow fadeInLeft">
-                            <h2 class="portfolio__title">
-                                Коротко о работах:
-                            </h2>
-                            <div class="portfolio__description">
-                                <p class="portfolio__text">
-
-                                    <span class="title--color">Динамика</span>
-                                    : Стремительное изменение уже существующих сооружений и совершенно новых путем абстракции и дерзских решений.
-                                </p>
-                                <p class="portfolio__text">
-                                    <span class="title--color">Последний</span>
-                                    : Дома в форме правильных прямоугольников выглядят красиво. Мне захотелось создать прямоугольные дома с ромбовидными окнами.
-                                </p>
-                                <p class="portfolio__text">
-                                    <span class="title--color">60 Минут</span>
-                                    : В этот эскиз мне хотелось вложидь жизнь, чтобы дать свет высоким зданиям, стремящимся за облака. Здесь я хотел показать величественность таких сооружений.
-                                </p>
-                                <p class="portfolio__text">
-                                    <span class="title--color">Снэйки</span>
-                                    : Снэйки - это каскадные, длинные, здания с острыми углами. Определения я дал сам, такого вы не найдёте нигде. Позволил себе поэксперементировать с архитектурой.
-                                </p>
-                                <p class="portfolio__text">
-                                    <span class="title--color">Пантеон</span>
-                                    : Потребовалось много времени, чтобы сделать проект, который был для меня совершенно новой ступень изучения 3D моделирования объектов. Это храм, посвященный всем богам у древних греков и римлян.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="portfolio__content-left wow fadeInRight">
-                            <div class="portfolio__content-top">
-                                <div class="portfolio__hexagon-build-1 hexagon">
-                                    <p class="portfolio__hexagon-title">
-                                        Динамика
-                                    </p>
-                                    <div class="portfolio__hexagon-btn btn">
-                                        <a class="portfolio__hexagon-detail btn-detail" href="" data-fancybox
-                                            data-src="#first">Подробнее</a>
-                                    </div>
-                                </div>
-                                <div class="portfolio__hexagon-build-2 hexagon">
-                                    <p class="portfolio__hexagon-title">
-                                        Последний
-                                    </p>
-                                    <div class="portfolio__hexagon-btn btn">
-                                        <a class="portfolio__hexagon-detail btn-detail" href="" data-fancybox
-                                            data-src="#second">Подробнее</a>
-                                    </div>
-                                </div>
-                                <div class="portfolio__hexagon-build-3 hexagon">
-                                    <p class="portfolio__hexagon-title">
-                                        60 Минут
-                                    </p>
-                                    <div class="portfolio__hexagon-btn btn">
-                                        <a class="portfolio__hexagon-detail btn-detail" href="" data-fancybox
-                                            data-src="#third">Подробнее</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="portfolio__content-bottom">
-                                <div class="portfolio__hexagon-build-4 hexagon">
-                                    <p class="portfolio__hexagon-title">
-                                        Снэйки
-                                    </p>
-                                    <div class="portfolio__hexagon-btn btn">
-                                        <a class="portfolio__hexagon-detail btn-detail" href="" data-fancybox
-                                            data-src="#fourth">Подробнее</a>
-                                    </div>
-                                </div>
-                                <div class="portfolio__hexagon-build-5 hexagon">
-                                    <p class="portfolio__hexagon-title">
-                                        Пантеон
-                                    </p>
-                                    <div class="portfolio__hexagon-btn btn">
-                                        <a class="portfolio__hexagon-detail btn-detail" href="" data-fancybox
-                                            data-src="#fifth">Подробнее</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="resume" id="resume">
-            <div class="container">
-                <div class="resume__inner">
-                    <div class="resume__left-bar wow fadeIn">
-                        <div class="resume__photo">
-                            <img src="images/resume_photo.jpg" alt="">
-                            <div class="resume__info">
-                                <h3 class="resume__name">Тюленев Станислав</h3>
-                                <p class="resume__short-info">3D дизайнер 25 лет</p>
-                            </div>
-                        </div>
-                        <div class="left-content__block">
-                            <div class="left-content__block-title">
-                                <img class="icon" src="images/contacts.svg" alt="">
-                                <p class="resume__title">Контакты</p>
-                            </div>
-                            <div class="left-content__block-inner">
-                                <div class="left-content__block-item">
-                                    <img class="icon__contact mail" src="images/mail.svg" alt="">
-                                    <a href="mailto:morisonadd@mail.ru" class="resume__contacts-link">curtis.weaver@example.com</a>
-                                </div>
-                                <div class="left-content__block-item">
-                                    <img class="icon__contact phone" src="images/phone.svg" alt="">
-                                    <a href="tel:+79038809338" class="resume__contacts-link">+7 (903) 880-93-38</a>
-                                </div>
-                                <div class="left-content__block-item">
-                                    <img class="icon__contact instagram" src="images/instagram.svg" alt="">
-                                    <a href="https://www.instagram.com/sta_hud/" class="resume__contacts-link">Univers General</a>
-                                </div>
-                                <div class="left-content__block-item">
-                                    <img class="icon__contact telegramm" src="images/telegramm.svg" alt="">
-                                    <a href="https://telegram.me/@STAASYAAN" class="resume__contacts-link">Morrow Meadows</a>
-                                </div>
-                                <div class="left-content__block-item">
-                                    <img class="icon__contact vk" src="images/vk.svg" alt="">
-                                    <a href="https://vk.com/tyulenev1996" class="resume__contacts-link">Inertia Systems</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="left-content__block">
-                            <div class="left-content__block-title">
-                                <img class="icon" src="images/lang.svg" alt="">
-                                <p class="resume__title">Языки</p>
-                            </div>
-                            <div class="left-content__block-inner">
-                                <div class="left-content__block-item block-item--dflex">
-                                    <p class="resume__languaches-rus">Русский</p>
-                                    <p class="resume__languaches-rus-lvl resume__languaches-lvl">Носитель</p>
-                                </div>
-                                <div class="left-content__block-item block-item--dflex">
-                                    <p class="resume__languaches-eng">Английский</p>
-                                    <p class="resume__languaches-eng-lvl resume__languaches-lvl">Продвинутый С1</p>
-                                </div>
-                                <div class="left-content__block-item block-item--dflex">
-                                    <p class="resume__languaches-franch">Французкий</p>
-                                    <p class="resume__languaches-franch-lvl  resume__languaches-lvl">Продвинутый С1</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="left-content__block">
-                            <div class="left-content__block-title">
-                                <img class="icon" src="images/skill.svg" alt="">
-                                <p class="resume__title">Языки</p>
-                            </div>
-                            <div class="left-content__block-inner">
-                                <div class="left-content__block-item block-item--dflex">
-                                    <p class="resume__skills">Дизайн:</p>
-                                    <div class="resume__line-info line-design"></div>
-                                </div>
-                                <div class="left-content__block-item block-item--dflex">
-                                    <p class="resume__skills">3D MAX:</p>
-                                    <div class="resume__line-info line-3dmax"></div>
-                                </div>
-                                <div class="left-content__block-item block-item--dflex">
-                                    <p class="resume__skills">Soft-skills:</p>
-                                    <div class="resume__line-info line-soft-skills"></div>
-                                </div>
-                                <div class="left-content__block-item block-item--dflex">
-                                    <p class="resume__skills">Photoshop:</p>
-                                    <div class="resume__line-info line-photoshop"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="resume__right-bar wow fadeIn">
-                        <div class="resume__content-block skill">
-                            <h4 class="resume__content-title">Период самообучения</h4>
-                            <div class="resume__content-block-text">
-                                <p class="resume__content-text">Самообучением занимался в период обучения в Университете
-                                    с 2018 по 2020 год. За это время было сделано 6 проектов на основе изученонного
-                                    материала, результатом самообучения является возможность создавать модели любой
-                                    сложности с сохранением качества выполнения работ.</p>
-                                <p class="resume__content-text">Самообучением занимался в период обучения в Университете
-                                    с 2018 по 2020 год. За это время было сделано 6 проектов на основе изученонного
-                                    материала, результатом самообучения является возможность создавать модели любой
-                                    сложности с сохранением качества выполнения работ.</p>
-                            </div>
-                        </div>
-                        <div class="resume__content-block">
-                            <h4 class="resume__content-title">Образование</h4>
-                            <div class="resume__content-block-text">
-                                <p class="resume__content-text">Югорский государственный университет - 2016 - 2020 год.
-                                    Кафедра: Строительство
-                                    Профессия: Инженер строительных технологий</p>
-                                <p class="resume__content-text">Югорский государственный университет - 2016 - 2020 год.
-                                    Кафедра: Строительство
-                                    Профессия: Инженер строительных технологий</p>
-                            </div>
-                        </div>
-                        <div class="resume__content-block">
-                            <h4 class="resume__content-title">Опыт работы</h4>
-                            <div class="resume__content-block-text">
-                                <p class="resume__content-text">Инженер ПТО: 2020 - 2021 год
-                                    Компания: ОАО Квартал.
-                                    Описание: В обязанности входила проверка технической документации, такой как: акты
-                                    приёма работ, акты выполнения работ, акты дефектов. В период работы Инженер ПТО, так
-                                    же помогал компании создавать 3D визуализации объектов и окружения.</p>
-                                <p class="resume__content-text">Инженер ПТО: 2020 - 2021 год
-                                    Компания: ОАО Квартал.
-                                    Описание: В обязанности входила проверка технической документации, такой как: акты
-                                    приёма работ, акты выполнения работ, акты дефектов. В период работы Инженер ПТО, так
-                                    же помогал компании создавать 3D визуализации объектов и окружения.</p>
-                            </div>
-                        </div>
-                        <div class="resume__content-block">
-                            <h4 class="resume__content-title">Курсы</h4>
-                            <div class="resume__content-block-text">
-                                <p class="resume__content-text">Aliquam pulvinar vestibulum blandit. Donec sed nisl
-                                    libero. Fusce dignissim luctus sem eu dapibus. Pellentesque vulputate quam a quam
-                                    volutpat, sed ullamcorper erat commodo. Vestibulum sit amet ipsum vitae mauris
-                                    mattis vulputate lacinia nec neque. Aenean quis consectetur nisi, ac interdum elit.
-                                    Aliquam sit amet luctus elit, id tempus purus.</p>
-                            </div>
-                        </div>
-                        <div class="resume__content-block">
-                            <h4 class="resume__content-title">О себе</h4>
-                            <div class="resume__content-block-text">
-                                <p class="resume__content-text">Себя позиционирую как человек, который не боится
-                                    ответственности, быстро адаптируюсь к команде, энтузиазм имеется. Самообучаемость,
-                                    структурирование информации, самостоятельность, командный человек.</p>
-                            </div>
-                        </div>
-                        <div class="resume__content-block">
-                            <h4 class="resume__content-title">Ожидания от работы</h4>
-                            <div class="resume__content-block-text">
-                                <p class="resume__content-text">Себя позиционирую как человек, который не боится
-                                    ответственности, быстро адаптируюсь к команде, энтузиазм имеется. Самообучаемость,
-                                    структурирование информации, самостоятельность, командный человек.</p>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-        <section class="short-about" id="about">
-            <div class="short-about__top wow slideInDown">
-                <div class="container">
-                    <div class="short-about__top-inner">
-                        <h2 class="short-about__top-title">Коротко о том</h2>
-                        <p class="short-about__top-description">что потребовалось мне для успешного овладения своим
-                            делом, в частности, чтобы получить приглашение работать в Москву в компанию Industrial на
+                    <div class="about__top-inner">
+                        <h2 class="about__title">Коротко о том</h2>
+                        <p class="about__description">что потребовалось мне для успешного овладения своим
+                            делом, в чаcтности, чтобы получить приглашение работать в Москву в компанию Industrial на
                             вакансию 3D Visualisation.</p>
                     </div>
                 </div>
             </div>
-            <div class="short-about__center wow slideInDown">
+            <div class="card about__content wow slideInDown">
                 <div class="container">
-                    <div class="short-about__center-inner">
-                        <div class="short-about__center-content">
+                    <div class="card__list">
 
 
-                            <div class="short-about__center-block">
-                                <div class="short-about__center-box">
-                                    <img class="short-about__center-circle" src="images/cube.svg" alt="">
-                                </div>
-                                <p class="short-about__center-title">3D Визуализация</p>
-                                <p class="short-about__center-descriotion">Визуализация объектов до их появления стало
-                                    обычным и очень важным делом</p>
-                                <div class="btn short-about__center-btn">
-                                    <a class="btn-detail short-about__center-btn-detail" href="" data-fancybox
-                                        data-src="#Visualisation">Узнать больше
-                                    </a>
-                                </div>
+                        <div class="card__item">
+                            <div class="card__circle">
+                                <img class="card__circle-img" src="images/cube.svg" alt="">
                             </div>
-
-
-                            <div class="short-about__center-block">
-                                <div class="short-about__center-box">
-                                    <img class="short-about__center-circle" src="images/cube.svg" alt="">
-                                </div>
-                                <p class="short-about__center-title">Дизайн</p>
-                                <p class="short-about__center-descriotion">Дизайн важная часть. Качественно сейчас
-                                    синоним слова красиво, а так же синоним слову хороший рендер.</p>
-                                <div class="btn short-about__center-btn">
-                                    <a class="btn-detail short-about__center-btn-detail" href="" data-fancybox
-                                        data-src="#design">Узнать больше
-                                    </a>
-                                </div>
+                            <p class="card__title">3D Визуализация</p>
+                            <p class="card__description">Визуализация объектов до их появления стало
+                                обычным и очень важным делом</p>
+                            <div class="btn card__btn">
+                                <button class="btn-detail card__btn-detail" href="" data-fancybox
+                                    data-src="#Visualisation">Узнать больше
+                                </button>
                             </div>
-
-                            <div class="short-about__center-block">
-                                <div class="short-about__center-box">
-                                    <img class="short-about__center-circle" src="images/cube.svg" alt="">
-                                </div>
-                                <p class="short-about__center-title">Пользование ПК</p>
-                                <p class="short-about__center-descriotion">Использование различных программ для создания
-                                    концепта будущего продукта.Без этого уже никак.</p>
-                                <div class="btn short-about__center-btn">
-                                    <a class="btn-detail short-about__center-btn-detail" href="" data-fancybox
-                                        data-src="#pc">Узнать больше
-                                    </a>
-                                </div>
-                            </div>
-
-                            <div class="short-about__center-block">
-                                <div class="short-about__center-box">
-                                    <img class="short-about__center-circle" src="images/cube.svg" alt="">
-                                </div>
-                                <p class="short-about__center-title">Софт-Скилы</p>
-                                <p class="short-about__center-descriotion">Взаимодействие с коллегами для достижения
-                                    одной цели не менее важный фактор.</p>
-                                <div class="btn short-about__center-btn">
-                                    <a class="btn-detail short-about__center-btn-detail" href="" data-fancybox
-                                        data-src="#soft">Узнать больше
-                                    </a>
-                                </div>
-                            </div>
-
-                            <div class="short-about__center-block">
-                                <div class="short-about__center-box">
-                                    <img class="short-about__center-circle" src="images/cube.svg" alt="">
-                                </div>
-                                <p class="short-about__center-title">Продукт</p>
-                                <p class="short-about__center-descriotion">Выхлоп всегда должен быть, вне зависимости от
-                                    уровня владения навыками.</p>
-                                <div class="btn short-about__center-btn">
-                                    <a class="btn-detail short-about__center-btn-detail" href="" data-fancybox
-                                        data-src="#product">Узнать больше
-                                    </a>
-                                </div>
-                            </div>
-
-
                         </div>
+
+                        <div class="card__item">
+                            <div class="card__circle">
+                                <img class="card__circle-img" src="images/cube.svg" alt="">
+                            </div>
+                            <p class="card__title">Дизайн</p>
+                            <p class="card__description">Дизайн важная часть. Качественно сейчас
+                                синоним слова красиво, а так же синоним слову хороший рендер.</p>
+                            <div class="btn card__btn">
+                                <button class="btn-detail card__btn-detail" href="" data-fancybox
+                                    data-src="#design">Узнать больше
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="card__item">
+                            <div class="card__circle">
+                                <img class="card__circle-img" src="images/cube.svg" alt="">
+                            </div>
+                            <p class="card__title">Пользование ПК</p>
+                            <p class="card__description">Использование различных программ для создания
+                                концепта будущего продукта.Без этого уже никак.</p>
+                            <div class="btn card__btn">
+                                <button class="btn-detail card__btn-detail" href="" data-fancybox
+                                    data-src="#pc">Узнать больше
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="card__item">
+                            <div class="card__circle">
+                                <img class="card__circle-img" src="images/cube.svg" alt="">
+                            </div>
+                            <p class="card__title">Софт-Скилы</p>
+                            <p class="card__description">Взаимодействие с коллегами для достижения
+                                одной цели не менее важный фактор.</p>
+                            <div class="btn card__btn">
+                                <button class="btn-detail card__btn-detail" href="" data-fancybox
+                                    data-src="#soft">Узнать больше
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="card__item">
+                            <div class="card__circle">
+                                <img class="card__circle-img" src="images/cube.svg" alt="">
+                            </div>
+                            <p class="card__title">Продукт</p>
+                            <p class="card__description">Выхлоп всегда должен быть, вне зависимости от
+                                уровня владения навыками.</p>
+                            <div class="btn card__btn">
+                                <button class="btn-detail card__btn-detail" href="" data-fancybox
+                                    data-src="#product">Узнать больше
+                                </button>
+                            </div>
+                        </div>
+
+
                     </div>
                 </div>
             </div>
-            <div class="short-about-bottom wow slideInDown">
+            <div class="about__bottom wow slideInDown">
                 <div class="container">
-                    <div class="short-about-bottom__quote">
-                        <p class="short-about-bottom__quote-title">Нравится то, что я делаю? <span
+                    <div class="about__quote">
+                        <p class="about__quote-title">Нравится то, что я делаю? <span
                                 class="keycolor keycolor--active">/</span> Следую за мной</p>
                     </div>
                 </div>
@@ -535,133 +203,149 @@
         </section>
 
 
-        <section class="project">
-            <div class="container">
-                <div class="project__top wow fadeInUp">
-                    <div id="logoCarousel" class="carousel">
-                        <div class="carousel__image-container">
-                            <ul class="carousel__image-left">
-                                <li data-for="0" class="carousel__image-inner is-active">
-                                    <h3 class="carousel__image-title">Природа</h3>
-                                    <img classs="carousel__image-img" alt="" src="https://lipsum.app/id/2/460x320" />
-                                </li>
-                                <li data-for="1">
-                                    <h3 class="carousel__image-title">Здания</h3>
-                                    <img classs="carousel__image-img" alt="" src="https://lipsum.app/id/3/460x320" />
-                                </li>
-                                <li data-for="2">
-                                    <h3 class="carousel__image-title">Интерьер</h3>
-                                    <img classs="carousel__image-img" alt="" src="https://lipsum.app/id/4/460x320" />
-                                </li>
-                                <li data-for="3">
-                                    <h3 class="carousel__image-title">Разрезы</h3>
-                                    <img classs="carousel__image-img" alt="" src="https://lipsum.app/id/5/460x320" />
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="carousel__viewport">
-                            <div class="carousel__track">
-                                <div class="carousel__slide">
-                                    <h3 class="carousel__slide-title">
-                                        Лучший строитель
-                                    </h3>
-                                    <p class="carousel__slide-description">
-                                        Пока человечество пытается догнать естественные формы образованные природой миллиарды лет назад, но возможно, когда-нибудь, процесс пойдёт дальше. 
-                                    </p>
-                                </div>
-                                <div class="carousel__slide">
-                                    <h3 class="carousel__slide-title">
-                                        Архитектура зданий
-                                    </h3>
-                                    <p class="carousel__slide-description">
-                                        Архитектурный стиль — это совокупность деталей и особенностей сооружения, которые указывают на время его постройки, назначение, историческую ценность, регион, а иногда даже и на автора.
-                                    </p>
-                                </div>
-                                <div class="carousel__slide">
-                                    <h3 class="carousel__slide-title">
-                                        Дизайн интерьера
-                                    </h3>
-                                    <p class="carousel__slide-description">
-                                        В дизайне интерьера наступила эра свободомыслия, гибких трендов и индивидуальности.Теперь можно миксовать, бунтовать и экспериментировать на грани китча. 
-                                    </p>
-                                </div>
-                                <div class="carousel__slide">
-                                    <h3 class="carousel__slide-title">
-                                        Строительные схемы
-                                    </h3>
-                                    <p class="carousel__slide-description">
-                                        Инженерная графика подразумевает создания концепций будущего строения для воссоздания копии в натуральную величину.
-                                    </p>
+        <section class="about-work">
+            <div class="about-work__top">
+                <div class="container">
+                    <div class="slider about-work__slider wow fadeInUp">
+                        <div id="logoCarousel" class="carousel">
+                            <div class="carousel__image-container">
+                                <ul class="carousel__image-left">
+                                    <li data-for="0" class="carousel__image-inner is-active">
+                                        <h3 class="carousel__image-title">Природа</h3>
+                                        <img classs="carousel__image-img" alt="" src="https://lipsum.app/id/2/460x320" />
+                                    </li>
+                                    <li data-for="1">
+                                        <h3 class="carousel__image-title">Здания</h3>
+                                        <img classs="carousel__image-img" alt="" src="https://lipsum.app/id/3/460x320" />
+                                    </li>
+                                    <li data-for="2">
+                                        <h3 class="carousel__image-title">Интерьер</h3>
+                                        <img classs="carousel__image-img" alt="" src="https://lipsum.app/id/4/460x320" />
+                                    </li>
+                                    <li data-for="3">
+                                        <h3 class="carousel__image-title">Разрезы</h3>
+                                        <img classs="carousel__image-img" alt="" src="https://lipsum.app/id/5/460x320" />
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="carousel__viewport">
+                                <div class="carousel__track">
+                                    <div class="carousel__slide">
+                                        <h3 class="carousel__slide-title">
+                                            Лучший строитель
+                                        </h3>
+                                        <p class="carousel__slide-description">
+                                            Пока человечество пытается догнать естественные формы образованные природой
+                                            миллиарды лет назад, но возможно, когда-нибудь, процесс пойдёт дальше.
+                                        </p>
+                                    </div>
+                                    <div class="carousel__slide">
+                                        <h3 class="carousel__slide-title">
+                                            Архитектура зданий
+                                        </h3>
+                                        <p class="carousel__slide-description">
+                                            Архитектурный стиль — это совокупность деталей и особенностей сооружения,
+                                            которые указывают на время его постройки, назначение, историческую ценность,
+                                            регион, а иногда даже и на автора.
+                                        </p>
+                                    </div>
+                                    <div class="carousel__slide">
+                                        <h3 class="carousel__slide-title">
+                                            Дизайн интерьера
+                                        </h3>
+                                        <p class="carousel__slide-description">
+                                            В дизайне интерьера наступила эра свободомыслия, гибких трендов и
+                                            индивидуальности.Теперь можно миксовать, бунтовать и экспериментировать на грани
+                                            китча.
+                                        </p>
+                                    </div>
+                                    <div class="carousel__slide">
+                                        <h3 class="carousel__slide-title">
+                                            Строительные схемы
+                                        </h3>
+                                        <p class="carousel__slide-description">
+                                            Инженерная графика подразумевает создания концепций будущего строения для
+                                            воссоздания копии в натуральную величину.
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="project__center">
-                <div class="project__center-top">
-                    <div class="container">
-                        <ul id="logoBar" class="project__center-top-nav">
-                            <li class="project__center-top-item">
-                                <a class="project__center-top-title is-active" data-for="0">Природа</a>
+                    <div class="about-work__nav">
+                        <ul id="logoBar" class="about-work__list">
+                            <li class="about-work__item">
+                                <a class="about-work__link is-active" data-for="0">Природа</a>
                             </li>
-                            <li class="project__center-top-item">
-                                <a class="project__center-top-title" data-for="1">Здания</a>
+                            <li class="about-work__item">
+                                <a class="about-work__link" data-for="1">Здания</a>
                             </li>
-                            <li class="project__center-top-item">
-                                <a class="project__center-top-title" data-for="2">Интерьер</a>
+                            <li class="about-work__item">
+                                <a class="about-work__link" data-for="2">Интерьер</a>
                             </li>
-                            <li class="project__center-top-item">
-                                <a class="project__center-top-title" data-for="3">Разрезы</a>
+                            <li class="about-work__item">
+                                <a class="about-work__link" data-for="3">Разрезы</a>
                             </li>
                         </ul>
                     </div>
                 </div>
-                <div class="project__center-bottom">
-                    <div class="container">
-                        <h3 class="project__center-bottom-title">О моей работе</h3>
-                    </div>
+            </div>
+            
+                
+                    
+            <div class="about-work__center">
+                <div class="container">
+                    <h3 class="about-work__title">О моей работе</h3>
                 </div>
             </div>
-            <div class="project__bottom">
+            <div class="card about-work__bottom">
                 <div class="container">
-                    <div class="project__bottom-inner">
-                        <div class="project__bottom-cards">
-                            <div class="project__bottom-block wow fadeInUp delay-1s">
-                                <img src="images/project_with_team.jpg" alt="" class="project__bottom-content">
-                                <p class="project__bottom-title">Моя команда</p>
-                                <p class="project__bottom-description">Здесь вы сможете узнать больше о моём коллективе и моей команде разработки. Это отличные ребята с которыми любая работа пойдёт в гору.</p>
-                                <div class="project__bottom-btn btn">
-                                    <a class="project__bottom-btn-detail btn-detail" href="Blog.html">Подробнее о команде</a>
-                                </div>
+                    <div class="card__list about-work__cards wow fadeInUp delay-1s">
+
+                        <div class="card__item about-work__cards-block">
+                            <div class="about-work__cards-inner">
+                                <img src="images/project_with_team.jpg" alt="" class="about-work__cards-img">
                             </div>
-                            <div class="project__bottom-block wow fadeInUp delay-1s">
-                                <img src="images/cheess.jpg" alt="" class="project__bottom-content">
-                                <p class="project__bottom-title">Поставленные задачи</p>
-                                <p class="project__bottom-description">
-                                    Подробный список задач поставленных мною с целью выполнить их все до конца года. Все невыполенные задачи с этого года, будут перенесены в следующий, как снежный ком. Следите за списком.
-                                </p>
-                                <div class="project__bottom-btn btn">
-                                    <a class="project__bottom-btn-detail btn-detail" href="Blog.html">Подробнее о задачах</a>
-                                </div>
-                            </div>
-                            <div class="project__bottom-block wow fadeInUp delay-2s">
-                                <img src="images/nature.jpg" alt="" class="project__bottom-content">
-                                <p class="project__bottom-title">Источники вдохновления</p>
-                                <p class="project__bottom-description">Меня часто спрашивали, чем интересуюсь и откуда у меня берутся идеи. Отвечал всегда просто, от природы.</p>
-                                <div class="project__bottom-btn btn">
-                                    <a class="project__bottom-btn-detail btn-detail" href="Blog.html">Подробнее о источниках</a>
-                                </div>
-                            </div>
-                            <div class="project__bottom-block wow fadeInUp delay-2s">
-                                <img src="images/process.jpg" alt="" class="project__bottom-content">
-                                <p class="project__bottom-title">Задачи в процессе</p>
-                                <p class="project__bottom-description">Я не выполняю все задачи одновременно. Моя тактика в работе с одной конкретной и четко поставленной задачей, и её полного сопровождения.</p>
-                                <div class="project__bottom-btn btn">
-                                    <a class="project__bottom-btn-detail btn-detail" href="Blog.html">Подробнее о таске</a>
-                                </div>
+                            <p class="card__title about-work__cards-title">Моя команда</p>
+                            <p class="card__description about-work__cards-description">Здесь вы сможете узнать больше о моём коллективе и моей команде разработки. Это отличные ребята с которыми любая работа пойдёт в гору</p>
+                            <div class="about-work__cards-btn btn">
+                                <a class="about-work__cards-btn-detail btn-detail" href="Blog.html">Узнать больше</a>
                             </div>
                         </div>
+
+                        <div class="card__item about-work__cards-block">
+                            <div class="about-work__cards-inner">
+                                <img src="images/cheess.jpg" alt="" class="about-work__cards-img">
+                            </div>
+                            <p class="card__title about-work__cards-title">Поставленные задачи</p>
+                            <p class="card__description about-work__cards-description">Подробный список задач поставленных мною с целью выполнить их все до конца года. Все невыполенные задачи с этого года, будут перенесены в следующий, как снежный ком.</p>
+                            <div class="about-work__cards-btn btn">
+                                <a class="about-work__cards-btn-detail btn-detail" href="Blog.html">Узнать больше</a>
+                            </div>
+                        </div>
+
+                        <div class="card__item about-work__cards-block">
+                            <div class="about-work__cards-inner">
+                                <img src="images/nature.jpg" alt="" class="about-work__cards-img">
+                            </div>
+                            <p class="card__title about-work__cards-title">Источники вдохновления</p>
+                            <p class="card__description about-work__cards-description">Меня часто спрашивали, чем интересуюсь и откуда у меня берутся идеи. Отвечал всегда просто, от природы</p>
+                            <div class="about-work__cards-btn btn">
+                                <a class="about-work__cards-btn-detail btn-detail" href="Blog.html">Узнать больше</a>
+                            </div>
+                        </div>
+
+                        <div class="card__item about-work__cards-block">
+                            <div class="about-work__cards-inner">
+                                <img src="images/process.jpg" alt="" class="about-work__cards-img">
+                            </div>
+                            <p class="card__title about-work__cards-title">Задачи в процессе</p>
+                            <p class="card__description about-work__cards-description">Я не выполняю все задачи одновременно. Моя тактика в работе с одной конкретной и четко поставленной задачей, и её полного сопровождения</p>
+                            <div class="about-work__cards-btn btn">
+                                <a class="about-work__cards-btn-detail btn-detail" href="Blog.html">Узнать больше</a>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -670,13 +354,20 @@
 
         <section class="development">
             <div class="container">
-                <div class="development__details development__container-video">
-                    <video muted controls>
-                        <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
-                            type="video/mp4" />
-                    </video>
+                <div class="development__details">
+                    <div class="development__container-video">
+                        <video muted controls>
+                            <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+                                type="video/mp4" />
+                        </video>
+                    </div>
+                    <div class="development__description">
+                        <h4 class="development__title">О разработке проектов моими глазами</h4>
+                        <p class="development__text">Заниматься 3D визуализацией стало для меня повседневной приятной работой. Любое представление проекта за начинается с разбора “полётов” и постановки задачи. Каждый день у меня есть разнообразие задач, где можно выбрать наиболле желаемую.</p>
+                        <p class="development__text">Рутинные задачи можно облегчить и сохранить время на более важные дела. </p>
+                        <p class="development__text">Если повезет, отхватить задачу интереснее.</p>
+                    </div>
                 </div>
-                <h4 class="development__title">О разработке проектов моими глазами</h4>
             </div>
         </section>
     </main>
@@ -689,7 +380,13 @@
                     <a class="logo__link" href="#main">
                         <span class="keycolor">Stanislav</span> T
                     </a>
+                    <div class="icons footer__icons">
+                        <a class="icons__link icons__instagram" href=""></a>
+                        <a class="icons__link icons__telegramm" href=""></a>
+                        <a class="icons__link icons__vk" href=""></a>
+                    </div>
                 </div>
+                
                 <div class="footer__menu">
                     <div class="footer__sourses">
                         <h5 class="footer__title">Источники информации</h5>
@@ -789,16 +486,36 @@
                     </div>
                     <div class="popups__project-description">
                         <h1 class="popups__project-title">Business Center</h1>
-                        <p class="popups__project-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis voluptate omnis distinctio hic sapiente tempora iure? Hic veritatis doloremque, non architecto odit cupiditate laudantium cumque, necessitatibus quo vero, numquam magnam!
-                        Laboriosam et doloremque nam at ea! Magnam quis impedit in blanditiis dignissimos autem cupiditate illum laborum iusto! Distinctio ad ipsam dicta harum quisquam magnam, aperiam, repudiandae beatae at, recusandae optio.
-                        Voluptatibus necessitatibus, minus nisi tempora quos id, adipisci maxime quaerat eveniet itaque officia nobis in quasi eligendi quis eius consectetur! Iusto repudiandae cumque esse, explicabo at consequuntur nemo ab? Exercitationem!
-                        Ut nesciunt, incidunt neque nulla sequi tenetur corporis natus quisquam aspernatur blanditiis architecto tempore voluptates ducimus delectus temporibus facere asperiores nobis corrupti ex, possimus cupiditate consectetur exercitationem quos? Ut, veritatis?
-                        Optio, error deserunt. Dignissimos labore molestias hic corrupti quas nemo suscipit repudiandae. Harum dolorum, sequi suscipit vitae commodi eaque libero saepe omnis repellat, eveniet aspernatur dicta debitis in culpa eos!
-                        Vel, amet? Hic ad dicta vero assumenda quaerat totam, fuga consequatur quas excepturi expedita minus temporibus corrupti non blanditiis rem eos quidem voluptatem molestiae debitis voluptatum fugiat asperiores? Iste, laudantium.
-                        Ex ut, reiciendis porro sunt quo ea facilis temporibus beatae blanditiis omnis quibusdam quasi, labore debitis veritatis? Corporis maiores facere dolor ex, architecto reiciendis consequatur, eius, ducimus ipsum corrupti nisi!
-                        Sit vero, possimus numquam facilis laborum adipisci quam ad laudantium doloribus ex odio omnis nobis, error non itaque dolores inventore veniam expedita nulla dolorum alias officia. Aliquid est qui ab.
-                        Repellendus ex totam voluptatibus ipsam sapiente nemo autem repudiandae aspernatur officiis, alias tempore dolore voluptatem velit iste fuga magni, minima inventore veritatis nostrum a perferendis ut tempora? Sapiente, distinctio officia.
-                        Cupiditate, rem praesentium? Ad quibusdam, ex similique quia architecto labore earum ab. Iusto sint ex, minus maiores ea inventore, qui nemo soluta corrupti voluptatem, earum animi laborum quam consequuntur unde?</p>
+                        <p class="popups__project-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
+                            voluptate omnis distinctio hic sapiente tempora iure? Hic veritatis doloremque, non
+                            architecto odit cupiditate laudantium cumque, necessitatibus quo vero, numquam magnam!
+                            Laboriosam et doloremque nam at ea! Magnam quis impedit in blanditiis dignissimos autem
+                            cupiditate illum laborum iusto! Distinctio ad ipsam dicta harum quisquam magnam, aperiam,
+                            repudiandae beatae at, recusandae optio.
+                            Voluptatibus necessitatibus, minus nisi tempora quos id, adipisci maxime quaerat eveniet
+                            itaque officia nobis in quasi eligendi quis eius consectetur! Iusto repudiandae cumque esse,
+                            explicabo at consequuntur nemo ab? Exercitationem!
+                            Ut nesciunt, incidunt neque nulla sequi tenetur corporis natus quisquam aspernatur
+                            blanditiis architecto tempore voluptates ducimus delectus temporibus facere asperiores nobis
+                            corrupti ex, possimus cupiditate consectetur exercitationem quos? Ut, veritatis?
+                            Optio, error deserunt. Dignissimos labore molestias hic corrupti quas nemo suscipit
+                            repudiandae. Harum dolorum, sequi suscipit vitae commodi eaque libero saepe omnis repellat,
+                            eveniet aspernatur dicta debitis in culpa eos!
+                            Vel, amet? Hic ad dicta vero assumenda quaerat totam, fuga consequatur quas excepturi
+                            expedita minus temporibus corrupti non blanditiis rem eos quidem voluptatem molestiae
+                            debitis voluptatum fugiat asperiores? Iste, laudantium.
+                            Ex ut, reiciendis porro sunt quo ea facilis temporibus beatae blanditiis omnis quibusdam
+                            quasi, labore debitis veritatis? Corporis maiores facere dolor ex, architecto reiciendis
+                            consequatur, eius, ducimus ipsum corrupti nisi!
+                            Sit vero, possimus numquam facilis laborum adipisci quam ad laudantium doloribus ex odio
+                            omnis nobis, error non itaque dolores inventore veniam expedita nulla dolorum alias officia.
+                            Aliquid est qui ab.
+                            Repellendus ex totam voluptatibus ipsam sapiente nemo autem repudiandae aspernatur officiis,
+                            alias tempore dolore voluptatem velit iste fuga magni, minima inventore veritatis nostrum a
+                            perferendis ut tempora? Sapiente, distinctio officia.
+                            Cupiditate, rem praesentium? Ad quibusdam, ex similique quia architecto labore earum ab.
+                            Iusto sint ex, minus maiores ea inventore, qui nemo soluta corrupti voluptatem, earum animi
+                            laborum quam consequuntur unde?</p>
                     </div>
                 </div>
 
@@ -846,16 +563,36 @@
                     </div>
                     <div class="popups__project-description">
                         <h1 class="popups__project-title">Severin</h1>
-                        <p class="popups__project-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis voluptate omnis distinctio hic sapiente tempora iure? Hic veritatis doloremque, non architecto odit cupiditate laudantium cumque, necessitatibus quo vero, numquam magnam!
-                        Laboriosam et doloremque nam at ea! Magnam quis impedit in blanditiis dignissimos autem cupiditate illum laborum iusto! Distinctio ad ipsam dicta harum quisquam magnam, aperiam, repudiandae beatae at, recusandae optio.
-                        Voluptatibus necessitatibus, minus nisi tempora quos id, adipisci maxime quaerat eveniet itaque officia nobis in quasi eligendi quis eius consectetur! Iusto repudiandae cumque esse, explicabo at consequuntur nemo ab? Exercitationem!
-                        Ut nesciunt, incidunt neque nulla sequi tenetur corporis natus quisquam aspernatur blanditiis architecto tempore voluptates ducimus delectus temporibus facere asperiores nobis corrupti ex, possimus cupiditate consectetur exercitationem quos? Ut, veritatis?
-                        Optio, error deserunt. Dignissimos labore molestias hic corrupti quas nemo suscipit repudiandae. Harum dolorum, sequi suscipit vitae commodi eaque libero saepe omnis repellat, eveniet aspernatur dicta debitis in culpa eos!
-                        Vel, amet? Hic ad dicta vero assumenda quaerat totam, fuga consequatur quas excepturi expedita minus temporibus corrupti non blanditiis rem eos quidem voluptatem molestiae debitis voluptatum fugiat asperiores? Iste, laudantium.
-                        Ex ut, reiciendis porro sunt quo ea facilis temporibus beatae blanditiis omnis quibusdam quasi, labore debitis veritatis? Corporis maiores facere dolor ex, architecto reiciendis consequatur, eius, ducimus ipsum corrupti nisi!
-                        Sit vero, possimus numquam facilis laborum adipisci quam ad laudantium doloribus ex odio omnis nobis, error non itaque dolores inventore veniam expedita nulla dolorum alias officia. Aliquid est qui ab.
-                        Repellendus ex totam voluptatibus ipsam sapiente nemo autem repudiandae aspernatur officiis, alias tempore dolore voluptatem velit iste fuga magni, minima inventore veritatis nostrum a perferendis ut tempora? Sapiente, distinctio officia.
-                        Cupiditate, rem praesentium? Ad quibusdam, ex similique quia architecto labore earum ab. Iusto sint ex, minus maiores ea inventore, qui nemo soluta corrupti voluptatem, earum animi laborum quam consequuntur unde?</p>
+                        <p class="popups__project-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
+                            voluptate omnis distinctio hic sapiente tempora iure? Hic veritatis doloremque, non
+                            architecto odit cupiditate laudantium cumque, necessitatibus quo vero, numquam magnam!
+                            Laboriosam et doloremque nam at ea! Magnam quis impedit in blanditiis dignissimos autem
+                            cupiditate illum laborum iusto! Distinctio ad ipsam dicta harum quisquam magnam, aperiam,
+                            repudiandae beatae at, recusandae optio.
+                            Voluptatibus necessitatibus, minus nisi tempora quos id, adipisci maxime quaerat eveniet
+                            itaque officia nobis in quasi eligendi quis eius consectetur! Iusto repudiandae cumque esse,
+                            explicabo at consequuntur nemo ab? Exercitationem!
+                            Ut nesciunt, incidunt neque nulla sequi tenetur corporis natus quisquam aspernatur
+                            blanditiis architecto tempore voluptates ducimus delectus temporibus facere asperiores nobis
+                            corrupti ex, possimus cupiditate consectetur exercitationem quos? Ut, veritatis?
+                            Optio, error deserunt. Dignissimos labore molestias hic corrupti quas nemo suscipit
+                            repudiandae. Harum dolorum, sequi suscipit vitae commodi eaque libero saepe omnis repellat,
+                            eveniet aspernatur dicta debitis in culpa eos!
+                            Vel, amet? Hic ad dicta vero assumenda quaerat totam, fuga consequatur quas excepturi
+                            expedita minus temporibus corrupti non blanditiis rem eos quidem voluptatem molestiae
+                            debitis voluptatum fugiat asperiores? Iste, laudantium.
+                            Ex ut, reiciendis porro sunt quo ea facilis temporibus beatae blanditiis omnis quibusdam
+                            quasi, labore debitis veritatis? Corporis maiores facere dolor ex, architecto reiciendis
+                            consequatur, eius, ducimus ipsum corrupti nisi!
+                            Sit vero, possimus numquam facilis laborum adipisci quam ad laudantium doloribus ex odio
+                            omnis nobis, error non itaque dolores inventore veniam expedita nulla dolorum alias officia.
+                            Aliquid est qui ab.
+                            Repellendus ex totam voluptatibus ipsam sapiente nemo autem repudiandae aspernatur officiis,
+                            alias tempore dolore voluptatem velit iste fuga magni, minima inventore veritatis nostrum a
+                            perferendis ut tempora? Sapiente, distinctio officia.
+                            Cupiditate, rem praesentium? Ad quibusdam, ex similique quia architecto labore earum ab.
+                            Iusto sint ex, minus maiores ea inventore, qui nemo soluta corrupti voluptatem, earum animi
+                            laborum quam consequuntur unde?</p>
                     </div>
                 </div>
             </div>
@@ -902,16 +639,36 @@
                     </div>
                     <div class="popups__project-description">
                         <h1 class="popups__project-title">Kitchen</h1>
-                        <p class="popups__project-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis voluptate omnis distinctio hic sapiente tempora iure? Hic veritatis doloremque, non architecto odit cupiditate laudantium cumque, necessitatibus quo vero, numquam magnam!
-                        Laboriosam et doloremque nam at ea! Magnam quis impedit in blanditiis dignissimos autem cupiditate illum laborum iusto! Distinctio ad ipsam dicta harum quisquam magnam, aperiam, repudiandae beatae at, recusandae optio.
-                        Voluptatibus necessitatibus, minus nisi tempora quos id, adipisci maxime quaerat eveniet itaque officia nobis in quasi eligendi quis eius consectetur! Iusto repudiandae cumque esse, explicabo at consequuntur nemo ab? Exercitationem!
-                        Ut nesciunt, incidunt neque nulla sequi tenetur corporis natus quisquam aspernatur blanditiis architecto tempore voluptates ducimus delectus temporibus facere asperiores nobis corrupti ex, possimus cupiditate consectetur exercitationem quos? Ut, veritatis?
-                        Optio, error deserunt. Dignissimos labore molestias hic corrupti quas nemo suscipit repudiandae. Harum dolorum, sequi suscipit vitae commodi eaque libero saepe omnis repellat, eveniet aspernatur dicta debitis in culpa eos!
-                        Vel, amet? Hic ad dicta vero assumenda quaerat totam, fuga consequatur quas excepturi expedita minus temporibus corrupti non blanditiis rem eos quidem voluptatem molestiae debitis voluptatum fugiat asperiores? Iste, laudantium.
-                        Ex ut, reiciendis porro sunt quo ea facilis temporibus beatae blanditiis omnis quibusdam quasi, labore debitis veritatis? Corporis maiores facere dolor ex, architecto reiciendis consequatur, eius, ducimus ipsum corrupti nisi!
-                        Sit vero, possimus numquam facilis laborum adipisci quam ad laudantium doloribus ex odio omnis nobis, error non itaque dolores inventore veniam expedita nulla dolorum alias officia. Aliquid est qui ab.
-                        Repellendus ex totam voluptatibus ipsam sapiente nemo autem repudiandae aspernatur officiis, alias tempore dolore voluptatem velit iste fuga magni, minima inventore veritatis nostrum a perferendis ut tempora? Sapiente, distinctio officia.
-                        Cupiditate, rem praesentium? Ad quibusdam, ex similique quia architecto labore earum ab. Iusto sint ex, minus maiores ea inventore, qui nemo soluta corrupti voluptatem, earum animi laborum quam consequuntur unde?</p>
+                        <p class="popups__project-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
+                            voluptate omnis distinctio hic sapiente tempora iure? Hic veritatis doloremque, non
+                            architecto odit cupiditate laudantium cumque, necessitatibus quo vero, numquam magnam!
+                            Laboriosam et doloremque nam at ea! Magnam quis impedit in blanditiis dignissimos autem
+                            cupiditate illum laborum iusto! Distinctio ad ipsam dicta harum quisquam magnam, aperiam,
+                            repudiandae beatae at, recusandae optio.
+                            Voluptatibus necessitatibus, minus nisi tempora quos id, adipisci maxime quaerat eveniet
+                            itaque officia nobis in quasi eligendi quis eius consectetur! Iusto repudiandae cumque esse,
+                            explicabo at consequuntur nemo ab? Exercitationem!
+                            Ut nesciunt, incidunt neque nulla sequi tenetur corporis natus quisquam aspernatur
+                            blanditiis architecto tempore voluptates ducimus delectus temporibus facere asperiores nobis
+                            corrupti ex, possimus cupiditate consectetur exercitationem quos? Ut, veritatis?
+                            Optio, error deserunt. Dignissimos labore molestias hic corrupti quas nemo suscipit
+                            repudiandae. Harum dolorum, sequi suscipit vitae commodi eaque libero saepe omnis repellat,
+                            eveniet aspernatur dicta debitis in culpa eos!
+                            Vel, amet? Hic ad dicta vero assumenda quaerat totam, fuga consequatur quas excepturi
+                            expedita minus temporibus corrupti non blanditiis rem eos quidem voluptatem molestiae
+                            debitis voluptatum fugiat asperiores? Iste, laudantium.
+                            Ex ut, reiciendis porro sunt quo ea facilis temporibus beatae blanditiis omnis quibusdam
+                            quasi, labore debitis veritatis? Corporis maiores facere dolor ex, architecto reiciendis
+                            consequatur, eius, ducimus ipsum corrupti nisi!
+                            Sit vero, possimus numquam facilis laborum adipisci quam ad laudantium doloribus ex odio
+                            omnis nobis, error non itaque dolores inventore veniam expedita nulla dolorum alias officia.
+                            Aliquid est qui ab.
+                            Repellendus ex totam voluptatibus ipsam sapiente nemo autem repudiandae aspernatur officiis,
+                            alias tempore dolore voluptatem velit iste fuga magni, minima inventore veritatis nostrum a
+                            perferendis ut tempora? Sapiente, distinctio officia.
+                            Cupiditate, rem praesentium? Ad quibusdam, ex similique quia architecto labore earum ab.
+                            Iusto sint ex, minus maiores ea inventore, qui nemo soluta corrupti voluptatem, earum animi
+                            laborum quam consequuntur unde?</p>
                     </div>
                 </div>
             </div>
@@ -958,16 +715,36 @@
                     </div>
                     <div class="popups__project-description">
                         <h1 class="popups__project-title">Park</h1>
-                        <p class="popups__project-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis voluptate omnis distinctio hic sapiente tempora iure? Hic veritatis doloremque, non architecto odit cupiditate laudantium cumque, necessitatibus quo vero, numquam magnam!
-                        Laboriosam et doloremque nam at ea! Magnam quis impedit in blanditiis dignissimos autem cupiditate illum laborum iusto! Distinctio ad ipsam dicta harum quisquam magnam, aperiam, repudiandae beatae at, recusandae optio.
-                        Voluptatibus necessitatibus, minus nisi tempora quos id, adipisci maxime quaerat eveniet itaque officia nobis in quasi eligendi quis eius consectetur! Iusto repudiandae cumque esse, explicabo at consequuntur nemo ab? Exercitationem!
-                        Ut nesciunt, incidunt neque nulla sequi tenetur corporis natus quisquam aspernatur blanditiis architecto tempore voluptates ducimus delectus temporibus facere asperiores nobis corrupti ex, possimus cupiditate consectetur exercitationem quos? Ut, veritatis?
-                        Optio, error deserunt. Dignissimos labore molestias hic corrupti quas nemo suscipit repudiandae. Harum dolorum, sequi suscipit vitae commodi eaque libero saepe omnis repellat, eveniet aspernatur dicta debitis in culpa eos!
-                        Vel, amet? Hic ad dicta vero assumenda quaerat totam, fuga consequatur quas excepturi expedita minus temporibus corrupti non blanditiis rem eos quidem voluptatem molestiae debitis voluptatum fugiat asperiores? Iste, laudantium.
-                        Ex ut, reiciendis porro sunt quo ea facilis temporibus beatae blanditiis omnis quibusdam quasi, labore debitis veritatis? Corporis maiores facere dolor ex, architecto reiciendis consequatur, eius, ducimus ipsum corrupti nisi!
-                        Sit vero, possimus numquam facilis laborum adipisci quam ad laudantium doloribus ex odio omnis nobis, error non itaque dolores inventore veniam expedita nulla dolorum alias officia. Aliquid est qui ab.
-                        Repellendus ex totam voluptatibus ipsam sapiente nemo autem repudiandae aspernatur officiis, alias tempore dolore voluptatem velit iste fuga magni, minima inventore veritatis nostrum a perferendis ut tempora? Sapiente, distinctio officia.
-                        Cupiditate, rem praesentium? Ad quibusdam, ex similique quia architecto labore earum ab. Iusto sint ex, minus maiores ea inventore, qui nemo soluta corrupti voluptatem, earum animi laborum quam consequuntur unde?</p>
+                        <p class="popups__project-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
+                            voluptate omnis distinctio hic sapiente tempora iure? Hic veritatis doloremque, non
+                            architecto odit cupiditate laudantium cumque, necessitatibus quo vero, numquam magnam!
+                            Laboriosam et doloremque nam at ea! Magnam quis impedit in blanditiis dignissimos autem
+                            cupiditate illum laborum iusto! Distinctio ad ipsam dicta harum quisquam magnam, aperiam,
+                            repudiandae beatae at, recusandae optio.
+                            Voluptatibus necessitatibus, minus nisi tempora quos id, adipisci maxime quaerat eveniet
+                            itaque officia nobis in quasi eligendi quis eius consectetur! Iusto repudiandae cumque esse,
+                            explicabo at consequuntur nemo ab? Exercitationem!
+                            Ut nesciunt, incidunt neque nulla sequi tenetur corporis natus quisquam aspernatur
+                            blanditiis architecto tempore voluptates ducimus delectus temporibus facere asperiores nobis
+                            corrupti ex, possimus cupiditate consectetur exercitationem quos? Ut, veritatis?
+                            Optio, error deserunt. Dignissimos labore molestias hic corrupti quas nemo suscipit
+                            repudiandae. Harum dolorum, sequi suscipit vitae commodi eaque libero saepe omnis repellat,
+                            eveniet aspernatur dicta debitis in culpa eos!
+                            Vel, amet? Hic ad dicta vero assumenda quaerat totam, fuga consequatur quas excepturi
+                            expedita minus temporibus corrupti non blanditiis rem eos quidem voluptatem molestiae
+                            debitis voluptatum fugiat asperiores? Iste, laudantium.
+                            Ex ut, reiciendis porro sunt quo ea facilis temporibus beatae blanditiis omnis quibusdam
+                            quasi, labore debitis veritatis? Corporis maiores facere dolor ex, architecto reiciendis
+                            consequatur, eius, ducimus ipsum corrupti nisi!
+                            Sit vero, possimus numquam facilis laborum adipisci quam ad laudantium doloribus ex odio
+                            omnis nobis, error non itaque dolores inventore veniam expedita nulla dolorum alias officia.
+                            Aliquid est qui ab.
+                            Repellendus ex totam voluptatibus ipsam sapiente nemo autem repudiandae aspernatur officiis,
+                            alias tempore dolore voluptatem velit iste fuga magni, minima inventore veritatis nostrum a
+                            perferendis ut tempora? Sapiente, distinctio officia.
+                            Cupiditate, rem praesentium? Ad quibusdam, ex similique quia architecto labore earum ab.
+                            Iusto sint ex, minus maiores ea inventore, qui nemo soluta corrupti voluptatem, earum animi
+                            laborum quam consequuntur unde?</p>
                     </div>
                 </div>
             </div>
@@ -1014,16 +791,36 @@
                     </div>
                     <div class="popups__project-description">
                         <h1 class="popups__project-title">Room</h1>
-                        <p class="popups__project-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis voluptate omnis distinctio hic sapiente tempora iure? Hic veritatis doloremque, non architecto odit cupiditate laudantium cumque, necessitatibus quo vero, numquam magnam!
-                        Laboriosam et doloremque nam at ea! Magnam quis impedit in blanditiis dignissimos autem cupiditate illum laborum iusto! Distinctio ad ipsam dicta harum quisquam magnam, aperiam, repudiandae beatae at, recusandae optio.
-                        Voluptatibus necessitatibus, minus nisi tempora quos id, adipisci maxime quaerat eveniet itaque officia nobis in quasi eligendi quis eius consectetur! Iusto repudiandae cumque esse, explicabo at consequuntur nemo ab? Exercitationem!
-                        Ut nesciunt, incidunt neque nulla sequi tenetur corporis natus quisquam aspernatur blanditiis architecto tempore voluptates ducimus delectus temporibus facere asperiores nobis corrupti ex, possimus cupiditate consectetur exercitationem quos? Ut, veritatis?
-                        Optio, error deserunt. Dignissimos labore molestias hic corrupti quas nemo suscipit repudiandae. Harum dolorum, sequi suscipit vitae commodi eaque libero saepe omnis repellat, eveniet aspernatur dicta debitis in culpa eos!
-                        Vel, amet? Hic ad dicta vero assumenda quaerat totam, fuga consequatur quas excepturi expedita minus temporibus corrupti non blanditiis rem eos quidem voluptatem molestiae debitis voluptatum fugiat asperiores? Iste, laudantium.
-                        Ex ut, reiciendis porro sunt quo ea facilis temporibus beatae blanditiis omnis quibusdam quasi, labore debitis veritatis? Corporis maiores facere dolor ex, architecto reiciendis consequatur, eius, ducimus ipsum corrupti nisi!
-                        Sit vero, possimus numquam facilis laborum adipisci quam ad laudantium doloribus ex odio omnis nobis, error non itaque dolores inventore veniam expedita nulla dolorum alias officia. Aliquid est qui ab.
-                        Repellendus ex totam voluptatibus ipsam sapiente nemo autem repudiandae aspernatur officiis, alias tempore dolore voluptatem velit iste fuga magni, minima inventore veritatis nostrum a perferendis ut tempora? Sapiente, distinctio officia.
-                        Cupiditate, rem praesentium? Ad quibusdam, ex similique quia architecto labore earum ab. Iusto sint ex, minus maiores ea inventore, qui nemo soluta corrupti voluptatem, earum animi laborum quam consequuntur unde?</p>
+                        <p class="popups__project-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
+                            voluptate omnis distinctio hic sapiente tempora iure? Hic veritatis doloremque, non
+                            architecto odit cupiditate laudantium cumque, necessitatibus quo vero, numquam magnam!
+                            Laboriosam et doloremque nam at ea! Magnam quis impedit in blanditiis dignissimos autem
+                            cupiditate illum laborum iusto! Distinctio ad ipsam dicta harum quisquam magnam, aperiam,
+                            repudiandae beatae at, recusandae optio.
+                            Voluptatibus necessitatibus, minus nisi tempora quos id, adipisci maxime quaerat eveniet
+                            itaque officia nobis in quasi eligendi quis eius consectetur! Iusto repudiandae cumque esse,
+                            explicabo at consequuntur nemo ab? Exercitationem!
+                            Ut nesciunt, incidunt neque nulla sequi tenetur corporis natus quisquam aspernatur
+                            blanditiis architecto tempore voluptates ducimus delectus temporibus facere asperiores nobis
+                            corrupti ex, possimus cupiditate consectetur exercitationem quos? Ut, veritatis?
+                            Optio, error deserunt. Dignissimos labore molestias hic corrupti quas nemo suscipit
+                            repudiandae. Harum dolorum, sequi suscipit vitae commodi eaque libero saepe omnis repellat,
+                            eveniet aspernatur dicta debitis in culpa eos!
+                            Vel, amet? Hic ad dicta vero assumenda quaerat totam, fuga consequatur quas excepturi
+                            expedita minus temporibus corrupti non blanditiis rem eos quidem voluptatem molestiae
+                            debitis voluptatum fugiat asperiores? Iste, laudantium.
+                            Ex ut, reiciendis porro sunt quo ea facilis temporibus beatae blanditiis omnis quibusdam
+                            quasi, labore debitis veritatis? Corporis maiores facere dolor ex, architecto reiciendis
+                            consequatur, eius, ducimus ipsum corrupti nisi!
+                            Sit vero, possimus numquam facilis laborum adipisci quam ad laudantium doloribus ex odio
+                            omnis nobis, error non itaque dolores inventore veniam expedita nulla dolorum alias officia.
+                            Aliquid est qui ab.
+                            Repellendus ex totam voluptatibus ipsam sapiente nemo autem repudiandae aspernatur officiis,
+                            alias tempore dolore voluptatem velit iste fuga magni, minima inventore veritatis nostrum a
+                            perferendis ut tempora? Sapiente, distinctio officia.
+                            Cupiditate, rem praesentium? Ad quibusdam, ex similique quia architecto labore earum ab.
+                            Iusto sint ex, minus maiores ea inventore, qui nemo soluta corrupti voluptatem, earum animi
+                            laborum quam consequuntur unde?</p>
                     </div>
                 </div>
             </div>
@@ -1072,16 +869,36 @@
                     </div>
                     <div class="popups__project-description">
                         <h1 class="popups__project-title">Динамика</h1>
-                        <p class="popups__project-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis voluptate omnis distinctio hic sapiente tempora iure? Hic veritatis doloremque, non architecto odit cupiditate laudantium cumque, necessitatibus quo vero, numquam magnam!
-                        Laboriosam et doloremque nam at ea! Magnam quis impedit in blanditiis dignissimos autem cupiditate illum laborum iusto! Distinctio ad ipsam dicta harum quisquam magnam, aperiam, repudiandae beatae at, recusandae optio.
-                        Voluptatibus necessitatibus, minus nisi tempora quos id, adipisci maxime quaerat eveniet itaque officia nobis in quasi eligendi quis eius consectetur! Iusto repudiandae cumque esse, explicabo at consequuntur nemo ab? Exercitationem!
-                        Ut nesciunt, incidunt neque nulla sequi tenetur corporis natus quisquam aspernatur blanditiis architecto tempore voluptates ducimus delectus temporibus facere asperiores nobis corrupti ex, possimus cupiditate consectetur exercitationem quos? Ut, veritatis?
-                        Optio, error deserunt. Dignissimos labore molestias hic corrupti quas nemo suscipit repudiandae. Harum dolorum, sequi suscipit vitae commodi eaque libero saepe omnis repellat, eveniet aspernatur dicta debitis in culpa eos!
-                        Vel, amet? Hic ad dicta vero assumenda quaerat totam, fuga consequatur quas excepturi expedita minus temporibus corrupti non blanditiis rem eos quidem voluptatem molestiae debitis voluptatum fugiat asperiores? Iste, laudantium.
-                        Ex ut, reiciendis porro sunt quo ea facilis temporibus beatae blanditiis omnis quibusdam quasi, labore debitis veritatis? Corporis maiores facere dolor ex, architecto reiciendis consequatur, eius, ducimus ipsum corrupti nisi!
-                        Sit vero, possimus numquam facilis laborum adipisci quam ad laudantium doloribus ex odio omnis nobis, error non itaque dolores inventore veniam expedita nulla dolorum alias officia. Aliquid est qui ab.
-                        Repellendus ex totam voluptatibus ipsam sapiente nemo autem repudiandae aspernatur officiis, alias tempore dolore voluptatem velit iste fuga magni, minima inventore veritatis nostrum a perferendis ut tempora? Sapiente, distinctio officia.
-                        Cupiditate, rem praesentium? Ad quibusdam, ex similique quia architecto labore earum ab. Iusto sint ex, minus maiores ea inventore, qui nemo soluta corrupti voluptatem, earum animi laborum quam consequuntur unde?</p>
+                        <p class="popups__project-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
+                            voluptate omnis distinctio hic sapiente tempora iure? Hic veritatis doloremque, non
+                            architecto odit cupiditate laudantium cumque, necessitatibus quo vero, numquam magnam!
+                            Laboriosam et doloremque nam at ea! Magnam quis impedit in blanditiis dignissimos autem
+                            cupiditate illum laborum iusto! Distinctio ad ipsam dicta harum quisquam magnam, aperiam,
+                            repudiandae beatae at, recusandae optio.
+                            Voluptatibus necessitatibus, minus nisi tempora quos id, adipisci maxime quaerat eveniet
+                            itaque officia nobis in quasi eligendi quis eius consectetur! Iusto repudiandae cumque esse,
+                            explicabo at consequuntur nemo ab? Exercitationem!
+                            Ut nesciunt, incidunt neque nulla sequi tenetur corporis natus quisquam aspernatur
+                            blanditiis architecto tempore voluptates ducimus delectus temporibus facere asperiores nobis
+                            corrupti ex, possimus cupiditate consectetur exercitationem quos? Ut, veritatis?
+                            Optio, error deserunt. Dignissimos labore molestias hic corrupti quas nemo suscipit
+                            repudiandae. Harum dolorum, sequi suscipit vitae commodi eaque libero saepe omnis repellat,
+                            eveniet aspernatur dicta debitis in culpa eos!
+                            Vel, amet? Hic ad dicta vero assumenda quaerat totam, fuga consequatur quas excepturi
+                            expedita minus temporibus corrupti non blanditiis rem eos quidem voluptatem molestiae
+                            debitis voluptatum fugiat asperiores? Iste, laudantium.
+                            Ex ut, reiciendis porro sunt quo ea facilis temporibus beatae blanditiis omnis quibusdam
+                            quasi, labore debitis veritatis? Corporis maiores facere dolor ex, architecto reiciendis
+                            consequatur, eius, ducimus ipsum corrupti nisi!
+                            Sit vero, possimus numquam facilis laborum adipisci quam ad laudantium doloribus ex odio
+                            omnis nobis, error non itaque dolores inventore veniam expedita nulla dolorum alias officia.
+                            Aliquid est qui ab.
+                            Repellendus ex totam voluptatibus ipsam sapiente nemo autem repudiandae aspernatur officiis,
+                            alias tempore dolore voluptatem velit iste fuga magni, minima inventore veritatis nostrum a
+                            perferendis ut tempora? Sapiente, distinctio officia.
+                            Cupiditate, rem praesentium? Ad quibusdam, ex similique quia architecto labore earum ab.
+                            Iusto sint ex, minus maiores ea inventore, qui nemo soluta corrupti voluptatem, earum animi
+                            laborum quam consequuntur unde?</p>
                     </div>
                 </div>
             </div>
@@ -1128,16 +945,36 @@
                     </div>
                     <div class="popups__project-description">
                         <h1 class="popups__project-title">Последний</h1>
-                        <p class="popups__project-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis voluptate omnis distinctio hic sapiente tempora iure? Hic veritatis doloremque, non architecto odit cupiditate laudantium cumque, necessitatibus quo vero, numquam magnam!
-                        Laboriosam et doloremque nam at ea! Magnam quis impedit in blanditiis dignissimos autem cupiditate illum laborum iusto! Distinctio ad ipsam dicta harum quisquam magnam, aperiam, repudiandae beatae at, recusandae optio.
-                        Voluptatibus necessitatibus, minus nisi tempora quos id, adipisci maxime quaerat eveniet itaque officia nobis in quasi eligendi quis eius consectetur! Iusto repudiandae cumque esse, explicabo at consequuntur nemo ab? Exercitationem!
-                        Ut nesciunt, incidunt neque nulla sequi tenetur corporis natus quisquam aspernatur blanditiis architecto tempore voluptates ducimus delectus temporibus facere asperiores nobis corrupti ex, possimus cupiditate consectetur exercitationem quos? Ut, veritatis?
-                        Optio, error deserunt. Dignissimos labore molestias hic corrupti quas nemo suscipit repudiandae. Harum dolorum, sequi suscipit vitae commodi eaque libero saepe omnis repellat, eveniet aspernatur dicta debitis in culpa eos!
-                        Vel, amet? Hic ad dicta vero assumenda quaerat totam, fuga consequatur quas excepturi expedita minus temporibus corrupti non blanditiis rem eos quidem voluptatem molestiae debitis voluptatum fugiat asperiores? Iste, laudantium.
-                        Ex ut, reiciendis porro sunt quo ea facilis temporibus beatae blanditiis omnis quibusdam quasi, labore debitis veritatis? Corporis maiores facere dolor ex, architecto reiciendis consequatur, eius, ducimus ipsum corrupti nisi!
-                        Sit vero, possimus numquam facilis laborum adipisci quam ad laudantium doloribus ex odio omnis nobis, error non itaque dolores inventore veniam expedita nulla dolorum alias officia. Aliquid est qui ab.
-                        Repellendus ex totam voluptatibus ipsam sapiente nemo autem repudiandae aspernatur officiis, alias tempore dolore voluptatem velit iste fuga magni, minima inventore veritatis nostrum a perferendis ut tempora? Sapiente, distinctio officia.
-                        Cupiditate, rem praesentium? Ad quibusdam, ex similique quia architecto labore earum ab. Iusto sint ex, minus maiores ea inventore, qui nemo soluta corrupti voluptatem, earum animi laborum quam consequuntur unde?</p>
+                        <p class="popups__project-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
+                            voluptate omnis distinctio hic sapiente tempora iure? Hic veritatis doloremque, non
+                            architecto odit cupiditate laudantium cumque, necessitatibus quo vero, numquam magnam!
+                            Laboriosam et doloremque nam at ea! Magnam quis impedit in blanditiis dignissimos autem
+                            cupiditate illum laborum iusto! Distinctio ad ipsam dicta harum quisquam magnam, aperiam,
+                            repudiandae beatae at, recusandae optio.
+                            Voluptatibus necessitatibus, minus nisi tempora quos id, adipisci maxime quaerat eveniet
+                            itaque officia nobis in quasi eligendi quis eius consectetur! Iusto repudiandae cumque esse,
+                            explicabo at consequuntur nemo ab? Exercitationem!
+                            Ut nesciunt, incidunt neque nulla sequi tenetur corporis natus quisquam aspernatur
+                            blanditiis architecto tempore voluptates ducimus delectus temporibus facere asperiores nobis
+                            corrupti ex, possimus cupiditate consectetur exercitationem quos? Ut, veritatis?
+                            Optio, error deserunt. Dignissimos labore molestias hic corrupti quas nemo suscipit
+                            repudiandae. Harum dolorum, sequi suscipit vitae commodi eaque libero saepe omnis repellat,
+                            eveniet aspernatur dicta debitis in culpa eos!
+                            Vel, amet? Hic ad dicta vero assumenda quaerat totam, fuga consequatur quas excepturi
+                            expedita minus temporibus corrupti non blanditiis rem eos quidem voluptatem molestiae
+                            debitis voluptatum fugiat asperiores? Iste, laudantium.
+                            Ex ut, reiciendis porro sunt quo ea facilis temporibus beatae blanditiis omnis quibusdam
+                            quasi, labore debitis veritatis? Corporis maiores facere dolor ex, architecto reiciendis
+                            consequatur, eius, ducimus ipsum corrupti nisi!
+                            Sit vero, possimus numquam facilis laborum adipisci quam ad laudantium doloribus ex odio
+                            omnis nobis, error non itaque dolores inventore veniam expedita nulla dolorum alias officia.
+                            Aliquid est qui ab.
+                            Repellendus ex totam voluptatibus ipsam sapiente nemo autem repudiandae aspernatur officiis,
+                            alias tempore dolore voluptatem velit iste fuga magni, minima inventore veritatis nostrum a
+                            perferendis ut tempora? Sapiente, distinctio officia.
+                            Cupiditate, rem praesentium? Ad quibusdam, ex similique quia architecto labore earum ab.
+                            Iusto sint ex, minus maiores ea inventore, qui nemo soluta corrupti voluptatem, earum animi
+                            laborum quam consequuntur unde?</p>
                     </div>
                 </div>
             </div>
@@ -1184,16 +1021,36 @@
                     </div>
                     <div class="popups__project-description">
                         <h1 class="popups__project-title">60 Минут</h1>
-                        <p class="popups__project-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis voluptate omnis distinctio hic sapiente tempora iure? Hic veritatis doloremque, non architecto odit cupiditate laudantium cumque, necessitatibus quo vero, numquam magnam!
-                        Laboriosam et doloremque nam at ea! Magnam quis impedit in blanditiis dignissimos autem cupiditate illum laborum iusto! Distinctio ad ipsam dicta harum quisquam magnam, aperiam, repudiandae beatae at, recusandae optio.
-                        Voluptatibus necessitatibus, minus nisi tempora quos id, adipisci maxime quaerat eveniet itaque officia nobis in quasi eligendi quis eius consectetur! Iusto repudiandae cumque esse, explicabo at consequuntur nemo ab? Exercitationem!
-                        Ut nesciunt, incidunt neque nulla sequi tenetur corporis natus quisquam aspernatur blanditiis architecto tempore voluptates ducimus delectus temporibus facere asperiores nobis corrupti ex, possimus cupiditate consectetur exercitationem quos? Ut, veritatis?
-                        Optio, error deserunt. Dignissimos labore molestias hic corrupti quas nemo suscipit repudiandae. Harum dolorum, sequi suscipit vitae commodi eaque libero saepe omnis repellat, eveniet aspernatur dicta debitis in culpa eos!
-                        Vel, amet? Hic ad dicta vero assumenda quaerat totam, fuga consequatur quas excepturi expedita minus temporibus corrupti non blanditiis rem eos quidem voluptatem molestiae debitis voluptatum fugiat asperiores? Iste, laudantium.
-                        Ex ut, reiciendis porro sunt quo ea facilis temporibus beatae blanditiis omnis quibusdam quasi, labore debitis veritatis? Corporis maiores facere dolor ex, architecto reiciendis consequatur, eius, ducimus ipsum corrupti nisi!
-                        Sit vero, possimus numquam facilis laborum adipisci quam ad laudantium doloribus ex odio omnis nobis, error non itaque dolores inventore veniam expedita nulla dolorum alias officia. Aliquid est qui ab.
-                        Repellendus ex totam voluptatibus ipsam sapiente nemo autem repudiandae aspernatur officiis, alias tempore dolore voluptatem velit iste fuga magni, minima inventore veritatis nostrum a perferendis ut tempora? Sapiente, distinctio officia.
-                        Cupiditate, rem praesentium? Ad quibusdam, ex similique quia architecto labore earum ab. Iusto sint ex, minus maiores ea inventore, qui nemo soluta corrupti voluptatem, earum animi laborum quam consequuntur unde?</p>
+                        <p class="popups__project-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
+                            voluptate omnis distinctio hic sapiente tempora iure? Hic veritatis doloremque, non
+                            architecto odit cupiditate laudantium cumque, necessitatibus quo vero, numquam magnam!
+                            Laboriosam et doloremque nam at ea! Magnam quis impedit in blanditiis dignissimos autem
+                            cupiditate illum laborum iusto! Distinctio ad ipsam dicta harum quisquam magnam, aperiam,
+                            repudiandae beatae at, recusandae optio.
+                            Voluptatibus necessitatibus, minus nisi tempora quos id, adipisci maxime quaerat eveniet
+                            itaque officia nobis in quasi eligendi quis eius consectetur! Iusto repudiandae cumque esse,
+                            explicabo at consequuntur nemo ab? Exercitationem!
+                            Ut nesciunt, incidunt neque nulla sequi tenetur corporis natus quisquam aspernatur
+                            blanditiis architecto tempore voluptates ducimus delectus temporibus facere asperiores nobis
+                            corrupti ex, possimus cupiditate consectetur exercitationem quos? Ut, veritatis?
+                            Optio, error deserunt. Dignissimos labore molestias hic corrupti quas nemo suscipit
+                            repudiandae. Harum dolorum, sequi suscipit vitae commodi eaque libero saepe omnis repellat,
+                            eveniet aspernatur dicta debitis in culpa eos!
+                            Vel, amet? Hic ad dicta vero assumenda quaerat totam, fuga consequatur quas excepturi
+                            expedita minus temporibus corrupti non blanditiis rem eos quidem voluptatem molestiae
+                            debitis voluptatum fugiat asperiores? Iste, laudantium.
+                            Ex ut, reiciendis porro sunt quo ea facilis temporibus beatae blanditiis omnis quibusdam
+                            quasi, labore debitis veritatis? Corporis maiores facere dolor ex, architecto reiciendis
+                            consequatur, eius, ducimus ipsum corrupti nisi!
+                            Sit vero, possimus numquam facilis laborum adipisci quam ad laudantium doloribus ex odio
+                            omnis nobis, error non itaque dolores inventore veniam expedita nulla dolorum alias officia.
+                            Aliquid est qui ab.
+                            Repellendus ex totam voluptatibus ipsam sapiente nemo autem repudiandae aspernatur officiis,
+                            alias tempore dolore voluptatem velit iste fuga magni, minima inventore veritatis nostrum a
+                            perferendis ut tempora? Sapiente, distinctio officia.
+                            Cupiditate, rem praesentium? Ad quibusdam, ex similique quia architecto labore earum ab.
+                            Iusto sint ex, minus maiores ea inventore, qui nemo soluta corrupti voluptatem, earum animi
+                            laborum quam consequuntur unde?</p>
                     </div>
                 </div>
             </div>
@@ -1240,16 +1097,36 @@
                     </div>
                     <div class="popups__project-description">
                         <h1 class="popups__project-title">Снэйки</h1>
-                        <p class="popups__project-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis voluptate omnis distinctio hic sapiente tempora iure? Hic veritatis doloremque, non architecto odit cupiditate laudantium cumque, necessitatibus quo vero, numquam magnam!
-                        Laboriosam et doloremque nam at ea! Magnam quis impedit in blanditiis dignissimos autem cupiditate illum laborum iusto! Distinctio ad ipsam dicta harum quisquam magnam, aperiam, repudiandae beatae at, recusandae optio.
-                        Voluptatibus necessitatibus, minus nisi tempora quos id, adipisci maxime quaerat eveniet itaque officia nobis in quasi eligendi quis eius consectetur! Iusto repudiandae cumque esse, explicabo at consequuntur nemo ab? Exercitationem!
-                        Ut nesciunt, incidunt neque nulla sequi tenetur corporis natus quisquam aspernatur blanditiis architecto tempore voluptates ducimus delectus temporibus facere asperiores nobis corrupti ex, possimus cupiditate consectetur exercitationem quos? Ut, veritatis?
-                        Optio, error deserunt. Dignissimos labore molestias hic corrupti quas nemo suscipit repudiandae. Harum dolorum, sequi suscipit vitae commodi eaque libero saepe omnis repellat, eveniet aspernatur dicta debitis in culpa eos!
-                        Vel, amet? Hic ad dicta vero assumenda quaerat totam, fuga consequatur quas excepturi expedita minus temporibus corrupti non blanditiis rem eos quidem voluptatem molestiae debitis voluptatum fugiat asperiores? Iste, laudantium.
-                        Ex ut, reiciendis porro sunt quo ea facilis temporibus beatae blanditiis omnis quibusdam quasi, labore debitis veritatis? Corporis maiores facere dolor ex, architecto reiciendis consequatur, eius, ducimus ipsum corrupti nisi!
-                        Sit vero, possimus numquam facilis laborum adipisci quam ad laudantium doloribus ex odio omnis nobis, error non itaque dolores inventore veniam expedita nulla dolorum alias officia. Aliquid est qui ab.
-                        Repellendus ex totam voluptatibus ipsam sapiente nemo autem repudiandae aspernatur officiis, alias tempore dolore voluptatem velit iste fuga magni, minima inventore veritatis nostrum a perferendis ut tempora? Sapiente, distinctio officia.
-                        Cupiditate, rem praesentium? Ad quibusdam, ex similique quia architecto labore earum ab. Iusto sint ex, minus maiores ea inventore, qui nemo soluta corrupti voluptatem, earum animi laborum quam consequuntur unde?</p>
+                        <p class="popups__project-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
+                            voluptate omnis distinctio hic sapiente tempora iure? Hic veritatis doloremque, non
+                            architecto odit cupiditate laudantium cumque, necessitatibus quo vero, numquam magnam!
+                            Laboriosam et doloremque nam at ea! Magnam quis impedit in blanditiis dignissimos autem
+                            cupiditate illum laborum iusto! Distinctio ad ipsam dicta harum quisquam magnam, aperiam,
+                            repudiandae beatae at, recusandae optio.
+                            Voluptatibus necessitatibus, minus nisi tempora quos id, adipisci maxime quaerat eveniet
+                            itaque officia nobis in quasi eligendi quis eius consectetur! Iusto repudiandae cumque esse,
+                            explicabo at consequuntur nemo ab? Exercitationem!
+                            Ut nesciunt, incidunt neque nulla sequi tenetur corporis natus quisquam aspernatur
+                            blanditiis architecto tempore voluptates ducimus delectus temporibus facere asperiores nobis
+                            corrupti ex, possimus cupiditate consectetur exercitationem quos? Ut, veritatis?
+                            Optio, error deserunt. Dignissimos labore molestias hic corrupti quas nemo suscipit
+                            repudiandae. Harum dolorum, sequi suscipit vitae commodi eaque libero saepe omnis repellat,
+                            eveniet aspernatur dicta debitis in culpa eos!
+                            Vel, amet? Hic ad dicta vero assumenda quaerat totam, fuga consequatur quas excepturi
+                            expedita minus temporibus corrupti non blanditiis rem eos quidem voluptatem molestiae
+                            debitis voluptatum fugiat asperiores? Iste, laudantium.
+                            Ex ut, reiciendis porro sunt quo ea facilis temporibus beatae blanditiis omnis quibusdam
+                            quasi, labore debitis veritatis? Corporis maiores facere dolor ex, architecto reiciendis
+                            consequatur, eius, ducimus ipsum corrupti nisi!
+                            Sit vero, possimus numquam facilis laborum adipisci quam ad laudantium doloribus ex odio
+                            omnis nobis, error non itaque dolores inventore veniam expedita nulla dolorum alias officia.
+                            Aliquid est qui ab.
+                            Repellendus ex totam voluptatibus ipsam sapiente nemo autem repudiandae aspernatur officiis,
+                            alias tempore dolore voluptatem velit iste fuga magni, minima inventore veritatis nostrum a
+                            perferendis ut tempora? Sapiente, distinctio officia.
+                            Cupiditate, rem praesentium? Ad quibusdam, ex similique quia architecto labore earum ab.
+                            Iusto sint ex, minus maiores ea inventore, qui nemo soluta corrupti voluptatem, earum animi
+                            laborum quam consequuntur unde?</p>
                     </div>
                 </div>
             </div>
@@ -1296,16 +1173,36 @@
                     </div>
                     <div class="popups__project-description">
                         <h1 class="popups__project-title">Пантеон</h1>
-                        <p class="popups__project-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis voluptate omnis distinctio hic sapiente tempora iure? Hic veritatis doloremque, non architecto odit cupiditate laudantium cumque, necessitatibus quo vero, numquam magnam!
-                        Laboriosam et doloremque nam at ea! Magnam quis impedit in blanditiis dignissimos autem cupiditate illum laborum iusto! Distinctio ad ipsam dicta harum quisquam magnam, aperiam, repudiandae beatae at, recusandae optio.
-                        Voluptatibus necessitatibus, minus nisi tempora quos id, adipisci maxime quaerat eveniet itaque officia nobis in quasi eligendi quis eius consectetur! Iusto repudiandae cumque esse, explicabo at consequuntur nemo ab? Exercitationem!
-                        Ut nesciunt, incidunt neque nulla sequi tenetur corporis natus quisquam aspernatur blanditiis architecto tempore voluptates ducimus delectus temporibus facere asperiores nobis corrupti ex, possimus cupiditate consectetur exercitationem quos? Ut, veritatis?
-                        Optio, error deserunt. Dignissimos labore molestias hic corrupti quas nemo suscipit repudiandae. Harum dolorum, sequi suscipit vitae commodi eaque libero saepe omnis repellat, eveniet aspernatur dicta debitis in culpa eos!
-                        Vel, amet? Hic ad dicta vero assumenda quaerat totam, fuga consequatur quas excepturi expedita minus temporibus corrupti non blanditiis rem eos quidem voluptatem molestiae debitis voluptatum fugiat asperiores? Iste, laudantium.
-                        Ex ut, reiciendis porro sunt quo ea facilis temporibus beatae blanditiis omnis quibusdam quasi, labore debitis veritatis? Corporis maiores facere dolor ex, architecto reiciendis consequatur, eius, ducimus ipsum corrupti nisi!
-                        Sit vero, possimus numquam facilis laborum adipisci quam ad laudantium doloribus ex odio omnis nobis, error non itaque dolores inventore veniam expedita nulla dolorum alias officia. Aliquid est qui ab.
-                        Repellendus ex totam voluptatibus ipsam sapiente nemo autem repudiandae aspernatur officiis, alias tempore dolore voluptatem velit iste fuga magni, minima inventore veritatis nostrum a perferendis ut tempora? Sapiente, distinctio officia.
-                        Cupiditate, rem praesentium? Ad quibusdam, ex similique quia architecto labore earum ab. Iusto sint ex, minus maiores ea inventore, qui nemo soluta corrupti voluptatem, earum animi laborum quam consequuntur unde?</p>
+                        <p class="popups__project-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
+                            voluptate omnis distinctio hic sapiente tempora iure? Hic veritatis doloremque, non
+                            architecto odit cupiditate laudantium cumque, necessitatibus quo vero, numquam magnam!
+                            Laboriosam et doloremque nam at ea! Magnam quis impedit in blanditiis dignissimos autem
+                            cupiditate illum laborum iusto! Distinctio ad ipsam dicta harum quisquam magnam, aperiam,
+                            repudiandae beatae at, recusandae optio.
+                            Voluptatibus necessitatibus, minus nisi tempora quos id, adipisci maxime quaerat eveniet
+                            itaque officia nobis in quasi eligendi quis eius consectetur! Iusto repudiandae cumque esse,
+                            explicabo at consequuntur nemo ab? Exercitationem!
+                            Ut nesciunt, incidunt neque nulla sequi tenetur corporis natus quisquam aspernatur
+                            blanditiis architecto tempore voluptates ducimus delectus temporibus facere asperiores nobis
+                            corrupti ex, possimus cupiditate consectetur exercitationem quos? Ut, veritatis?
+                            Optio, error deserunt. Dignissimos labore molestias hic corrupti quas nemo suscipit
+                            repudiandae. Harum dolorum, sequi suscipit vitae commodi eaque libero saepe omnis repellat,
+                            eveniet aspernatur dicta debitis in culpa eos!
+                            Vel, amet? Hic ad dicta vero assumenda quaerat totam, fuga consequatur quas excepturi
+                            expedita minus temporibus corrupti non blanditiis rem eos quidem voluptatem molestiae
+                            debitis voluptatum fugiat asperiores? Iste, laudantium.
+                            Ex ut, reiciendis porro sunt quo ea facilis temporibus beatae blanditiis omnis quibusdam
+                            quasi, labore debitis veritatis? Corporis maiores facere dolor ex, architecto reiciendis
+                            consequatur, eius, ducimus ipsum corrupti nisi!
+                            Sit vero, possimus numquam facilis laborum adipisci quam ad laudantium doloribus ex odio
+                            omnis nobis, error non itaque dolores inventore veniam expedita nulla dolorum alias officia.
+                            Aliquid est qui ab.
+                            Repellendus ex totam voluptatibus ipsam sapiente nemo autem repudiandae aspernatur officiis,
+                            alias tempore dolore voluptatem velit iste fuga magni, minima inventore veritatis nostrum a
+                            perferendis ut tempora? Sapiente, distinctio officia.
+                            Cupiditate, rem praesentium? Ad quibusdam, ex similique quia architecto labore earum ab.
+                            Iusto sint ex, minus maiores ea inventore, qui nemo soluta corrupti voluptatem, earum animi
+                            laborum quam consequuntur unde?</p>
                     </div>
                 </div>
             </div>
@@ -1314,7 +1211,7 @@
 
         <div class="popups__skills">
             <div class="popup" id="Visualisation">
-               <div class="popups__content">
+                <div class="popups__content">
                     <div class="popups__card">
                         <img class="popups__img" src="images/card-3dmax.jpg" alt="">
                         <img class="popups__img" src="images/card-3dmax.jpg" alt="">
@@ -1322,20 +1219,26 @@
                     </div>
                     <div class="popups__description">
                         <h1 class="popups__title">3D Visualisation</h1>
-                        <p class="popups__desc">Работа с про с 3D Max - это довольно лёгкий процесс, если знаешь как к нему подойти.
+                        <p class="popups__desc">Работа с про с 3D Max - это довольно лёгкий процесс, если знаешь как к
+                            нему подойти.
                             Об этом я и рассказываю.
-                            Переходи по ссылке на блог, подчерпни много полезной информации о 3D моделировании и не только.</p>
-                        <p class="popups__desc">Работа с про с 3D Max - это довольно лёгкий процесс, если знаешь как к нему подойти.
+                            Переходи по ссылке на блог, подчерпни много полезной информации о 3D моделировании и не
+                            только.</p>
+                        <p class="popups__desc">Работа с про с 3D Max - это довольно лёгкий процесс, если знаешь как к
+                            нему подойти.
                             Об этом я и рассказываю.
-                            Переходи по ссылке на блог, подчерпни много полезной информации о 3D моделировании и не только.</p>
-                        <p class="popups__desc">Работа с про с 3D Max - это довольно лёгкий процесс, если знаешь как к нему подойти.
+                            Переходи по ссылке на блог, подчерпни много полезной информации о 3D моделировании и не
+                            только.</p>
+                        <p class="popups__desc">Работа с про с 3D Max - это довольно лёгкий процесс, если знаешь как к
+                            нему подойти.
                             Об этом я и рассказываю.
-                            Переходи по ссылке на блог, подчерпни много полезной информации о 3D моделировании и не только.</p>
+                            Переходи по ссылке на блог, подчерпни много полезной информации о 3D моделировании и не
+                            только.</p>
                         <div class="popups__btn btn">
                             <a class="popups__btn-detail btn-detail" href="Blog.html">Подробнее</a>
                         </div>
                     </div>
-               </div>   
+                </div>
             </div>
 
             <div class="popup" id="design">
@@ -1347,20 +1250,26 @@
                     </div>
                     <div class="popups__description">
                         <h1 class="popups__title">Designing</h1>
-                        <p class="popups__desc">Работа с про с 3D Max - это довольно лёгкий процесс, если знаешь как к нему подойти.
+                        <p class="popups__desc">Работа с про с 3D Max - это довольно лёгкий процесс, если знаешь как к
+                            нему подойти.
                             Об этом я и рассказываю.
-                            Переходи по ссылке на блог, подчерпни много полезной информации о 3D моделировании и не только.</p>
-                        <p class="popups__desc">Работа с про с 3D Max - это довольно лёгкий процесс, если знаешь как к нему подойти.
+                            Переходи по ссылке на блог, подчерпни много полезной информации о 3D моделировании и не
+                            только.</p>
+                        <p class="popups__desc">Работа с про с 3D Max - это довольно лёгкий процесс, если знаешь как к
+                            нему подойти.
                             Об этом я и рассказываю.
-                            Переходи по ссылке на блог, подчерпни много полезной информации о 3D моделировании и не только.</p>
-                        <p class="popups__desc">Работа с про с 3D Max - это довольно лёгкий процесс, если знаешь как к нему подойти.
+                            Переходи по ссылке на блог, подчерпни много полезной информации о 3D моделировании и не
+                            только.</p>
+                        <p class="popups__desc">Работа с про с 3D Max - это довольно лёгкий процесс, если знаешь как к
+                            нему подойти.
                             Об этом я и рассказываю.
-                            Переходи по ссылке на блог, подчерпни много полезной информации о 3D моделировании и не только.</p>
+                            Переходи по ссылке на блог, подчерпни много полезной информации о 3D моделировании и не
+                            только.</p>
                         <div class="popups__btn btn">
                             <a class="popups__btn-detail btn-detail" href="Blog.html">Подробнее</a>
                         </div>
                     </div>
-               </div> 
+                </div>
             </div>
 
             <div class="popup" id="pc">
@@ -1372,20 +1281,26 @@
                     </div>
                     <div class="popups__description">
                         <h1 class="popups__title">PC using</h1>
-                        <p class="popups__desc">Работа с про с 3D Max - это довольно лёгкий процесс, если знаешь как к нему подойти.
+                        <p class="popups__desc">Работа с про с 3D Max - это довольно лёгкий процесс, если знаешь как к
+                            нему подойти.
                             Об этом я и рассказываю.
-                            Переходи по ссылке на блог, подчерпни много полезной информации о 3D моделировании и не только.</p>
-                        <p class="popups__desc">Работа с про с 3D Max - это довольно лёгкий процесс, если знаешь как к нему подойти.
+                            Переходи по ссылке на блог, подчерпни много полезной информации о 3D моделировании и не
+                            только.</p>
+                        <p class="popups__desc">Работа с про с 3D Max - это довольно лёгкий процесс, если знаешь как к
+                            нему подойти.
                             Об этом я и рассказываю.
-                            Переходи по ссылке на блог, подчерпни много полезной информации о 3D моделировании и не только.</p>
-                        <p class="popups__desc">Работа с про с 3D Max - это довольно лёгкий процесс, если знаешь как к нему подойти.
+                            Переходи по ссылке на блог, подчерпни много полезной информации о 3D моделировании и не
+                            только.</p>
+                        <p class="popups__desc">Работа с про с 3D Max - это довольно лёгкий процесс, если знаешь как к
+                            нему подойти.
                             Об этом я и рассказываю.
-                            Переходи по ссылке на блог, подчерпни много полезной информации о 3D моделировании и не только.</p>
+                            Переходи по ссылке на блог, подчерпни много полезной информации о 3D моделировании и не
+                            только.</p>
                         <div class="popups__btn btn">
                             <a class="popups__btn-detail btn-detail" href="Blog.html">Подробнее</a>
                         </div>
                     </div>
-               </div> 
+                </div>
             </div>
 
 
@@ -1399,20 +1314,26 @@
                     </div>
                     <div class="popups__description">
                         <h1 class="popups__title">Soft skills</h1>
-                        <p class="popups__desc">Работа с про с 3D Max - это довольно лёгкий процесс, если знаешь как к нему подойти.
+                        <p class="popups__desc">Работа с про с 3D Max - это довольно лёгкий процесс, если знаешь как к
+                            нему подойти.
                             Об этом я и рассказываю.
-                            Переходи по ссылке на блог, подчерпни много полезной информации о 3D моделировании и не только.</p>
-                        <p class="popups__desc">Работа с про с 3D Max - это довольно лёгкий процесс, если знаешь как к нему подойти.
+                            Переходи по ссылке на блог, подчерпни много полезной информации о 3D моделировании и не
+                            только.</p>
+                        <p class="popups__desc">Работа с про с 3D Max - это довольно лёгкий процесс, если знаешь как к
+                            нему подойти.
                             Об этом я и рассказываю.
-                            Переходи по ссылке на блог, подчерпни много полезной информации о 3D моделировании и не только.</p>
-                        <p class="popups__desc">Работа с про с 3D Max - это довольно лёгкий процесс, если знаешь как к нему подойти.
+                            Переходи по ссылке на блог, подчерпни много полезной информации о 3D моделировании и не
+                            только.</p>
+                        <p class="popups__desc">Работа с про с 3D Max - это довольно лёгкий процесс, если знаешь как к
+                            нему подойти.
                             Об этом я и рассказываю.
-                            Переходи по ссылке на блог, подчерпни много полезной информации о 3D моделировании и не только.</p>
+                            Переходи по ссылке на блог, подчерпни много полезной информации о 3D моделировании и не
+                            только.</p>
                         <div class="popups__btn btn">
                             <a class="popups__btn-detail btn-detail" href="Blog.html">Подробнее</a>
                         </div>
                     </div>
-               </div> 
+                </div>
             </div>
 
             <div class="popup" id="product">
@@ -1424,20 +1345,26 @@
                     </div>
                     <div class="popups__description">
                         <h1 class="popups__title">Production</h1>
-                        <p class="popups__desc">Работа с про с 3D Max - это довольно лёгкий процесс, если знаешь как к нему подойти.
+                        <p class="popups__desc">Работа с про с 3D Max - это довольно лёгкий процесс, если знаешь как к
+                            нему подойти.
                             Об этом я и рассказываю.
-                            Переходи по ссылке на блог, подчерпни много полезной информации о 3D моделировании и не только.</p>
-                        <p class="popups__desc">Работа с про с 3D Max - это довольно лёгкий процесс, если знаешь как к нему подойти.
+                            Переходи по ссылке на блог, подчерпни много полезной информации о 3D моделировании и не
+                            только.</p>
+                        <p class="popups__desc">Работа с про с 3D Max - это довольно лёгкий процесс, если знаешь как к
+                            нему подойти.
                             Об этом я и рассказываю.
-                            Переходи по ссылке на блог, подчерпни много полезной информации о 3D моделировании и не только.</p>
-                        <p class="popups__desc">Работа с про с 3D Max - это довольно лёгкий процесс, если знаешь как к нему подойти.
+                            Переходи по ссылке на блог, подчерпни много полезной информации о 3D моделировании и не
+                            только.</p>
+                        <p class="popups__desc">Работа с про с 3D Max - это довольно лёгкий процесс, если знаешь как к
+                            нему подойти.
                             Об этом я и рассказываю.
-                            Переходи по ссылке на блог, подчерпни много полезной информации о 3D моделировании и не только.</p>
+                            Переходи по ссылке на блог, подчерпни много полезной информации о 3D моделировании и не
+                            только.</p>
                         <div class="popups__btn btn">
                             <a class="popups__btn-detail btn-detail" href="Blog.html">Подробнее</a>
                         </div>
                     </div>
-               </div> 
+                </div>
             </div>
         </div>
     </div>

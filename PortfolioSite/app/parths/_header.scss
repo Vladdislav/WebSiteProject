@@ -15,17 +15,15 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 10px 0;
+        height: 60px;
         transition: all 1s ease;
     }
 }
 .logo {
     word-wrap: normal;
-    width: 100%;
-    max-width: max-content;
     padding-right: 60px;
     &__link {
-        font-size: 30px;
+        font-size: 36px;
         line-height: 45px;
         font-family: "SedgwickAve";
         
@@ -34,16 +32,16 @@
 .menu {
     display: flex;
     justify-content: space-between;
-    max-width: 932px;
-    width: 100%;
+    align-items: center;
 
     &__list {
         display: flex;
+
     }
 
     &__item {
         &:not(:first-child) {
-            margin-left: 40px;
+            margin-left: 30px;
         }
     }
     &__link {
@@ -85,28 +83,48 @@
     }
 }
 
-.lang-switcher {
-    display: flex;
-    padding: 0 10px;
-    align-items: center;
 
-    &__item {
-        font-size: 20px;
-        line-height: 24px;
+.languages {
+    
+    &__list {
+        margin-left: 50px;
+        &-svg {
+            height: 28px;
+            width: 28px;
+            background: url('../images/switch_lang.svg');
 
-        &:not(:first-child) {
-            margin-left: 15px;
         }
+    }
+    &__item {
+        display: flex;
+        position: relative;
+
+        &:hover .languages__swither-list {
+            display: block;
+        }
+    }
+    &__swither-list {
+        text-align: center;
+        min-width: 50px;
+        position: absolute;
+        z-index: 1000;
+        right: 0;
+        padding-top: 10px;
+        top: 20px;
+        display: none;
+        
+    }
+    &__swither-link {
+        background-color: $color-sub-menu;
+        padding-top: 5px;
+        &:last-child{
+            padding-bottom: 5px;
+        }
+    }
+    &__swither-item {
         &:hover {
             transition: 0.3s;
             color: $color-primary;
         }
-
-        &--active {
-            color: red;
-        }
     }
 }
-
-
-
