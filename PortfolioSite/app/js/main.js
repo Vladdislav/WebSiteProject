@@ -64,36 +64,11 @@ $(function(){
     });
 
 };
-
-
-// Adaptive animation
-
-if ($(window).width() < 426){
-  $('.short-about__center').removeClass('slideInDown');
-  $('.short-about__center').addClass('fadeIn');
-  $('.portfolio__content-left').removeClass('fadeInLeft');
-
-  // hexagons first block
-  $('.portfolio__hexagon-busines').addClass('wow fadeInLeft');
-  $('.portfolio__hexagon-severin').addClass('wow fadeInRight');
-  $('.portfolio__hexagon-kitchen').addClass('wow fadeInLeft');
-
-  $('.portfolio__hexagon-park').addClass('wow fadeInRight');
-  $('.portfolio__hexagon-room').addClass('wow fadeInLeft');
-
-  // hexagons second block
-  $('.portfolio__hexagon-build-1').addClass('wow fadeInLeft');
-  $('.portfolio__hexagon-build-2').addClass('wow fadeInRight');
-  $('.portfolio__hexagon-build-3').addClass('wow fadeInLeft');
-
-  $('.portfolio__hexagon-build-4').addClass('wow fadeInRight');
-  $('.portfolio__hexagon-build-5').addClass('wow fadeInLeft');
-
-  $('.project__bottom-block').removeClass('fadeInUp delay-1s');
-  $('.project__bottom-block').removeClass('fadeInUp delay-2s');
-  $('.project__bottom-block').addClass('fadeInLeft');
-  
-}
+  if ($(window).width() < 426){
+    $('.project__bottom-block').removeClass('fadeInUp delay-1s');
+    $('.project__bottom-block').removeClass('fadeInUp delay-2s');
+    $('.project__bottom-block').addClass('fadeInLeft');
+  }
 
 $('.burger').on('click', function(){
   $('.burger').toggleClass('active');
@@ -125,22 +100,22 @@ $('.burger').on('click', function(){
       },
     }
   );
-    const anchors = document.querySelectorAll('a[href*="#"]')
-    for (let anchor of anchors) {
-      anchor.addEventListener('click', function (e) {
-        e.preventDefault()
+    // const anchors = document.querySelectorAll('a[href*="#"]')
+    // for (let anchor of anchors) {
+    //   anchor.addEventListener('click', function (e) {
+    //     e.preventDefault()
         
-        const blockID = anchor.getAttribute('href').substr(1)
+    //     const blockID = anchor.getAttribute('href').substr(1)
         
-        document.getElementById(blockID).scrollIntoView({
-          behavior: 'smooth',
-          block: 'start'
-        })
-      })
-    }
+    //     document.getElementById(blockID).scrollIntoView({
+    //       behavior: 'smooth',
+    //       block: 'start'
+    //     })
+    //   })
+    // }
       
-      wow.init();
-      onScrollHeader();
+    wow.init();
+    onScrollHeader();
 
   // Initialise Carousel
 const logoCarousel = new Carousel(document.querySelector("#logoCarousel"), {

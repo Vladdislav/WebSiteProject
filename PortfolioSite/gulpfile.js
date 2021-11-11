@@ -50,9 +50,12 @@ function scripts() {
         'node_modules/@fancyapps/ui/dist/carousel.umd.js',
         'node_modules/@fancyapps/ui/dist/carousel.autoplay.umd.js',
         'node_modules/wow.js/dist/wow.js',
-        'app/js/main.js'
+        'node_modules/slick-slider/slick/slick.js',
+        'app/js/portfolio.js'
+        // 'app/js/main.js'
+
     ])
-    .pipe(concat('main.min.js'))
+    .pipe(concat('portfolio.min.js'))
     // .pipe(uglify())
     .pipe(dest('app/js'))
     .pipe(browserSync.stream())
@@ -60,9 +63,12 @@ function scripts() {
 
 // Компиляция scss в css с минификацией после сохранения
 function styles() {
-    return src('app/scss/style.scss')
+    return src([
+        // 'app/scss/style.scss',
+        'app/scss/portfolio.scss'
+    ])
     .pipe(scss({outputStyle: 'compressed'}))
-    .pipe(concat('style.min.css'))
+    .pipe(concat('portfolio.min.css'))
     .pipe(autoprefixer({
         overrideBrowserslist: ['last 10 version'],
         grid: true
@@ -74,9 +80,9 @@ function styles() {
 function build() {
     
     return src([
-    'app/css/style.min.css',
+    'app/css/**/*.min.css',
     'app/fonts/**/*',
-    'app/js/main.min.js',
+    'app/js/**/*.min.js',
     'app/*.html'
 ], {base: 'app'})
     .pipe(dest('dist'))
@@ -85,7 +91,7 @@ function build() {
 // Наблюдейние за файлами scss, js, html
 function watching() {
     watch(['app/**/**/*.scss'], styles);
-    watch(['app/js/main.js' ,'!app/js/main.min.js'], scripts);
+    watch(['app/js/portfolio.js' ,'!app/js/portfolio.min.js'], scripts);
     watch(['app/*.html']).on('change', browserSync.reload);
 }
 

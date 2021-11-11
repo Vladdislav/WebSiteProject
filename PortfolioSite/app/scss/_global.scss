@@ -39,8 +39,6 @@ body {
     max-width: 1480px;
     padding: 0 20px;
     margin: 0 auto;
-
-
 }
 .btn {
     background: red;
@@ -60,6 +58,48 @@ body {
     }
     &:active {
         transform: scale(95%);
+    }
+}
+.icons {
+    display: flex;
+    align-items: center;
+
+    &__instagram:after {
+        content: '';
+        display: block;
+        width: 30px;
+        height: 30px;
+        background: url('../images/instagram.svg');
+    }
+    &__telegramm:after {
+        content: '';
+        display: block;
+        width: 30px;
+        height: 30px;
+        background: url('../images//telegramm.svg');
+    }
+
+    &__vk:after {
+        content: '';
+        display: block;
+        width: 30px;
+        height: 30px;
+        background: url('../images/vk.svg');
+    }
+
+    &__link {
+        font-size: 30px;
+        transition: 0.3s;
+
+        &:hover {
+            transition: 0.3s;
+            color: red;
+            transform: translateY(-15%);
+        }
+
+        &:not(:first-child) {
+            margin-left: 25px;
+        }
     }
 }
 
