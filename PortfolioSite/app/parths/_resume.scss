@@ -125,9 +125,7 @@ $photoshop: calc(135 / 164) * 100%;
         text-align: center;
         padding: 6px 15px;
     }
-    &:last-child {
-        margin-bottom: 355px;
-    }
+    
 }
 .block-item--dflex {
     display: flex;
@@ -142,8 +140,7 @@ $photoshop: calc(135 / 164) * 100%;
     }
     &__left-bar {
         margin: 100px 20px 100px 0;
-        max-height: max-content;
-        height: 100%;
+        min-height: 1400px;
         width: 100%;
         max-width: 400px;
         background: #928c8a;
@@ -152,8 +149,7 @@ $photoshop: calc(135 / 164) * 100%;
 
     &__right-bar {
         margin: 100px 0;
-        max-height: max-content;
-        height: 100%;
+        min-height: 1400px;
         width: 100%;
         max-width: 940px;
         background: #928c8a;

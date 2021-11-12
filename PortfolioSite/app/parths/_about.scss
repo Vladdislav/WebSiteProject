@@ -1,0 +1,132 @@
+.header {
+    background: none;
+
+    .container {
+        padding: 0;
+        
+    }
+    &__inner {
+        width: 50%;
+        background: $color-bg-portfolio;
+        padding: 0 20px;
+    }
+    .logo__link {
+        color: $color-sub-menu;
+    }
+}
+.menu {
+    display: block;
+    position: absolute;
+    opacity: 0;
+    text-align: center;
+    max-width: 150px;
+    width: 100%;
+    background-color: #2B303B; 
+    right: 55%;
+    top: 60px;
+    
+    &.active {
+        opacity: 1;
+    }
+    &__list{
+        display: block;
+    }
+    &__item:first-child {
+        margin-top: 10px;
+    }
+    &__item:not(:first-child) {
+        margin: 10px 0;
+    }
+    &__link{
+        font-size: 20px;
+        line-height: 24px;
+    }
+    
+}
+.cover {
+    display: flex;
+    align-items: center;
+    max-width: 78px;
+}
+.burger {
+    display:block;
+    position: relative;
+    width: 30px;
+    &.active span {
+        opacity:0; 
+        transition: 0.5s; 
+    }
+    &.active:before {
+        transform: rotate(45deg);
+        top: 12px;
+        transition: 0.4s;
+    }
+    &.active:after {
+        transform: rotate(-45deg);
+        bottom: 12px;
+        transition: 0.4s;
+    }
+}
+.logo {
+    word-wrap: normal;
+    padding-right: 60px;
+    &__link {
+        font-size: 36px;
+        line-height: 45px;
+        font-family: "SedgwickAve";
+        
+    }
+}
+
+
+.languages {
+    
+    &__list {
+        margin-left: 20px;
+        &-svg {
+            height: 28px;
+            width: 28px;
+            background: url('../images/lang_switch_black.svg');
+            
+        }
+    }
+    &__item {
+        display: flex;
+        position: relative;
+
+        &:hover .languages__swither-list{
+            transition: all 0.5s;
+            opacity: 1;
+        }
+    }
+    &__swither-list {
+        opacity: 0;
+        text-align: center;
+        min-width: 50px;
+        position: absolute;
+        z-index: 1000;
+        padding-top: 20px;
+        
+        top: 24px;
+        right: 0;
+        
+        
+    }
+    &__swither-link {
+        background-color: #2B303B; 
+        padding-top: 5px;
+        padding-right: 20px;
+        padding-left: 20px;
+        &:last-child{
+            padding-bottom: 5px;
+        }
+    }
+    &__swither-item {
+        &:hover {
+            transition: 0.3s;
+            color: $color-primary;
+        }
+        
+    }
+    
+}

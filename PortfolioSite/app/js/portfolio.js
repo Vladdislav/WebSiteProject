@@ -99,5 +99,4 @@ $(function(){
         
         
     });
-    $('slick-slide-control01').removeAttr
 });
